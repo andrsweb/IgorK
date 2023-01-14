@@ -1,4 +1,4 @@
-# Mironova Elena project. December 21.12.2022
+# Surgeon Igor Kraushkin project. January 17.01.2023
 
 <br />
 
@@ -8,7 +8,7 @@
 
 ### 1. Download archive or clone these files with:
 ```
-git clone https://github.com/andrsweb/ElMironova.git
+git clone https://github.com/andrsweb/IgorK.git
 ```
 
 ### 2. Install dependencies:

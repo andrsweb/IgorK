@@ -3,24 +3,24 @@ h2, .h2,
 h3, .h3,
 h4, .h4 {
 	font-family: $ff-title;
-	font-weight: $fw-bold;
+	font-weight: $fw-semibold;
 	line-height: $lh-title;
 	margin: 0;
 }
 
 h1, .h1 {
-	font-size: 32px;
+	font-size: 30px;
 
 	@media all and (min-width: $lg) {
-		font-size: 36px
+		font-size: 40px;
 	}
 }
 
 h2, .h2 {
-	font-size: 24px;
+	font-size: 20px;
 
 	@media all and (min-width: $lg) {
-		font-size: 36px
+		font-size: 22px
 	}
 }
 
@@ -44,8 +44,4 @@ a {
 
 p {
 	margin: 0;
-}
-
-b, strong {
-	font-weight: $fw-bold
 }

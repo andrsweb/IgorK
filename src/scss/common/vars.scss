@@ -9,14 +9,13 @@ $xxl: 1366px;
 // Container max-width.
 $container-md: 760px;
 $container-lg: 990px;
-$container-xl: 1200px;
+$container-xl: 1440px;
 
 // Container padding.
-$container-padding: 24px;
+$container-padding: 20px;
 
 // Font families.
-$ff			: Arial, sans-serif;
-$ff-title	: Arial, sans-serif;
+$ff			: 'Montserrat', sans-serif;
 
 // Font sizes.
 $fs-xs	: 12px;
@@ -26,19 +25,24 @@ $fs-lg	: 18px;
 $fs-xl	: 20px;
 
 // Font weights.
-$fw-light	: 300;
 $fw-regular	: 400;
 $fw-medium	: 500;
 $fw-semibold: 600;
-$fw-bold	: 700;
 
 // Line heights.
-$lh			: 1.5;
-$lh-title	: 1.3;
+$lh					: 1.4;
+$lh-title			: 1.31;
+
 
 // Colors.
 $white	: #FFFFFF;
 $black	: #000000;
+$wheat  : #F5F7F9;
+$light  : #D6E0EA;
+$medium : #A4B4C3;
+$grey   : #81909F;
+$dark   : #48577A;
+$accent : #5575C1;
 
 // Others.
 $tr: 0.35s;

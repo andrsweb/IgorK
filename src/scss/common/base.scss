@@ -15,13 +15,14 @@ body {
 	display: flex;
 	height: auto;
 	font-family: $ff;
-	font-size: $fs-md;
+	font-size: $fs-lg;
 	line-height: $lh;
 	color: $black;
 	background-color: $white
 }
 
 img {
+	display: block;
 	max-width: 100%;
 	height: auto
 }
@@ -30,6 +31,11 @@ ul {
 	margin: 0;
 	padding: 0;
 	list-style: none
+}
+
+li {
+	padding: 0;
+	margin: 0;
 }
 
 .wrapper {

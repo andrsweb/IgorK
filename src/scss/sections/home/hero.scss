@@ -6,7 +6,7 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	z-index: -1;
+	z-index: 0;
 
 	&::before {
 		content: "";
@@ -17,7 +17,7 @@
 		height: 100%;
 		background: linear-gradient(0deg, #000000 -4.1%, rgba(0, 0, 0, 0) 100%);
 		opacity: 0.85;
-		z-index: -2;
+		z-index: -1;
 	}
 
 	.container {

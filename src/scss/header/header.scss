@@ -5,6 +5,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 100;
 	transition:
 		box-shadow ease $tr,
 		padding ease $tr;

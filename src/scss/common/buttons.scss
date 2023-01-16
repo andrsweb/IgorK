@@ -1,0 +1,101 @@
+.button {
+	font-family: $ff;
+	font-style: normal;
+	font-weight: $fw-semibold;
+	font-size: 20px;
+	line-height: $lh;
+	color: $accent;
+	border: 2px solid $accent;
+	padding: 18px 41px;
+	border-radius: $bord;
+	transition: background-color ease $tr,
+				color ease $tr;
+
+	&:hover {
+		background-color: $accent;
+		color: $white;
+	}
+}
+
+.burger-button {
+	cursor: pointer;
+	position: relative;
+	width: 40px;
+	height: 25px;
+	transition: opacity ease $tr;
+	margin-left: auto;
+
+	&.opened {
+		span {
+			top: 10px;
+			background: $accent;
+			
+			animation: rot 0.5s forwards;
+
+			@keyframes rot {
+				0% {
+					transform: rotate( 0 );
+				}
+
+				100% {
+					transform: rotate( -45deg );
+				}
+			}
+		}
+
+		span::before {
+			opacity: 0;
+		}
+
+		span::after {
+			background: $accent;
+			top: 0;
+			animation: angle 0.5s forwards;
+
+			@keyframes angle {
+				0% {
+					transform: rotate( 0 );
+				}
+
+				100% {
+					transform: rotate( 90deg );	
+				}
+			}
+		}
+	}
+
+	&:hover {
+		opacity: $op;
+	}
+
+	@media all and (min-width: $lg) {
+		display: none;
+	}
+
+	span {
+		position: absolute;
+		width: 100%;
+		height: 4px;
+		background-color: $grey;
+		top: 0;
+		left: 0;
+		border-radius: $bord;
+
+		&::before, &::after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 4px;
+			background-color: $grey;
+			border-radius: $bord;
+		}
+
+		&::before {
+			top: 10px;
+		}
+
+		&::after {
+			top: 20px;
+		}
+	}
+}

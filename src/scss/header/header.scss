@@ -1,0 +1,205 @@
+.header {
+	padding: 19px 0;
+	background-color: $white;
+	width: 100vw;
+	position: fixed;
+	transition:
+		box-shadow ease $tr,
+		padding ease $tr;
+
+	&.scrolled {
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.623);
+		padding: 14px 0;
+	}
+
+	.container {
+		max-width: 1260px;
+	}
+
+	&-wrapper {
+		display: flex;
+		align-items: center;
+
+		&.active {
+			.header-nav {
+				flex-direction: column;
+				margin-right: 0;
+				width: 100%;
+				align-items: center;
+			}
+
+			.header-inner {
+				padding: 10px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				position: fixed;
+				top: 76px;
+				right: 0;
+				width: 200px;
+				background: $white;
+				border-top: 2px solid $accent;
+				border-left: 2px solid $accent;
+				border-bottom: 2px solid $accent;
+				border-top-left-radius: $bord;
+				border-bottom-left-radius: $bord;
+				z-index: 100;
+				animation: fade 0.5s forwards;
+
+				@keyframes fade {
+					0% {
+						transform: translateX( 100% );
+					}
+
+					100% {
+						transform: translateX( 0 );
+					}
+				}
+			}
+
+			.header-link {
+				margin-bottom: 15px;
+			}
+
+			.header-number {
+				margin-left: 0;
+				margin-top: 10px;
+			}
+		}
+	}
+
+	&-logo {
+		display: flex;
+		flex-direction: column;
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-semibold;
+		font-size: 17px;
+		line-height: $lh-title;
+		color: $accent;
+		margin-right: 74px;
+		min-width: 163px;
+		transition: opacity ease $tr;
+
+		@media all and (min-width: $lg) {
+			margin-right: 20px;
+		}
+
+		@media all and (min-width: $xl) {
+			margin-right: 71px;
+		}
+
+		span {
+			font-family: $ff;
+			font-style: normal;
+			font-weight: $fw-regular;
+			font-size: 12px;
+			line-height: $lh-title;
+			color: $grey;
+			text-transform: uppercase;
+		}
+
+		&:hover {
+			opacity: $op;
+		}
+	}
+
+	&-inner {
+		display: none;
+		align-items: center;
+
+		@media all and (min-width: $lg) {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+		}
+
+		@media all and (min-width: $xl) {
+			justify-content: flex-start;
+		}
+	}
+
+	&-nav {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+			justify-content: center;
+			margin-right: 20px;
+			margin: 0 auto;
+		}
+
+		@media all and (min-width: $xl) {
+			justify-content: flex-start;
+			margin: 0 56px 0 0;
+		}
+	}
+
+	&-link {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 15px;
+		line-height: $lh-title;
+		color: #81909F;
+		transition: opacity ease $tr;
+
+		@media all and (min-width: $lg) {
+			margin-right: 39px;
+			font-size: 12px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 15px;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover {
+			opacity: $op;
+		}
+	}
+
+	&-feedback {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
+	}
+
+	&-button {
+		padding: 5.5px 23px;
+		font-size: 14px;
+		border-radius: 8px;
+	}
+
+	&-number {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-semibold;
+		font-size: 17px;
+		line-height: $lh-title;
+		color: $accent;
+		margin-left: 35px;
+		transition: opacity ease $tr;
+
+		@media all and (min-width: $lg) {
+			font-size: 12px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 17px;
+		}
+
+		&:hover {
+			opacity: $op;
+		}
+	}
+}

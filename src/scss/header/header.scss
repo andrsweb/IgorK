@@ -1,0 +1,93 @@
+.header {
+	padding: 19px 0;
+	background-color: $white;
+	width: 100%;
+	position: fixed;
+
+	.container {
+		max-width: 1240px;
+	}
+
+	&-wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&-logo {
+		display: flex;
+		flex-direction: column;
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-semibold;
+		font-size: 17px;
+		line-height: $lh-title;
+		color: $accent;
+		margin-right: 74px;
+		transition: opacity ease $tr;
+
+		span {
+			font-family: $ff;
+			font-style: normal;
+			font-weight: $fw-regular;
+			font-size: 12px;
+			line-height: $lh-title;
+			color: $grey;
+			text-transform: uppercase;
+		}
+
+		&:hover {
+			opacity: $op;
+		}
+	}
+
+	&-inner {
+		display: flex;
+		align-items: center;
+	}
+
+	&-nav {
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: 56px;
+	}
+
+	&-link {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 15px;
+		line-height: $lh-title;
+		color: #81909F;
+		margin-right: 39px;
+		transition: opacity ease $tr;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover {
+			opacity: $op;
+		}
+	}
+
+	&-button {
+		padding: 5.5px 23px;
+		font-size: 14px;
+		border-radius: 8px;
+	}
+
+	&-number {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-semibold;
+		font-size: 17px;
+		line-height: $lh-title;
+		color: $accent;
+		margin-left: 35px;
+		transition: opacity ease $tr;
+
+		&:hover {
+			opacity: $op;
+		}
+	}
+}

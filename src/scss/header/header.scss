@@ -11,6 +11,53 @@
 	&-wrapper {
 		display: flex;
 		align-items: center;
+
+		&.active {
+			.header-nav {
+				flex-direction: column;
+				margin-right: 0;
+				width: 100%;
+				align-items: center;
+			}
+
+			.header-inner {
+				padding: 10px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				position: fixed;
+				top: 76px;
+				right: 0;
+				width: 200px;
+				background: $white;
+				border-top: 2px solid $accent;
+				border-left: 2px solid $accent;
+				border-bottom: 2px solid $accent;
+				border-top-left-radius: $bord;
+				border-bottom-left-radius: $bord;
+				z-index: 100;
+				animation: fade 0.5s forwards;
+
+				@keyframes fade {
+					0% {
+						transform: translateX( 100% );
+					}
+
+					100% {
+						transform: translateX( 0 );
+					}
+				}
+			}
+
+			.header-link {
+				margin-bottom: 15px;
+			}
+
+			.header-number {
+				margin-left: 0;
+				margin-top: 10px;
+			}
+		}
 	}
 
 	&-logo {
@@ -23,7 +70,16 @@
 		line-height: $lh-title;
 		color: $accent;
 		margin-right: 74px;
+		min-width: 163px;
 		transition: opacity ease $tr;
+
+		@media all and (min-width: $lg) {
+			margin-right: 20px;
+		}
+
+		@media all and (min-width: $xl) {
+			margin-right: 71px;
+		}
 
 		span {
 			font-family: $ff;
@@ -41,14 +97,37 @@
 	}
 
 	&-inner {
-		display: flex;
+		display: none;
 		align-items: center;
+
+		@media all and (min-width: $lg) {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+		}
+
+		@media all and (min-width: $xl) {
+			justify-content: flex-start;
+		}
 	}
 
 	&-nav {
 		display: flex;
+		flex-direction: column;
 		flex-wrap: wrap;
-		margin-right: 56px;
+		// margin-right: 56px;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+			justify-content: center;
+			margin-right: 20px;
+			margin: 0 auto;
+		}
+
+		@media all and (min-width: $xl) {
+			justify-content: flex-start;
+			margin: 0 56px 0 0;
+		}
 	}
 
 	&-link {
@@ -58,8 +137,16 @@
 		font-size: 15px;
 		line-height: $lh-title;
 		color: #81909F;
-		margin-right: 39px;
 		transition: opacity ease $tr;
+
+		@media all and (min-width: $lg) {
+			margin-right: 39px;
+			font-size: 12px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 15px;
+		}
 
 		&:last-child {
 			margin-right: 0;
@@ -67,6 +154,16 @@
 
 		&:hover {
 			opacity: $op;
+		}
+	}
+
+	&-feedback {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
 		}
 	}
 
@@ -85,6 +182,14 @@
 		color: $accent;
 		margin-left: 35px;
 		transition: opacity ease $tr;
+
+		@media all and (min-width: $lg) {
+			font-size: 12px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 17px;
+		}
 
 		&:hover {
 			opacity: $op;

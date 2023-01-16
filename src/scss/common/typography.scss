@@ -5,11 +5,16 @@ h4, .h4 {
 	font-family: $ff;
 	font-weight: $fw-semibold;
 	line-height: $lh-title;
+	font-style: normal;
 	margin: 0;
 }
 
 h1, .h1 {
-	font-size: 30px;
+	font-size: 25px;
+
+	@media all and (min-width: $md) {
+		font-size: 30px;
+	}
 
 	@media all and (min-width: $lg) {
 		font-size: 40px;

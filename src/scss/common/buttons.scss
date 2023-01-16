@@ -17,6 +17,23 @@
 	}
 }
 
+.dark-button {
+	padding: 20px 60px;
+	font-family: $ff;
+	font-style: normal;
+	font-weight: $fw-semibold;
+	font-size: 20px;
+	background-color: $accent;
+	line-height: $lh;
+	color: $white;
+	border-radius: $bord;
+	transition: background-color ease $tr;
+
+	&:hover {
+		background-color: $dark;
+	}
+}
+
 .burger-button {
 	cursor: pointer;
 	position: relative;

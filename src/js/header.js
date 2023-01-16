@@ -1,9 +1,8 @@
-import { reCalculateDropdownHeight } from "./common/global"
-
 document.addEventListener( 'DOMContentLoaded', () => {
 	'use strict'
 
 	toggleBurgerMenu()
+	headerScroll()
 } )
 
 const toggleBurgerMenu = () => {
@@ -36,4 +35,30 @@ const toggleBurgerMenu = () => {
 		burgerMenu.classList.remove( 'active' )
 		burgerBtn.classList.remove( 'opened' )
 	} )
+
+	window.addEventListener( 'resize', () => {
+		const windowWidth = window.innerWidth
+		const WINDOW_WIDTH_MD = 992
+	
+		if( windowWidth >= WINDOW_WIDTH_MD &&  burgerMenu.classList.contains( 'active' ) ) {
+			burgerMenu.classList.remove( 'active' )
+			burgerBtn.classList.remove( 'opened' )
+		}
+	} )
+}
+
+const headerScroll = () => {
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY
+        const header = document.querySelector( '.header' )
+
+		if( ! header ) return
+
+        if ( scrollTop > 0 ) {
+            if ( ! header.classList.contains( 'scrolled' ) )
+                header.classList.add( 'scrolled' )
+		}   else {
+            header.classList.remove( 'scrolled' )
+        }
+    })
 }

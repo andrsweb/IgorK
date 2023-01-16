@@ -25,6 +25,45 @@
 	transition: opacity ease $tr;
 	margin-left: auto;
 
+	&.opened {
+		span {
+			top: 10px;
+			background: $accent;
+			
+			animation: rot 0.5s forwards;
+
+			@keyframes rot {
+				0% {
+					transform: rotate( 0 );
+				}
+
+				100% {
+					transform: rotate( -45deg );
+				}
+			}
+		}
+
+		span::before {
+			opacity: 0;
+		}
+
+		span::after {
+			background: $accent;
+			top: 0;
+			animation: angle 0.5s forwards;
+
+			@keyframes angle {
+				0% {
+					transform: rotate( 0 );
+				}
+
+				100% {
+					transform: rotate( 90deg );	
+				}
+			}
+		}
+	}
+
 	&:hover {
 		opacity: $op;
 	}

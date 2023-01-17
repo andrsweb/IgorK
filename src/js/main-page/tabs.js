@@ -35,10 +35,3 @@ const mainTabs = () => {
 
 	tabBtns.forEach(checkOutTabs)
 }
-
-
-
-
-
-
-

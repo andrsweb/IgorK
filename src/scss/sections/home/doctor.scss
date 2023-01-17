@@ -1,0 +1,59 @@
+.doctor {
+	padding: 76px 0 112px;
+	background-image: url( '../img/home/doctor/doc-bg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	.container {
+		max-width: 1170px;
+	}
+
+	h2 {
+		color: $white;
+		text-align: left;
+		margin-bottom: 17px;
+	}
+
+	h4 {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 18px;
+		line-height: $lh;
+		color: $white;
+		margin-bottom: 57px;
+	}
+
+	&-list {
+		margin-bottom: 50px;
+		width: 55%;
+	}
+
+	&-item {
+		display: flex;
+		margin-bottom: 18px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		img {
+			margin-right: 16px;
+		}
+	}
+
+	&-text {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 18px;
+		line-height: $lh;
+		color: $white;
+		max-width: 478px;
+	}
+
+	&-button {
+		padding: 18px 51px;
+	}
+}

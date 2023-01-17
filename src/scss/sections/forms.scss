@@ -1,8 +1,12 @@
 .home-form {
-	padding: 81px 0 100px;
+	padding: 30px 0;
+	
+	@media all and (min-width: $xl) {
+		padding: 81px 0 100px;
+	}
 
 	.container {
-		max-width: 900px;
+		max-width: 810px;
 	}
 
 	h2 {
@@ -13,21 +17,29 @@
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-medium;
-		font-size: 22px;
+		font-size: 18px;
 		line-height: $lh;
 		color: $dark;
+
+		@media all and (min-width: $md) {
+			font-size: 22px;
+		}
 	}
 
 	.radio-label {
 		display: flex;
 		align-items: center;
-		font-family: 'Montserrat';
+		font-family: $ff;
 		font-style: normal;
-		font-weight: 400;
-		font-size: 18px;
+		font-weight: $fw-regular;
+		font-size: 14px;
 		line-height: 22px;
-		color: #48577A;
+		color: $dark;
 		margin-bottom: 20px;
+
+		@media all and (min-width: $md) {
+			font-size: 18px;
+		}
 	}
 
 	.radio {
@@ -61,31 +73,62 @@
 		justify-content: center;
 	}
 
-	.name {
+	.name, .promo {
 		width: 100%;
-		max-width: 341px;
+		max-width: 100%;
 		margin-bottom: 25px;
-		margin-right: 31px;
+
+		@media all and (min-width: $m) {
+			max-width: 250px;
+			margin-right: 31px;
+		}
+
+		@media all and (min-width: $md) {
+			max-width: 300px;
+		}
+
+		@media all and (min-width: $lg) {
+			max-width: 341px;
+		}
 	}
 
 	.tel {
 		width: 100%;
-		max-width: 393px;
+		max-width: 100%;
 		margin-bottom: 25px;
-	}
 
-	.promo {
-		width: 100%;
-		max-width: 341px;
-		margin-right: 31px;
+		@media all and (min-width: $m) {
+			max-width: 250px;
+		}
+
+		@media all and (min-width: $md) {
+			max-width: 300px;
+		}
+
+		@media all and (min-width: $lg) {
+			max-width: 393px;
+		}
 	}
 
 	.form-button {
 		width: 100%;
-		max-width: 393px;
-		height: 64px;
+		height: 44px;
 		border: none;
 		cursor: pointer;
+
+		@media all and (min-width: $m) {
+			max-width: 250px;
+			height: 64px;
+		}
+
+		@media all and (min-width: $md) {
+			max-width: 300px;
+		}
+
+		@media all and (min-width: $lg) {
+			padding: 10px 20px;
+			max-width: 393px;
+		}
 	}
 
 	input {
@@ -93,7 +136,7 @@
 		border-style: 0;
 		background: $wheat;
 		border-radius: $bord;
-		height: 64px;
+		height: 44px;
 		padding-left: 30px;
 		font-family: $ff;
 		font-style: normal;
@@ -101,6 +144,10 @@
 		font-size: 18px;
 		line-height: 22px;
 		color: $grey;
+
+		@media all and (min-width: $m) {
+			height: 64px;
+		}
 
 		&::placeholder {
 			font-family: $ff;

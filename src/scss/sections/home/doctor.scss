@@ -1,0 +1,91 @@
+.doctor {
+	padding: 50px 0;
+	
+	background-image: url( '../img/home/doctor/doc-bg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	@media all and (min-width: $xl) {
+		padding: 76px 0 112px;
+	}
+
+	.container {
+		max-width: 1170px;
+	}
+
+	h2 {
+		color: $white;
+		text-align: center;
+		margin-bottom: 17px;
+
+		@media all and (min-width: $md) {
+			text-align: left;
+		}
+	}
+
+	h4 {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 14px;
+		line-height: $lh;
+		color: $white;
+		margin-bottom: 57px;
+		text-align: center;
+
+		@media all and (min-width: $md) {
+			text-align: left;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 18px;		
+		}
+	}
+
+	&-list {
+		margin-bottom: 30px;
+		width: 100%;
+
+		@media all and (min-width: $md) {
+			margin-bottom: 50px;
+			width: 55%;
+		}
+	}
+
+	&-item {
+		position: relative;
+		display: flex;
+		margin-bottom: 18px;
+		padding-left: 30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		img {
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+
+	&-text {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 14px;
+		line-height: $lh;
+		color: $white;
+		max-width: 100%;
+
+		@media all and (min-width: $lg) {
+			font-size: 18px;
+			max-width: 478px;		
+		}
+	}
+
+	&-button {
+		padding: 18px 51px;
+	}
+}

@@ -1,4 +1,5 @@
 .button {
+	cursor: pointer;
 	font-family: $ff;
 	font-style: normal;
 	font-weight: $fw-semibold;
@@ -8,6 +9,7 @@
 	border: 2px solid $accent;
 	padding: 18px 41px;
 	border-radius: $bord;
+	text-align: center;
 	transition: background-color ease $tr,
 				color ease $tr;
 
@@ -28,6 +30,7 @@
 	color: $white;
 	border-radius: $bord;
 	transition: background-color ease $tr;
+	text-align: center;
 
 	@media all and (min-width: $lg) {
 		padding: 20px 60px;

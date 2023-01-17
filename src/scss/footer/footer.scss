@@ -1,0 +1,153 @@
+.footer {
+	padding: 53px 0 70px;
+	background-color: $accent;
+
+	.container {
+		max-width: 1200px;
+	}
+
+	.header-logo {
+		color: $white;
+		margin: 0 0 34px 0;
+		text-align: center;
+		width: 163px;
+
+		@media all and (min-width: $sm) {
+			text-align: left;
+		}
+
+		span {
+			color: $white;
+		}
+	}
+
+	&-nav {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+
+	&-col-1, &-col-2, &-col-3 {
+		padding-right: 5px;
+		margin-bottom: 20px;
+
+		a {
+			width: 100%;
+		}
+	}
+
+	&-col-1 {
+		width: 50%; //12
+		// margin-right: 90px;
+
+		@media all and (min-width: $sm) {
+			width: 33.333%;
+		}
+
+		@media all and (min-width: $md) {
+			width: 33.333%;
+		}
+
+		@media all and (min-width: $md) {
+			width: 15%;
+		}
+	}
+
+	&-col-2 {
+		width: 50%;//14
+		// margin-right: 90px;
+
+		@media all and (min-width: $sm) {
+			width: 33.333%;
+		}
+
+		@media all and (min-width: $md) {
+			width: 20%;
+		}
+	}
+
+	&-col-3 {
+		width: 50%;
+
+		@media all and (min-width: $sm) {
+			width: 33.333%;
+		}
+
+		@media all and (min-width: $md) {
+			width: 20%;
+		}
+	}
+
+	&-col-4 {
+		width: 50%;
+
+		@media all and (min-width: $sm) {
+			width: 100%;
+		}
+
+		@media all and (min-width: $md) {
+			width: 45%;
+		}
+	}
+
+	&-col-title, &-num {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 15px;
+		line-height: 18px;
+		color: $white;
+		margin-bottom: 10px;
+	}
+
+	&-link {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 12px;
+		line-height: 15px;
+		color: $white;
+		transition: opacity ease $tr;
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			opacity: $op;
+		}
+	}
+
+	&-num {
+		transition: opacity ease $tr;
+		
+		&:hover {
+			opacity: $op;
+		}
+	}
+
+	&-address {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 12px;
+		line-height: 25px;
+		color: $white;
+		width: 100%;
+
+		span {
+			font-size: 10px;
+		}
+	}
+
+	&-license {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 10px;
+		line-height: 12px;
+		color: $white;
+		margin-top: 15px;
+	}
+}

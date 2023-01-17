@@ -7,7 +7,6 @@
 
 	&-wrapper {
 		display: flex;
-		
 	}
 
 	&-links {
@@ -41,6 +40,7 @@
 		padding-left: 20px;
 		margin-bottom: 20px;
 		cursor: pointer;
+		transition: color ease $tr;
 
 		&.active {
 			color: $accent;
@@ -64,9 +64,27 @@
 	}
 
 	.links-wrapper {
-		display: flex;
+		display: none;
 		flex-direction: column;
-		margin: 46px 0 141px;
+		margin: 46px 0 121px;
+		min-height: 117px;
+
+		&.active {
+			display: flex;
+
+			.main-tab-link {
+				animation: marg $tr forwards;
+
+				@keyframes marg {
+					0% {
+						margin: 0;
+					}
+					100% {
+						margin-bottom: 17px;
+					}
+				}
+			}
+		}
 	}
 
 	.main-tab-link {
@@ -77,6 +95,7 @@
 		line-height: 22px;
 		color: $medium;
 		margin-bottom: 17px;
+		transition: color ease $tr;
 
 		&:last-child {
 			margin-bottom: 0;
@@ -95,5 +114,13 @@
 	&-img {
 		padding-top: 42px;
 		position: relative;
+	}
+
+	.image-to-change {
+		display: none;
+
+		&.active {
+			display: block;
+		}
 	}
 }

@@ -1,0 +1,53 @@
+.clinic {
+	position: relative;
+	padding: 50px 0;
+	background-image: url( '../img/home/clinic/video.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	z-index: 0;
+
+	@media all and (min-width: $lg) {
+		padding: 62px 0 162px;
+	}
+
+	&::before {
+		content: "";
+		display: block;
+		background: linear-gradient(90deg, #FFFFFF 31.96%, rgba(255, 255, 255, 0) 97.9%);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100%;
+		z-index: -1;
+	}
+
+	.container {
+		max-width: 1180px;
+	}
+
+	h2 {
+		text-align: left;
+		margin-bottom: 30px;
+	}
+
+	&-text {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 14px;
+		line-height: $lh;
+		color: $dark;
+		max-width: 512px;
+		margin-bottom: 15px;
+
+		@media all and (min-width: $lg) {
+			font-size: 18px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

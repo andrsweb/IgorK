@@ -1,0 +1,114 @@
+.home-form {
+	padding: 81px 0 100px;
+
+	.container {
+		max-width: 900px;
+	}
+
+	h2 {
+		margin-bottom: 41px;
+	}
+
+	.consultation {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 22px;
+		line-height: $lh;
+		color: $dark;
+	}
+
+	.radio-label {
+		display: flex;
+		align-items: center;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		color: #48577A;
+		margin-bottom: 20px;
+	}
+
+	.radio {
+		scale: 1.14;
+		filter: hue-rotate( -13deg );
+		margin-right: 20px;
+		height: auto;
+	}
+
+	.radio-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin: 24px 0 31px 0;
+	}
+
+	form {
+		max-width: 765px;
+	}
+
+	fieldset {
+		border: 0;
+		padding: 0;
+		margin: 0;
+	}
+
+	.inputs {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.name {
+		width: 100%;
+		max-width: 341px;
+		margin-bottom: 25px;
+		margin-right: 31px;
+	}
+
+	.tel {
+		width: 100%;
+		max-width: 393px;
+		margin-bottom: 25px;
+	}
+
+	.promo {
+		width: 100%;
+		max-width: 341px;
+		margin-right: 31px;
+	}
+
+	.form-button {
+		width: 100%;
+		max-width: 393px;
+		height: 64px;
+		border: none;
+		cursor: pointer;
+	}
+
+	input {
+		border: 0;
+		border-style: 0;
+		background: $wheat;
+		border-radius: $bord;
+		height: 64px;
+		padding-left: 30px;
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 18px;
+		line-height: 22px;
+		color: $grey;
+
+		&::placeholder {
+			font-family: $ff;
+			font-style: normal;
+			font-weight: $fw-regular;
+			font-size: 18px;
+			line-height: 22px;
+			color: $grey;
+		}
+	}
+}

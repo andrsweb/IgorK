@@ -1,0 +1,22 @@
+<section class="home-price">
+	<div class="container">
+		<h2>
+			Стоимость самых популярных услуг
+		</h2>
+		<div class="home-price-wrapper">
+			<div class="home-price-items">
+				@@loop( 'item.html', [
+					{ 'num': '1', 'text': 'Эндоскопический лифтинг лба', 'value': '150 000 р.' },
+					{ 'num': '2', 'text': 'Блефаропластика верхняя', 'value': '90 000 р.' },
+					{ 'num': '3', 'text': 'Увеличение груди', 'value': '250 000 р.' },
+					{ 'num': '4', 'text': 'Абдоминопластика с перемещением пупка', 'value': '200 000 р.' },
+					{ 'num': '5', 'text': 'Узкая талия', 'value': '250 000 р.' },
+					{ 'num': '6', 'text': 'Стоимость консультации', 'value': '1 000 р.' }
+				] )
+			</div>
+			<a href="#" class="button home-price-button">
+				Узнать стоимость остальных операций
+			</a>
+		</div>
+	</div>
+</section>

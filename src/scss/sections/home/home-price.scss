@@ -1,0 +1,67 @@
+.home-price {
+	padding: 60px 0 84px;
+
+	.container {
+		max-width: 910px;
+	}
+
+	h2 {
+		margin-bottom: 80px;
+	}
+
+	&-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&-items {
+		margin-bottom: 55px;
+	}
+
+	&-item {
+		display: flex;
+		margin-bottom: 25px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&-num {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 23px;
+		height: 23px;
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 14px;
+		line-height: 17px;
+		color: $accent;
+		border: 1px solid $accent;
+		padding: 10px;
+		border-radius: 50%;
+		margin-right: 20px;
+	}
+
+	&-text, &-value {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 20px;
+		line-height: 24px;
+		color: $black;
+	}
+
+	&-value {
+		font-weight: $fw-medium;
+		margin-left: auto;
+		width: 13%;
+	}
+
+	&-button {
+		margin: 0 auto;
+		padding: 16px 57.5px;
+	}
+}

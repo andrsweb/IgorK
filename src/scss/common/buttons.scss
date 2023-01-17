@@ -3,7 +3,7 @@
 	font-family: $ff;
 	font-style: normal;
 	font-weight: $fw-semibold;
-	font-size: 20px;
+	font-size: 15px;
 	line-height: $lh;
 	color: $accent;
 	border: 2px solid $accent;
@@ -16,6 +16,10 @@
 	&:hover {
 		background-color: $accent;
 		color: $white;
+	}
+
+	@media all and (min-width: $lg) {
+		font-size: 20px;
 	}
 }
 

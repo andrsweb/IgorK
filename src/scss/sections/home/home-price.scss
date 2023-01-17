@@ -49,19 +49,36 @@
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-regular;
-		font-size: 20px;
+		font-size: 12px; //20
 		line-height: 24px;
 		color: $black;
+		width: calc( 60% - 23px );
+
+		@media all and (min-width: $m) {
+			font-size: 15px;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 20px;
+		}
 	}
 
 	&-value {
 		font-weight: $fw-medium;
 		margin-left: auto;
-		width: 13%;
+		width: 25%;
+
+		@media all and (min-width: $md) {
+			width: 13%;
+		}
 	}
 
 	&-button {
 		margin: 0 auto;
-		padding: 16px 57.5px;
+		padding: 10px 20px;
+
+		@media all and (min-width: $md) {
+			padding: 16px 57.5px;
+		}
 	}
 }

@@ -7,9 +7,14 @@
 	}
 
 	.header-logo {
-		width: 100%;
 		color: $white;
-		margin-bottom: 34px;
+		margin: 0 0 34px 0;
+		text-align: center;
+		width: 163px;
+
+		@media all and (min-width: $sm) {
+			text-align: left;
+		}
 
 		span {
 			color: $white;
@@ -18,26 +23,71 @@
 
 	&-nav {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: flex-start;
 	}
 
 	&-col-1, &-col-2, &-col-3 {
 		padding-right: 5px;
+		margin-bottom: 20px;
+
+		a {
+			width: 100%;
+		}
 	}
 
 	&-col-1 {
-		width: 12%;
-		margin-right: 90px;
+		width: 50%; //12
+		// margin-right: 90px;
+
+		@media all and (min-width: $sm) {
+			width: 33.333%;
+		}
+
+		@media all and (min-width: $md) {
+			width: 33.333%;
+		}
+
+		@media all and (min-width: $md) {
+			width: 15%;
+		}
 	}
 
 	&-col-2 {
-		width: 14%;
-		margin-right: 90px;
+		width: 50%;//14
+		// margin-right: 90px;
+
+		@media all and (min-width: $sm) {
+			width: 33.333%;
+		}
+
+		@media all and (min-width: $md) {
+			width: 20%;
+		}
 	}
 
 	&-col-3 {
-		width: 10%;
-		margin-right: 127px;
+		width: 50%;
+
+		@media all and (min-width: $sm) {
+			width: 33.333%;
+		}
+
+		@media all and (min-width: $md) {
+			width: 20%;
+		}
+	}
+
+	&-col-4 {
+		width: 50%;
+
+		@media all and (min-width: $sm) {
+			width: 100%;
+		}
+
+		@media all and (min-width: $md) {
+			width: 45%;
+		}
 	}
 
 	&-col-title, &-num {

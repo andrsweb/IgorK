@@ -17,10 +17,6 @@
 		background-color: $accent;
 		color: $white;
 	}
-
-	@media all and (min-width: $lg) {
-		font-size: 20px;
-	}
 }
 
 .dark-button {
@@ -35,11 +31,6 @@
 	border-radius: $bord;
 	transition: background-color ease $tr;
 	text-align: center;
-
-	@media all and (min-width: $lg) {
-		padding: 20px 60px;
-		font-size: 20px;
-	}
 
 	&:hover {
 		background-color: $dark;

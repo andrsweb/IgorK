@@ -1,0 +1,103 @@
+.footer {
+	padding: 53px 0 70px;
+	background-color: $accent;
+
+	.container {
+		max-width: 1200px;
+	}
+
+	.header-logo {
+		width: 100%;
+		color: $white;
+		margin-bottom: 34px;
+
+		span {
+			color: $white;
+		}
+	}
+
+	&-nav {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	&-col-1, &-col-2, &-col-3 {
+		padding-right: 5px;
+	}
+
+	&-col-1 {
+		width: 12%;
+		margin-right: 90px;
+	}
+
+	&-col-2 {
+		width: 14%;
+		margin-right: 90px;
+	}
+
+	&-col-3 {
+		width: 10%;
+		margin-right: 127px;
+	}
+
+	&-col-title, &-num {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 15px;
+		line-height: 18px;
+		color: $white;
+		margin-bottom: 10px;
+	}
+
+	&-link {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 12px;
+		line-height: 15px;
+		color: $white;
+		transition: opacity ease $tr;
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			opacity: $op;
+		}
+	}
+
+	&-num {
+		transition: opacity ease $tr;
+		
+		&:hover {
+			opacity: $op;
+		}
+	}
+
+	&-address {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 12px;
+		line-height: 25px;
+		color: $white;
+		width: 100%;
+
+		span {
+			font-size: 10px;
+		}
+	}
+
+	&-license {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 10px;
+		line-height: 12px;
+		color: $white;
+		margin-top: 15px;
+	}
+}

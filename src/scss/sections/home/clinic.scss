@@ -1,11 +1,15 @@
 .clinic {
 	position: relative;
-	padding: 62px 0 162px;
+	padding: 50px 0;
 	background-image: url( '../img/home/clinic/video.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	z-index: 0;
+
+	@media all and (min-width: $lg) {
+		padding: 62px 0 162px;
+	}
 
 	&::before {
 		content: "";
@@ -32,11 +36,15 @@
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-regular;
-		font-size: 18px;
+		font-size: 14px;
 		line-height: $lh;
 		color: $dark;
 		max-width: 512px;
 		margin-bottom: 15px;
+
+		@media all and (min-width: $lg) {
+			font-size: 18px;
+		}
 
 		&:last-child {
 			margin-bottom: 0;

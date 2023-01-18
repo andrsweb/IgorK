@@ -1,0 +1,81 @@
+.receive {
+	padding: 40px 0 10px;
+
+	@media all and (min-width: $lg) {
+		padding: 62px 0 37px;
+	}
+
+	.container {
+		max-width: 1100px;
+	}
+
+	h2 {
+		margin-bottom: 43px;
+	}
+
+	&-items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -30px;
+	}
+
+	&-item {
+		width: calc( 100% / 1 );
+		padding: 0 30px;
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 15px;
+		line-height: $lh;
+		color: $dark;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin-bottom: 34px;
+
+		@media all and (min-width: $sm) {
+			width: calc( 100% / 2 );
+		}
+
+		@media all and (min-width: $m) {
+			font-size: 20px;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 20px;
+			width: calc( 100% / 3 );
+		}
+
+		span {
+			font-family: $ff;
+			font-style: normal;
+			font-weight: 800;
+			font-size: 70px;
+			line-height: $lh-title;
+			text-align: center;
+			color: $span;
+			margin-right: 14px;
+
+		}
+
+		&:last-child {
+			width: 100%;
+			font-size: 18px;
+			font-weight: $fw-regular;
+
+			&::before {
+				content: "";
+				display: block;
+				width: 28px;
+				height: 106px;
+				background: $span;
+				border-radius: $bord;
+				margin: 0 27px;
+			}
+
+			@media all and (min-width: $lg) {
+				width: 66.667%;
+			}
+		}
+	}
+}

@@ -1,5 +1,9 @@
 .result {
-	padding: 54px 0 64px;
+	padding: 30px 0;
+
+	@media all and (min-width: $xl) {
+		padding: 54px 0 64px;
+	}
 	
 	.container {
 		max-width: 1040px;
@@ -9,64 +13,96 @@
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-semibold;
-		font-size: 28px;
+		font-size: 22px;
 		line-height: 140%;
 		text-align: center;
 		color: $accent;
 		margin-bottom: 47px;
+
+		@media all and (min-width: $lg) {
+			font-size: 28px;
+		}
 	}
 
 	&-items {
 		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
 	}
 
 	&-video {
 		position: relative;
-		width: 37%;
+		width: 100%;
+		order: 2;
+
+		@media all and (min-width: $lg) {
+			order: 1;
+			width: 37%;
+		}
+
+		img {
+			margin: 0 auto;
+		}
 	}
 
-	.video-button {
-		background: $white;
-		border-radius: 50%;
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate( -50%, -50% );
-		width: 66px;
-		height: 66px;
-		cursor: pointer;
-		transition: opacity ease $tr;
+	// .video-button {
+	// 	background: $white;
+	// 	border-radius: 50%;
+	// 	position: absolute;
+	// 	left: 50%;
+	// 	top: 50%;
+	// 	transform: translate( -50%, -50% );
+	// 	width: 66px;
+	// 	height: 66px;
+	// 	cursor: pointer;
+	// 	transition: opacity ease $tr;
 		
-		&:hover {
-			opacity: $op;
-		}
+	// 	&:hover {
+	// 		opacity: $op;
+	// 	}
 
-		span {
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			transform: translate( -40%, -50% );
-			width: 0;
-			height: 0;
-			border-top: 16px solid transparent;
-			border-left: 28px solid $medium;
-			border-bottom: 16px solid transparent;
-		}
-	}
+	// 	span {
+	// 		position: absolute;
+	// 		left: 50%;
+	// 		top: 50%;
+	// 		transform: translate( -40%, -50% );
+	// 		width: 0;
+	// 		height: 0;
+	// 		border-top: 16px solid transparent;
+	// 		border-left: 28px solid $medium;
+	// 		border-bottom: 16px solid transparent;
+	// 	}
+	// }
 
 	&-info {
 		display: flex;
 		flex-direction: column;
-		margin-left: 90px;
-		width: calc( 63% - 90px );
+	
+		width: 100%;
+		margin-bottom: 30px;
+		order: 1;
+
+		@media all and (min-width: $lg) {
+			order: 2;
+			margin-left: 90px;
+			width: calc( 63% - 90px );
+			margin-bottom: 0;
+		}
 	}
 	&-title, &-item {
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-medium;
-		font-size: 20px;
+		font-size: 18px;
 		line-height: $lh;
 		color: $black;
+
+		@media all and (min-width: $lg) {
+			font-size: 20px;
+		}
 	}
 
 	&-title {
@@ -109,8 +145,13 @@
 	}
 
 	&-button {
-		margin-top: auto;
-		font-size: 20px;
+		margin-top: 30px;
+		font-size: 15px;
 		max-width: 334px;
+
+		@media all and (min-width: $lg) {
+			font-size: 20px;
+			margin-top: auto;
+		}
 	}
 }

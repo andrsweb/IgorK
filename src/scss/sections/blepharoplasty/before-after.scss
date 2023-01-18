@@ -1,0 +1,81 @@
+.before-after {
+	padding: 54px 0;
+	background-color: $bef;
+
+	.container {
+		max-width: 1180px;
+	}
+
+	h2 {
+		margin-bottom: 16px;
+	}
+
+	&-text {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 16px;
+		line-height: $lh;
+		text-align: center;
+		color: $black;
+		margin-bottom: 38px;
+	}
+
+	&-slide {
+		width: 426px;
+		height: 366px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.button-wrapp {
+		margin-top: 26px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	&-button {
+		font-size: 15px;
+		text-align: center;
+		min-width: 250px;
+		padding: 16px 30px;
+
+		@media all and (min-width: $md) {
+			font-size: 20px;
+			min-width: 334px;
+		}
+	}
+
+	&-box {
+		position: relative;
+
+		@media all and (min-width: $md) {
+			padding: 0 12%;
+		}
+	}
+
+	&-prev, &-next {
+		display: none;
+
+		@media all and (min-width: $md) {
+			display: block;
+		}
+	}
+}
+
+.swiper-pagination {
+	position: relative;
+	bottom: 0;
+	margin-top: 31px;
+
+	&-bullet {
+		background: $accent;
+		height: 10px;
+		width: 10px;
+	}
+}

@@ -128,6 +128,7 @@
 		@media all and (min-width: $lg) {
 			padding: 10px 20px;
 			max-width: 393px;
+			font-size: 18px;
 		}
 	}
 
@@ -158,4 +159,10 @@
 			color: $grey;
 		}
 	}
+}
+
+.form.success {
+	text-align: center;
+	font-size: 18px;
+	color: $accent;
 }

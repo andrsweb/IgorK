@@ -1,7 +1,7 @@
 .hero {
 	position: relative;
 	width: 100vw;
-	padding: 45.4vh 0 54px 0;
+	padding: 45.4vh 0 57px 0;
 	background-image: url( '../img/home/hero/hero-bg.png');
 	background-repeat: no-repeat;
 	background-position: center;
@@ -38,6 +38,11 @@
 
 	.hero-button {
 		margin-bottom: 17px;
+
+		@media all and (min-width: $lg) {
+			font-size: 20px;
+			padding: 18px 60.5px;
+		}
 	}
 
 	.button-subtitle {

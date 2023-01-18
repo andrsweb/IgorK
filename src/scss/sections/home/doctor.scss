@@ -87,5 +87,9 @@
 
 	&-button {
 		padding: 18px 51px;
+
+		@media all and (min-width: $lg) {
+			font-size: 20px;
+		}
 	}
 }

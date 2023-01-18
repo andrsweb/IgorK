@@ -1,0 +1,16 @@
+.recovery {
+	padding: 56px 0 77px;
+
+	.container {
+		max-width: 750px;
+	}
+
+	h2 {
+		margin-bottom: 40px;
+	}
+
+	&-video {
+		display: flex;
+		justify-content: center;
+	}
+}

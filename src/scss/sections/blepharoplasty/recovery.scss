@@ -12,5 +12,21 @@
 	&-video {
 		display: flex;
 		justify-content: center;
+
+		img {
+			width: 250px;
+			height: 400px;
+			object-fit: cover;
+	
+			@media all and (min-width: $m) {
+				width: 300px;
+				height: 500px;
+			}
+	
+			@media all and (min-width: $lg) {
+				width: 364px;
+				height: 652px;
+			}
+		}
 	}
 }

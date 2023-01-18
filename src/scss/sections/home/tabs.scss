@@ -164,6 +164,7 @@
 		margin: 0 auto;
 		width: 250px;
 		height: 400px;
+		object-fit: cover;
 
 		@media all and (min-width: $m) {
 			width: 300px;

@@ -1,3 +1,4 @@
+@import '../../node_modules/swiper/swiper-bundle.min';
 // Defaults styles.
 @import 'common/fonts';
 @import 'common/vars';
@@ -29,3 +30,4 @@
 // Blepharoplasty page sections styles.
 @import 'sections/blepharoplasty/hero';
 @import 'sections/blepharoplasty/result';
+@import 'sections/blepharoplasty/before-after';

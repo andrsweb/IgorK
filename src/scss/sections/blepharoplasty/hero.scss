@@ -2,7 +2,7 @@
 	.hero {
 		position: relative;
 		width: 100vw;
-		padding: 34.8vh 0 57px 0;
+		padding: 32.7vh 0 57px 0;
 		background-image: url( '../img/blepharoplasty/hero/hero-bg.png');
 		background-repeat: no-repeat;
 		background-position: center;
@@ -16,19 +16,34 @@
 		&-texts {
 			width: 100%;
 			display: flex;
+			flex-direction: column;
 			margin-bottom: 48px;
+
+			@media all and (min-width: $md) {
+				flex-direction: row;
+			}
 		}
 
 		&-text {
 			font-family: $ff;
 			font-style: normal;
 			font-weight: $fw-regular;
-			font-size: 18px;
+			font-size: 14px;
 			line-height: $lh;
 			text-align: center;
 			color: #FFFFFF;
-			width: 33.333%;
+			width: 100%;
 			padding: 0 5px;
+			margin-bottom: 20px;
+
+			@media all and (min-width: $md) {
+				width: 33.333%;
+			}
+
+			@media all and (min-width: $lg) {
+				font-size: 18px;
+				width: 33.333%;
+			}
 		}
 	}
 }

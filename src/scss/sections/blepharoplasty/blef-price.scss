@@ -64,9 +64,6 @@
 		}
 
 		&-list {
-			border: 1px solid $accent;
-			padding: 22px 21px 23px 35px;
-
 			&-title {
 				font-family: $ff;
 				font-style: normal;
@@ -99,6 +96,16 @@
 
 		&.popular {
 			margin-bottom: 0;
+
+			.dropdown-inner {
+				border: 1px solid $accent;
+				padding: 22px 21px 23px 35px;
+
+				&.last-inner {
+					border-bottom-left-radius: $bord;
+						border-bottom-right-radius: $bord;
+				}
+			}
 
 			.dropdown-title {
 				border-bottom-left-radius: 0;

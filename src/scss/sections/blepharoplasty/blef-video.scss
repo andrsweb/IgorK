@@ -1,3 +1,13 @@
+.waist-page {
+	.blef-video {
+		padding: 40px 0;
+	
+		@media all and (min-width: $xl) {
+			padding: 38px 0 75px;
+		}
+	}
+}
+
 .blef-video {
 	padding: 0 0 40px;
 

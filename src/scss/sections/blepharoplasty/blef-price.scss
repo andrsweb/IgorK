@@ -72,6 +72,10 @@
 				line-height: $lh;
 				color: $dark;
 				margin-bottom: 25px;
+
+				&.end {
+					margin-bottom: 0;
+				}
 			}
 
 			&-item {

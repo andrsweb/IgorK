@@ -1,0 +1,52 @@
+<section class="blef-price">
+	<div class="container">
+		<h2>
+			Сколько стоит операция?
+		</h2>
+		<div class="price-wrapper">
+			<div class="dropdown">
+				<div class="dropdown-title">
+					<h4 class="price-start">
+						Стоимость (только операция)
+					</h4>
+					<span></span>
+				</div>
+				<div class="dropdown-open">
+					<div class="dropdown-inner">
+						@@loop( '../../blepharoplasty/price/item.html', [
+							{ 'title': 'Операция “Узкая талия”', 'value': '250 000 р'},
+							{ 'title': 'Консультация', 'value': '1 000 р'},
+						] )
+					</div>
+				</div>
+			</div>
+			<div class="dropdown">
+				<div class="dropdown-title">
+					<h4 class="price-start">
+						Дополнительные услуги 
+					</h4>
+					<span></span>
+				</div>
+				<div class="dropdown-open">
+					<div class="dropdown-inner">
+						@@loop( '../../blepharoplasty/price/item.html', [
+							{ 'title': 'Анестезия (наркоз)', 'value': 'От 18 000 р &nbsp;<br> до 55 000 р'},
+							{ 'title': 'Пребывание в стационаре, койко-день до вечера', 'value': '6 000 р'},
+							{ 'title': 'Пребывание в стационаре, койко-день', 'value': '12 000 р'},
+							{ 'title': 'Компрессионное белье', 'value': 'от 3 000 р &nbsp;<br> до 13 000 р'},
+							{ 'title': 'Компрессионное белье', 'value': 'от 3 000 р &nbsp;<br> до 13 000 р'},
+							{ 'title': 'Местная анестезия', 'value': 'Зависит от операции'},
+							{ 'title': 'Анализы', 'value': 'Зависит от операции'},
+							{ 'title': 'Программы реабилитации после пластических операций', 'value': 'Зависит от операции'},
+						] )
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="button-wrapper">
+			<a href="#" class="dark-button price-button">
+				Смотреть все цены
+			</a>
+		</div>
+	</div>
+</section>

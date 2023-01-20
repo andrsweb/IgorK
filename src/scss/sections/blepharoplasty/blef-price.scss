@@ -1,0 +1,113 @@
+.blef-price {
+	padding: 68px 0 60px;
+
+	.container {
+		max-width: 882px;
+	}
+
+	h2 {
+		margin-bottom: 53px;
+	}
+
+	.dropdown {
+		margin-bottom: 24px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		.price-start {
+			display: flex;
+			justify-content: space-between;
+	
+			span {
+				width: 20px;
+				height: 20px;
+				border-top: 2px solid $accent;
+				border-right: 2px solid $accent;
+				transform: rotate( 135deg );
+				transition: transform ease $tr;
+			}
+		}
+
+		&.opened {
+			.price-start {
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+
+				span {
+					transform: rotate( -45deg );
+				}
+			}
+
+			.inner-item {
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+
+				&:last-child {
+					border-bottom-left-radius: $bord;
+					border-bottom-right-radius: $bord;
+				}
+			}
+		}
+	}
+
+	.price-start, .inner-item { 
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-semibold;
+		font-size: 16px;
+		line-height: $lh;
+		color: $accent;
+		cursor: pointer;
+		border: 1px solid $accent;
+		padding: 22px 28px 22px 35px;
+		border-radius: $bord;
+		transition: border-radius ease $tr;
+
+		@media all and (min-width: $md) {
+			font-size: 20px;
+		}
+	}
+
+	.inner-item {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.inner-title {
+		width: 67%;
+		font-size: 14px;
+
+		@media all and (min-width: $md) {
+			font-size: 15px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 20px;
+		}
+	}
+
+	.inner-value {
+		font-size: 12px;
+		display: flex;
+		justify-content: flex-end;
+		width: 33%;
+
+		@media all and (min-width: $md) {
+			font-size: 15px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 20px;
+		}
+	}
+
+	.dropdown-open {
+		overflow: hidden;
+		height: 0;
+		transition: height ease $tr;
+	}
+}

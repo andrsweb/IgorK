@@ -1,0 +1,17 @@
+.waist-page {
+	.result {
+		padding: 35px 0;
+
+		h3 {
+			font-size: 24px;
+
+			@media all and (min-width: $lg) {
+				font-size: 30px
+			}
+
+			@media all and (min-width: $xl) {
+				font-size: 36px;
+			}
+		}
+	}
+}

@@ -1,0 +1,52 @@
+.rhino-slider {
+	padding: 30px 0;
+
+	@media all and (min-width: $xl) {
+		padding: 63px 0 38px;
+
+	}
+
+	.container {
+		max-width: 1200px;
+	}
+
+	h2 {
+		margin-bottom: 50px;
+	}
+
+	.blef-video {
+		@media all and (min-width: $lg) {
+			padding: 0 70px;
+		}
+
+
+		@media all and (min-width: $xl) {
+			padding: 0 140px;
+		}
+	}
+
+	.rhino-swiper {
+		position: relative;
+	}
+
+	.white-next, .white-prev {
+		position: absolute;
+		top: 45%;
+	}
+
+	.white-prev {
+		left: 0;
+	}
+
+	.white-next {
+		right: 0;
+	}
+
+	.swiper-pagination {
+		bottom: 0;
+
+		@media all and (min-width: $lg) {
+			bottom: 70px;
+		}
+	}
+}

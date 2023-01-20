@@ -1,5 +1,9 @@
 .waist-info {
-	padding: 76px 0 70px;
+	padding: 30px 0;
+
+	@media all and (min-width: $xl) {
+		padding: 76px 0 70px;
+	}
 	
 	.container {
 		max-width: 950px;
@@ -21,11 +25,25 @@
 	&-items {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0 -97px;
+		margin: 0 -20px;
+
+		@media all and (min-width: $xl) {
+			margin: 0 -97px;
+		}
 	}
 
 	&-item {
-		width: calc( 100% / 3 );
+		padding: 0 -20px;
+		width: calc( 100% / 1 );
+		margin-bottom: 30px;
+
+		@media all and (min-width: $m) {
+			width: calc( 100% / 3 );
+		}
+
+		@media all and (min-width: $xl) {
+			padding: 0 -97px;
+		}
 	}
 
 	&-inner {
@@ -39,7 +57,7 @@
 		position: relative;
 		width: 166px;
 		height: 166px;
-		background-color: $light;
+		background-color: #f5f7f9;
 		border-radius: 50%;
 		margin-bottom: 29px;
 
@@ -56,10 +74,14 @@
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-medium;
-		font-size: 20px;
+		font-size: 15px;
 		line-height: $lh;
 		text-align: center;
 		color: $dark;
 		max-width: 300px;
+
+		@media all and (min-width: $lg) {
+			font-size: 20px;
+		}
 	}
 }

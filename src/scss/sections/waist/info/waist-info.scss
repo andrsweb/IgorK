@@ -1,0 +1,65 @@
+.waist-info {
+	padding: 76px 0 70px;
+	
+	.container {
+		max-width: 950px;
+	}
+
+	h2 {
+		font-size: 24px;
+		margin-bottom: 59px;
+
+		@media all and (min-width: $lg) {
+			font-size: 30px
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 36px;
+		}
+	}
+
+	&-items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -97px;
+	}
+
+	&-item {
+		width: calc( 100% / 3 );
+	}
+
+	&-inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&-img {
+		position: relative;
+		width: 166px;
+		height: 166px;
+		background-color: $light;
+		border-radius: 50%;
+		margin-bottom: 29px;
+
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate( -50%, -50% );
+		}
+	}
+
+	&-text {
+		padding: 0 5px;
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 20px;
+		line-height: $lh;
+		text-align: center;
+		color: $dark;
+		max-width: 300px;
+	}
+}

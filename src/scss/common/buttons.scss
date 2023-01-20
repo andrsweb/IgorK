@@ -131,6 +131,15 @@
 	border-radius: 50%;
 	transition: background-color ease $tr;
 
+	&.white-prev, &.white-next {
+		background-color: $white;
+		border: 2px solid $accent;
+
+		span {
+			border-color: $accent;
+		}
+	}
+
 	&:hover {
 		background-color: $accent;
 

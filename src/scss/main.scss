@@ -18,7 +18,7 @@
 
 @import './sections/forms';
 
-// Home page sections styles.
+// home page sections styles.
 @import 'sections/home/hero';
 @import 'sections/home/tabs';
 @import 'sections/home/before';
@@ -27,7 +27,7 @@
 @import 'sections/home/clinic';
 
 
-// Blepharoplasty page sections styles.
+// blepharoplasty page sections styles.
 @import 'sections/blepharoplasty/hero';
 @import 'sections/blepharoplasty/result';
 @import 'sections/blepharoplasty/before-after';
@@ -35,3 +35,6 @@
 @import 'sections/blepharoplasty/blef-video';
 @import 'sections/blepharoplasty/receive';
 @import 'sections/blepharoplasty/blef-price';
+
+// rhinoplasty page sections styles.
+@import 'sections/rhinoplasty/rhino-slider/rhino-slider';

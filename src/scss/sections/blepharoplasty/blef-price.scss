@@ -41,6 +41,7 @@
 			padding: 22px 28px 17px 35px;
 			display: flex;
 			justify-content: space-between;
+			cursor: pointer;
 			
 			span {
 				width: 20px;
@@ -165,7 +166,6 @@
 		font-size: 16px;
 		line-height: $lh;
 		color: $accent;
-		cursor: pointer;
 
 		@media all and (min-width: $md) {
 			font-size: 20px;

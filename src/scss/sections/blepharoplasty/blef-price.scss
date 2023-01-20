@@ -1,6 +1,10 @@
 .blef-price {
-	padding: 68px 0 60px;
+	padding: 20px 0;
 	background-color: $bef;
+
+	@media all and (min-width: $xl) {
+		padding: 68px 0 60px;
+	}
 
 	&.bg {
 		background-color: $white;
@@ -35,8 +39,17 @@
 			border-radius: $bord;
 			transition: border-radius ease $tr;
 			padding: 22px 28px 17px 35px;
-			// border-bottom-left-radius: 0;
-			// border-bottom-right-radius: 0;
+			display: flex;
+			justify-content: space-between;
+			
+			span {
+				width: 20px;
+				height: 20px;
+				border-top: 2px solid $accent;
+				border-right: 2px solid $accent;
+				transform: rotate( 135deg );
+				transition: transform ease $tr;
+			}
 
 			&.bord {
 				border-top-left-radius: 0;
@@ -86,7 +99,6 @@
 		&.popular {
 			margin-bottom: 0;
 
-
 			.dropdown-title {
 				border-bottom-left-radius: 0;
 				border-bottom-right-radius: 0;
@@ -108,17 +120,7 @@
 		}
 
 		.price-start {
-			display: flex;
-			justify-content: space-between;
-	
-			span {
-				width: 20px;
-				height: 20px;
-				border-top: 2px solid $accent;
-				border-right: 2px solid $accent;
-				transform: rotate( 135deg );
-				transition: transform ease $tr;
-			}
+			max-width: 80%;
 		}
 
 		&.opened {
@@ -179,7 +181,7 @@
 	}
 
 	.inner-title {
-		width: 67%;
+		width: 66%;
 		font-size: 14px;
 
 		@media all and (min-width: $md) {
@@ -195,10 +197,16 @@
 		font-size: 12px;
 		display: flex;
 		justify-content: flex-end;
-		width: 33%;
+		width: 34%;
+		text-align: right;
+		font-weight: $fw-medium;
 
 		@media all and (min-width: $md) {
 			font-size: 15px;
+
+			br {
+				display: none;
+			}
 		}
 
 		@media all and (min-width: $xl) {

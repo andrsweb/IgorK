@@ -1,5 +1,15 @@
 .blef-price {
 	padding: 68px 0 60px;
+	background-color: $bef;
+
+	&.bg {
+		background-color: $white;
+		padding: 57px 0 0;
+
+		h2 {
+			margin-bottom: 45px;
+		}
+	}
 
 	.container {
 		max-width: 882px;
@@ -9,8 +19,70 @@
 		margin-bottom: 53px;
 	}
 
+	.popular-title {
+		font-size: 22px;
+
+		@media all and (min-width: $xl) {
+			font-size: 28px;
+		}
+	}
+
 	.dropdown {
 		margin-bottom: 24px;
+
+		&-list {
+			border: 1px solid $accent;
+			padding: 22px 21px 23px 35px;
+
+			&-title {
+				font-family: $ff;
+				font-style: normal;
+				font-weight: $fw-regular;
+				font-size: 16px;
+				line-height: $lh;
+				color: $dark;
+				margin-bottom: 25px;
+			}
+
+			&-item {
+				list-style: decimal;
+				font-family: $ff;
+				font-style: normal;
+				font-weight: $fw-regular;
+				font-size: 16px;
+				line-height: $lh;
+				color: $dark;
+				margin-bottom: 10px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				&.no-num {
+					list-style: none;
+				}
+			}
+		}
+
+		&.popular {
+			margin-bottom: 0;
+
+			.price-start {
+				padding: 22px 28px 17px 35px;
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+
+				&.bord {
+					border-top-left-radius: 0;
+					border-top-right-radius: 0;
+
+					&.last{
+						border-bottom-left-radius: $bord;
+						border-bottom-right-radius: $bord;
+					}
+				}
+			}
+		}
 
 		&:last-child {
 			margin-bottom: 0;
@@ -31,6 +103,7 @@
 		}
 
 		&.opened {
+
 			.price-start {
 				border-bottom-left-radius: 0;
 				border-bottom-right-radius: 0;
@@ -38,6 +111,16 @@
 				span {
 					transform: rotate( -45deg );
 				}
+
+				&.bord.last {
+					border-bottom-left-radius: 0;
+					border-bottom-right-radius: 0;
+				}
+			}
+
+			.dropdown-list.last-list {
+					border-bottom-left-radius: $bord;
+					border-bottom-right-radius: $bord;
 			}
 
 			.inner-item {
@@ -109,5 +192,17 @@
 		overflow: hidden;
 		height: 0;
 		transition: height ease $tr;
+	}
+
+	.button-wrapper {
+		display: flex;
+		justify-content: center;
+		margin-top: 43px;
+	}
+
+	.price-button {
+		font-weight: $fw-semibold;
+		font-size: 20px;
+		padding: 18px 64px;
 	}
 }

@@ -1,5 +1,10 @@
 .rhino-slider {
-	padding: 63px 0 38px;
+	padding: 30px 0;
+
+	@media all and (min-width: $xl) {
+		padding: 63px 0 38px;
+
+	}
 
 	.container {
 		max-width: 1200px;
@@ -10,8 +15,12 @@
 	}
 
 	.blef-video {
-		padding: 0 70px;
-		@media all and (min-width: $xxl) {
+		@media all and (min-width: $lg) {
+			padding: 0 70px;
+		}
+
+
+		@media all and (min-width: $xl) {
 			padding: 0 140px;
 		}
 	}

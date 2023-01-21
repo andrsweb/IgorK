@@ -136,7 +136,7 @@
 		display: block;
 	}
 
-	&.white-prev, &.white-next {
+	&.white-prev, &.white-next, &.media-prev, &.media-next {
 		background-color: $white;
 		border: 2px solid $accent;
 

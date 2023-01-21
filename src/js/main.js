@@ -11,3 +11,6 @@ import './blepharoplasty/dropdown'
 
 //sliders
 import './slider'
+
+//libs
+import './fancybox'

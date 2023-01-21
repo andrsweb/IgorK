@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	initSwiper('.before-after-swiper', 2, '.before-after-next', '.before-after-prev', 2)
 	initSwiper('.rhino-swiper', 2, '.white-next', '.white-prev', 1 )
+	initSwiper('.media-swiper', 1, '.media-next', '.media-prev', 1 )
 })
 
 const initSwiper = (slider, num, next, prev, slides ) => {

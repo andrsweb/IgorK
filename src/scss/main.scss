@@ -1,4 +1,5 @@
 @import '../../node_modules/swiper/swiper-bundle.min';
+@import '../../node_modules/@fancyapps/ui/dist/fancybox';
 // Defaults styles.
 @import 'common/fonts';
 @import 'common/vars';
@@ -53,3 +54,4 @@
 @import 'sections/about/hero';
 @import 'sections/about/rate';
 @import 'sections/about/info';
+@import 'sections/about/media';

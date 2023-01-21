@@ -1,0 +1,9 @@
+.bust-page {
+	.before-after {
+		padding: 40px 0;
+
+		@media all and (min-width: $xl) {
+			padding: 60px 0;
+		}
+	}
+}

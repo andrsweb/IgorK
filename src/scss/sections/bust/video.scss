@@ -1,0 +1,9 @@
+.bust-page {
+	.blef-video {
+		padding: 40px 0;
+
+		@media all and (min-width: $xl) {
+			padding: 70px 0 78px;
+		}
+	}
+}

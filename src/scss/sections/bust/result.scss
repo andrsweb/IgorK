@@ -1,0 +1,23 @@
+.bust-page {
+	.result {
+		padding: 64px 0;
+	
+		h3 {
+			font-size: 24px;
+
+			@media all and (min-width: $lg) {
+				font-size: 30px
+			}
+
+			@media all and (min-width: $xl) {
+				font-size: 36px;
+			}
+		}
+
+		&-title {
+			&.bottom {
+				margin: 64px 0 29px;
+			}
+		}
+	}
+}

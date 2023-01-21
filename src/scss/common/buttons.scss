@@ -121,6 +121,7 @@
 }
 
 .prev, .next {
+	display: none;
 	width: 62px;
 	height: 62px;
 	position: absolute;
@@ -130,6 +131,10 @@
 	background-color: $light;
 	border-radius: 50%;
 	transition: background-color ease $tr;
+
+	@media all and (min-width: $lg) {
+		display: block;
+	}
 
 	&.white-prev, &.white-next {
 		background-color: $white;

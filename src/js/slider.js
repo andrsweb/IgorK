@@ -39,4 +39,3 @@ const initSwiper = (slider, num, next, prev, slides, pag ) => {
 			}
 		})
 }
-

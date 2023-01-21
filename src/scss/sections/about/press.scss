@@ -15,7 +15,10 @@
 
 	&-box {
 		position: relative;
-		padding: 0 70px;
+
+		@media all and (min-width: $md) {
+			padding: 0 70px;
+		}
 	}
 
 	&-slide {
@@ -38,6 +41,11 @@
 		@media all and (min-width: $lg) {
 			width: 221px;
 			height: 307px;
+		}
+
+		a {
+			height: 307px;
+			width: 100%;
 		}
 
 		img {

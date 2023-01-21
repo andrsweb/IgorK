@@ -25,7 +25,12 @@
 	&-items {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 46px -35px;
+		margin: 20px -35px;
+		
+
+		@media all and (min-width: $xl) {
+			margin: 46px -35px;
+		}
 	}
 
 	&-item {

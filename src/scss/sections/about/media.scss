@@ -31,7 +31,11 @@
 		}
 	}
 
-	.swiper-pagination {
+	.media-pagination {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		bottom: 0;
 		margin-top: 35px;
 	}
 }

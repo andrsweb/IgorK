@@ -1,0 +1,33 @@
+<section class="before-after">
+	<div class="container">
+		<div class="before-after-box">
+			<h2>
+				Блефаропластика
+			</h2>
+			<p class="before-after-text">
+				Фотографии  До/После
+			</p>
+			<div class="swiper blepharo-swiper">
+				<div class="swiper-wrapper before-after-wrapper">
+					@@loop( '../../blepharoplasty/before/slide.html', [
+						{ 'src': 'img/blepharoplasty/before/img1.jpg', 'class': 'blepharo-slide'},
+						{ 'src': 'img/blepharoplasty/before/img2.jpg', 'class': 'blepharo-slide'},
+						{ 'src': 'img/blepharoplasty/before/img3.jpg', 'class': 'blepharo-slide'}
+					] )
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="button-wrapp">
+				<a href="#" class="button before-after-button">
+					Смотреть все работы
+				</a>
+			</div>
+			<div class="prev blepharo-prev">
+				<span></span>
+			</div>
+			<div class="next blepharo-next">
+				<span></span>
+			</div>
+		</div>
+	</div>
+</section>

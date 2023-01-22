@@ -108,4 +108,20 @@
 			height: 100%;
 		}
 	}
+	
+	.blepharo-slide {
+		height: 85vw;
+
+		@media all and (min-width: $m) {
+			height: 50vw;
+		}
+
+		@media all and (min-width: $md) {
+			height: 40vw;
+		}
+
+		@media all and (min-width: $xl) {
+			height: 100%;
+		}
+	}
 }

@@ -135,18 +135,34 @@
 }
 
 .bust-slide {
-	height: 75vw;
+	height: 85vw;
 
 	@media all and (min-width: $m) {
-		height: 40vw;
+		height: 50vw;
 	}
 
 	@media all and (min-width: $md) {
-		height: 30vw;
+		height: 55vw;
 	}
 
 	@media all and (min-width: $xl) {
-		height: 100%;
+		height: 450px;
+	}
+} 
+
+.face-swipe {
+	height: 85vw;
+
+	@media all and (min-width: $m) {
+		height: 30vw;
+	}
+
+	@media all and (min-width: $md) {
+		height: 25vw;
+	}
+
+	@media all and (min-width: $xl) {
+		height: 366px;
 	}
 } 
 

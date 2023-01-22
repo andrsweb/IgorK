@@ -136,7 +136,7 @@
 		display: block;
 	}
 
-	&.white-prev, &.white-next {
+	&.white-prev, &.white-next, &.media-prev, &.media-next, &.press-next, &.press-prev {
 		background-color: $white;
 		border: 2px solid $accent;
 
@@ -175,4 +175,14 @@
 .next {
 	transform: rotate( 180deg );
 	right: 0;
+}
+
+.swiper-button-prev, .swiper-button-next {
+	display: none;
+	color: $accent;
+	scale: 0.6;
+
+	@media all and (min-width: $lg) {
+		display: block;
+	}
 }

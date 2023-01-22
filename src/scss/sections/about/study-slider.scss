@@ -1,0 +1,31 @@
+.study-slider {
+	padding: 5px 0 47px;
+
+	.container {
+		max-width: 1200px;
+	}
+
+	&-box {
+		position: relative;
+
+		@media all and (min-width: $lg) {
+			padding: 0 120px;
+		}
+	}
+
+	.study-doc {
+		width: 216px;
+		height: 151px;
+
+		a {
+			width: 100%;
+			height: 151px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}

@@ -87,6 +87,10 @@
 		@media all and (min-width: $xl) {
 			padding: 54px 0 20px;
 		}
+
+		&-button {
+			display: none;
+		}
 	}
 
 	.before-after-text {

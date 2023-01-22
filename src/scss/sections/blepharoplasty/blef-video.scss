@@ -19,6 +19,22 @@
 		max-width: 925px;
 	}
 
+	.blefaro-video-title {
+		display: none;
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-semibold;
+		font-size: 24px;
+		line-height: $lh;
+		text-align: center;
+		color: $dark;
+		margin-bottom: 30px;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 48px;
+		}
+	}
+
 	h3 {
 		font-family: $ff;
 		font-style: normal;
@@ -133,5 +149,16 @@
 		@media all and (min-width: $lg) {
 			margin-top: auto;
 		}
+	}
+}
+
+.work-page {
+
+	.blef-video {
+		padding: 40px 0;
+	}
+
+	.blefaro-video-title {
+		display: block;
 	}
 }

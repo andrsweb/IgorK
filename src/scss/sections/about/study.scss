@@ -5,6 +5,63 @@
 		padding: 42px 0 53px;
 	}
 
+	&-more-items {
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		transition: height ease-out $tr;
+
+		&.opened {
+			.to-hide {
+				opacity: 1
+			}
+
+			& + .study-button {
+				span {
+					transform: rotate(-45deg)
+				}
+
+				p {
+					display: none;
+
+					&.less {
+						display: block
+					}
+				}
+			}
+		}
+	}
+
+	&-item {
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 19px;
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 14px;
+		line-height: $lh;
+		color: $black;
+
+		@media all and (min-width: $lg) {
+			font-size: 18px
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&.to-hide {
+			opacity: 0;
+			transition: opacity ease-out $tr
+		}
+
+		span {
+			color: $accent;
+			margin-right: 10px;
+		}
+	}
+
 	.container {
 		max-width: 1000px;
 	}
@@ -22,7 +79,7 @@
 		}
 	}
 
-	.study-button {
+	&-button {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -60,35 +117,10 @@
 			line-height: $lh;
 			color: $medium;
 			margin-right: 10px;
+
+			&.less {
+				display: none
+			}
 		}
-	}
-}
-
-.study-item {
-	transition: height ease $tr;
-
-	&-inner {
-		display: flex;
-		align-items: flex-start;
-		margin-bottom: 19px;
-		font-family: $ff;
-		font-style: normal;
-		font-weight: $fw-regular;
-		font-size: 14px;
-		line-height: $lh;
-		color: $black;
-
-		@media all and (min-width: $lg) {
-			font-size: 18px
-		}
-	}
-
-	&:last-child {
-		margin-bottom: 0;
-	}
-
-	span {
-		color: $accent;
-		margin-right: 10px;
 	}
 }

@@ -2,36 +2,86 @@ document.addEventListener('DOMContentLoaded', () => {
 	'use strict'
 
 	mainTabs()
+	toggleTabsInside()
 })
 
 const mainTabs = () => {
-	const tabBtns     = document.querySelectorAll('.main-page .main-tab')
-	const tabContents = document.querySelectorAll('.main-page .links-wrapper')
-	const imgToChange = document.querySelectorAll('.main-page .image-to-change')
+	const tabBtns     = document.querySelectorAll('.main-tab')
+	const tabContents = document.querySelectorAll('.links-wrapper')
 
-	const clearActive = (element, className = 'active') => {
-		element.forEach(item => item.classList.remove(`${className}`))
-	}
+	const checkOutTabs = item => {
+		item.addEventListener( 'click', () => {
+			const id = item.dataset.id
 
-	const setActive = (element, index, className = 'active') => {
-		element[index].classList.add(`${className}`)
-	}
+			if( ! id ||  item.classList.contains( 'active' ) ) return
 
-	const checkOutTabs = (item, index) => {
+			clearActive( tabBtns )
+			clearActive( tabContents )
 
-		item.addEventListener('click', () => {
-
-			if (item.classList.contains('active')) return
-
-			clearActive(tabBtns)
-			clearActive(imgToChange)
-			clearActive(tabContents)
-
-			setActive(imgToChange, index)
-			setActive(tabBtns, index)
-			setActive(tabContents, index)
-		})
+			setActive( tabBtns, id )
+			setActive( tabContents, id )
+			setActiveInnerTab( tabContents, id )
+			changeImage( item )
+		} )
 	}
 
 	tabBtns.forEach(checkOutTabs)
+}
+
+const clearActive = elements => {
+	elements.forEach( el => el.classList.remove( 'active' ) )
+}
+
+const setActive = ( elements, id ) => {
+	elements.forEach( el => {
+		const elId = el.dataset.id
+
+		if( elId === id ) el.classList.add( 'active' )
+	} )
+}
+
+const setActiveInnerTab = ( elements, id ) => {
+	elements.forEach( el => {
+		const elId = el.dataset.id
+
+		if( elId === id ) el.querySelector( '.main-tab-link' ).classList.add( 'active' )
+	} )
+}
+
+const toggleTabsInside = () => {
+	const innerTabs = document.querySelectorAll( '.main-tab-link' )
+
+	if( ! innerTabs.length ) return
+
+	innerTabs.forEach( innerTab => {
+		innerTab.addEventListener( 'click', e => {
+			e.preventDefault()
+
+			if( innerTab.classList.contains( 'active' ) ) return
+
+			clearActive( innerTabs )
+			innerTab.classList.add( 'active' )
+			changeImage( innerTab, 1 )
+		} )
+	} )
+}
+
+const changeImage = ( element, elWithImg = 0 ) => {
+	const imgWrapper = document.querySelector( '.main-tabs-img' )
+	let id, imgToChange
+
+	if( ! imgWrapper ) return
+
+	// If we have element with image inside.
+	if( elWithImg ){
+		imgToChange = element.querySelector( 'picture' ).outerHTML
+	}	else {
+		id				= element.dataset.id
+		imgToChange		= document.querySelector( `.links-wrapper[data-id="${ id }"] .active picture` ).outerHTML
+	}
+
+	if( ! imgToChange ) return
+
+	imgWrapper.innerHTML = ''
+	imgWrapper.innerHTML = imgToChange
 }

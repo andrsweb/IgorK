@@ -1,0 +1,99 @@
+.study {
+	padding: 30px 0;
+
+	@media all and (min-width: $xl) {
+		padding: 42px 0 53px;
+	}
+
+	.container {
+		max-width: 1000px;
+	}
+
+	h2 {
+		margin-bottom: 39px;
+		font-size: 24px;
+
+		@media all and (min-width: $lg) {
+			font-size: 30px
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 36px;
+		}
+	}
+
+	&-more {
+
+		&-items {}
+	}
+
+	.study-item {
+		transition: height ease $tr;
+
+		&-inner {
+			display: flex;
+			align-items: flex-start;
+			margin-bottom: 19px;
+			font-family: $ff;
+			font-style: normal;
+			font-weight: $fw-regular;
+			font-size: 14px;
+			line-height: $lh;
+			color: $black;
+
+			@media all and (min-width: $lg) {
+				font-size: 18px
+			}
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		span {
+			color: $accent;
+			margin-right: 10px;
+		}
+	}
+
+	.study-button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		transition: opacity ease $tr;
+		margin: 0 auto;
+
+		&:hover {
+			opacity: $op;
+		}
+
+		&.clicked {
+			margin-top: 34px;
+
+			span {
+				transform: rotate( -45deg );
+			}
+		}
+
+		span {
+			width: 10px;
+			height: 10px;
+			border-top: 2px solid $medium;
+			border-right: 2px solid $medium;
+			transform: rotate( 135deg );
+			transition: transform ease $tr;
+
+		}
+
+		&-text {
+			font-family: $ff;
+			font-style: normal;
+			font-weight: $fw-semibold;
+			font-size: 18px;
+			line-height: $lh;
+			color: $medium;
+			margin-right: 10px;
+		}
+	}
+}

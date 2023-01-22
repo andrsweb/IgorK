@@ -45,48 +45,6 @@
 		}
 	}
 
-	.main-tab {
-		position: relative;
-		font-family: $ff;
-		font-style: normal;
-		font-weight: $fw-semibold;
-		font-size: 22px;
-		line-height: $lh-title;
-		color: $medium;
-		padding-left: 20px;
-		margin-bottom: 20px;
-		cursor: pointer;
-		transition: color ease $tr;
-
-		@media all and (min-width: $md) {
-			font-size: 25px;
-		}
-
-		@media all and (min-width: $lg) {
-			font-size: 32px;
-		}
-
-		&.active {
-			color: $accent;
-
-			&:last-child {
-				margin-bottom: 0;
-			}
-	
-			&::before {
-				position: absolute;
-				left: 0;
-				top: 50%;
-				transform: translateY( -50% );
-				content: "";
-				display: block;
-				width: 4px;
-				height: 40px;
-				background: $accent;
-			}
-		}
-	}
-
 	.links-wrapper {
 		display: none;
 		flex-direction: column;
@@ -115,7 +73,66 @@
 		}
 	}
 
-	.main-tab-link {
+	.tabs-button {
+		padding: 15px 31px;
+		font-size: 16px;
+	}
+
+	&-img {
+		padding-top: 42px;
+		position: relative;
+		order: 1;
+		margin-bottom: 30px;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 0;
+			order: 2;
+		}
+	}
+}
+
+.main-tab {
+	position: relative;
+	font-family: $ff;
+	font-style: normal;
+	font-weight: $fw-semibold;
+	font-size: 22px;
+	line-height: $lh-title;
+	color: $medium;
+	padding-left: 20px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	transition: color ease $tr;
+
+	@media all and (min-width: $md) {
+		font-size: 25px;
+	}
+
+	@media all and (min-width: $lg) {
+		font-size: 32px;
+	}
+
+	&.active {
+		color: $accent;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&::before {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY( -50% );
+			content: "";
+			display: block;
+			width: 4px;
+			height: 40px;
+			background: $accent;
+		}
+	}
+
+	&-link {
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-medium;
@@ -137,47 +154,31 @@
 			margin-bottom: 0;
 		}
 
-		&:hover {
-			color: $accent;
-		}
-	}
-
-	.tabs-button {
-		padding: 15px 31px;
-		font-size: 16px;
-	}
-
-	&-img {
-		padding-top: 42px;
-		position: relative;
-		order: 1;
-		margin-bottom: 30px;
-
-		@media all and (min-width: $lg) {
-			margin-bottom: 0;
-			order: 2;
-		}
-	}
-
-	.image-to-change {
-		display: none;
-		margin: 0 auto;
-		width: 250px;
-		height: 400px;
-		object-fit: cover;
-
-		@media all and (min-width: $m) {
-			width: 300px;
-			height: 500px;
-		}
-
-		@media all and (min-width: $lg) {
-			width: 342px;
-			height: 612px;
-		}
-
+		&:hover,
 		&.active {
-			display: block;
+			color: $accent
 		}
+
+		picture {
+			display: none
+		}
+	}
+}
+
+.image-to-change {
+	display: block;
+	margin: 0 auto;
+	width: 250px;
+	height: 400px;
+	object-fit: cover;
+
+	@media all and (min-width: $m) {
+		width: 300px;
+		height: 500px
+	}
+
+	@media all and (min-width: $lg) {
+		width: 342px;
+		height: 612px
 	}
 }

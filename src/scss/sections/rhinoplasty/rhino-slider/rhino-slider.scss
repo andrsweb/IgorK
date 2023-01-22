@@ -55,7 +55,7 @@
 	height: 75vw;
 
 	@media all and (min-width: $m) {
-		height: 30vw;
+		height: 50vw;
 	}
 
 	@media all and (min-width: $md) {
@@ -63,7 +63,7 @@
 	}
 
 	@media all and (min-width: $xl) {
-		height: 100%;
+		height: 366px;
 	}
 }
 

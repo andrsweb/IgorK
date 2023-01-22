@@ -44,7 +44,7 @@
 		}
 
 		@media all and (min-width: $xl) {
-			height: 100%;
+			height: 366px;
 		}
 	}
 
@@ -82,22 +82,6 @@
 			display: block;
 		}
 	}
-
-	.blepharo-slide {
-		height: 80vw;
-
-		@media all and (min-width: $m) {
-			height: 50vw;
-		}
-
-		@media all and (min-width: $m) {
-			height: 35vw;
-		}
-
-		@media all and (min-width: $lg) {
-			height: 100%;
-		}
-	}
 }
 
 .swiper-pagination {
@@ -132,35 +116,7 @@
 			font-size: 24px;
 		}
 	}
-
-	.before-after-slide {
-		height: 60vw;
-
-		@media all and (min-width: $m) {
-			height: 30vw;
-		}
-
-		@media all and (min-width: $lg) {
-			height: 100%;
-		}
-	}
 	
-	.blepharo-slide {
-		height: 85vw;
-
-		@media all and (min-width: $m) {
-			height: 50vw;
-		}
-
-		@media all and (min-width: $md) {
-			height: 40vw;
-		}
-
-		@media all and (min-width: $xl) {
-			height: 100%;
-		}
-	}
-
 	.work-bust-slide {
 		height: 75vw;
 
@@ -193,3 +149,19 @@
 		height: 100%;
 	}
 } 
+
+.blepharo-slide {
+	height: 85vw;
+
+	@media all and (min-width: $m) {
+		height: 50vw;
+	}
+
+	@media all and (min-width: $md) {
+		height: 40vw;
+	}
+
+	@media all and (min-width: $xl) {
+		height: 366px;
+	}
+}

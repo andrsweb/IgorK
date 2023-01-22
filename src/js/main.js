@@ -9,8 +9,14 @@ import './main-page/tabs'
 //blepharoplasty page
 import './blepharoplasty/dropdown'
 
+//about page
+import './about/showMore'
+
 //sliders
 import './slider'
 
 // Price list page scripts.
 import './price-list/common'
+
+//libs
+import './fancybox'

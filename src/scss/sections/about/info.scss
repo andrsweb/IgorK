@@ -1,0 +1,67 @@
+.about-info {
+	padding: 40px 0;
+	background-color: $bef;
+
+	@media all and (min-width: $lg) {
+		padding: 62px 0 60px;
+	}
+
+	.container {
+		max-width: 930px;
+	}
+
+	h2 {
+		font-size: 24px;
+		margin-bottom: 35px;
+
+		@media all and (min-width: $lg) {
+			font-size: 30px
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 36px;
+		}
+	}
+
+	&-wrapper {
+		margin-bottom: 48px;
+	}
+
+	&-text {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 14px;
+		line-height: $lh;
+		text-align: center;
+		color: $black;
+		margin-bottom: 25px;
+
+		@media all and (min-width: $xl) {
+			font-size: 18px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&-button-wrapper {
+		display: flex;
+		justify-content: center;
+	}
+
+	&-button {
+		padding: 12px 20px;
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-semibold;
+		font-size: 20px;
+		line-height: $lh;
+		color: $accent;
+
+		@media all and (min-width: $lg) {
+			padding: 16px 65px;
+		}
+	}
+}

@@ -1,4 +1,5 @@
 @import '../../node_modules/swiper/swiper-bundle.min';
+@import '../../node_modules/@fancyapps/ui/dist/fancybox';
 // Defaults styles.
 @import 'common/fonts';
 @import 'common/vars';
@@ -48,6 +49,16 @@
 @import 'sections/bust/result';
 @import 'sections/bust/before';
 @import 'sections/bust/video';
+
+// about page sections styles.
+@import 'sections/about/hero';
+@import 'sections/about/rate';
+@import 'sections/about/info';
+@import 'sections/about/media';
+@import 'sections/about/press';
+@import 'sections/about/study';
+@import 'sections/about/study-slider';
+@import 'sections/about/trips';
 
 // Price list page styles.
 @import 'price-list/common';

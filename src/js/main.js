@@ -11,3 +11,6 @@ import './blepharoplasty/dropdown'
 
 //sliders
 import './slider'
+
+// Price list page scripts.
+import './price-list/common'

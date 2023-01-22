@@ -1,0 +1,189 @@
+.price-list-page {
+	&-inner {
+		display: flex;
+		flex-wrap: wrap
+	}
+
+	main > .container {
+		max-width: 1200px
+	}
+
+	.page-title {
+		margin: 77px 0 63px
+	}
+
+	.home-form {
+		padding: 0 0 95px
+	}
+}
+
+.price-tabs-headers {
+	width: 100%;
+
+	@media (min-width: $md) {
+		width: 290px;
+		padding-right: 15px
+	}
+}
+
+.price-tabs-content {
+	width: 100%;
+	margin-top: 40px;
+
+	@media (min-width: $md) {
+		width: calc(100% - 290px);
+		margin-top: 0
+	}
+}
+
+.price-tab-header {
+	position: relative;
+	font-weight: $fw-semibold;
+	color: $grey;
+	cursor: pointer;
+	margin-bottom: 20px;
+	transition:
+		color ease-out $tr,
+		padding-left ease-out $tr;
+
+	&:last-child {
+		margin-bottom: 0
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: -1px;
+		left: 0;
+		width: 2px;
+		height: 100%;
+		background-color: $accent;
+		opacity: 0;
+		transition: opacity ease-out $tr
+	}
+
+	&.active {
+		color: $accent;
+		padding-left: 10px;
+
+		&::before {
+			opacity: 1
+		}
+	}
+
+	&:hover {
+		color: $accent
+	}
+}
+
+.price-content {
+	display: none;
+	padding-bottom: 75px;
+
+	&.active {
+		display: block
+	}
+
+	&-title {
+		font-size: 24px;
+		color: $accent;
+		font-weight: $fw-semibold;
+		margin-bottom: 40px;
+
+		@media (min-width: $lg) {
+			font-size: 32px;
+			line-height: 42px
+		}
+	}
+
+	&-item {
+		margin-bottom: 36px;
+
+		&:last-child {
+			margin-bottom: 0;
+
+			.with-price {
+				margin-bottom: 0
+			}
+		}
+
+		&-title {
+			color: $dark;
+			margin-bottom: 16px;
+
+			&.with-price {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				margin-bottom: 31px;
+
+				@media (min-width: $lg) {
+					flex-wrap: nowrap
+				}
+			}
+
+			span {
+				width: 100%;
+				font-size: 22px;
+				font-weight: $fw-medium;
+				white-space: nowrap;
+
+				@media (min-width: $lg) {
+					width: auto;
+					text-align: right
+				}
+			}
+		}
+	}
+
+	&-list {
+		counter-reset: item;
+
+		&-item {
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			font-size: $fs-lg;
+			font-weight: $fw-medium;
+			color: $dark;
+			padding-left: 40px;
+			margin-bottom: 21px;
+
+			@media (min-width: $lg) {
+				flex-wrap: nowrap
+			}
+
+			&:last-child {
+				margin-bottom: 0
+			}
+
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				content: counter(item);
+				counter-increment: item;
+				font-size: $fs-sm;
+				width: 23px;
+				height: 23px;
+				border: 1px solid $dark;
+				border-radius: 50%;
+				margin-right: 17px
+			}
+
+			span {
+				width: 100%;
+				font-size: 22px;
+				margin-left: auto;
+				white-space: nowrap;
+
+				@media (min-width: $lg) {
+					width: auto
+				}
+			}
+		}
+	}
+}

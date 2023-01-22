@@ -1,0 +1,16 @@
+@@include( 'template-parts/header/header.html', { title: 'Прайс-лист', class: 'price-list-page' } )
+
+<main>
+	<div class="container">
+		<h2 class="page-title">Прайс-лист</h2>
+
+		<div class="price-list-page-inner">
+			@@include( 'template-parts/price-list/tabs-headers.html' )
+			@@include( 'template-parts/price-list/tabs-content.html' )
+		</div>
+
+		@@include( 'template-parts/sections/form.html', { 'form-id': 'price-list-form' } )
+	</div>
+</main>
+
+@@include( 'template-parts/footer/footer.html' )

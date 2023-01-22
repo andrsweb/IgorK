@@ -15,5 +15,8 @@ import './about/showMore'
 //sliders
 import './slider'
 
+// Price list page scripts.
+import './price-list/common'
+
 //libs
 import './fancybox'

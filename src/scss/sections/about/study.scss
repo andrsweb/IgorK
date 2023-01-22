@@ -22,35 +22,6 @@
 		}
 	}
 
-	.study-item {
-		transition: height ease $tr;
-
-		&-inner {
-			display: flex;
-			align-items: flex-start;
-			margin-bottom: 19px;
-			font-family: $ff;
-			font-style: normal;
-			font-weight: $fw-regular;
-			font-size: 14px;
-			line-height: $lh;
-			color: $black;
-
-			@media all and (min-width: $lg) {
-				font-size: 18px
-			}
-		}
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-
-		span {
-			color: $accent;
-			margin-right: 10px;
-		}
-	}
-
 	.study-button {
 		display: flex;
 		align-items: center;
@@ -90,5 +61,34 @@
 			color: $medium;
 			margin-right: 10px;
 		}
+	}
+}
+
+.study-item {
+	transition: height ease $tr;
+
+	&-inner {
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 19px;
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 14px;
+		line-height: $lh;
+		color: $black;
+
+		@media all and (min-width: $lg) {
+			font-size: 18px
+		}
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	span {
+		color: $accent;
+		margin-right: 10px;
 	}
 }

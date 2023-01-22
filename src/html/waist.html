@@ -4,11 +4,15 @@
 	@@include( 'template-parts/sections/blepharoplasty/hero/hero.html', { h1: 'Минус 10-12 см в талии без удаления ребер <br> с уникальной операцией "Тонкая талия"',
 		text1: 'Осиная талия на всю жизнь', text2: 'Новый уровень <br> женственности и красоты',
 		text3: 'Малотравматичная операция <br> без негативного влияния на здоровье'})
+		
 	@@include( 'template-parts/sections/waist/result/result.html' )
 	@@include( 'template-parts/sections/waist/waist-info/waist-info.html' )
-	@@include( 'template-parts/sections/waist/before/before.html' )
+	@@include( 'template-parts/sections/waist/before/before.html', { 'h2': 'Фотографии До\После', 'text': 'Немногие соглашаются на то, чтобы рассказать о своей истории преображения, в основном все хотят анонимности. Но для тех, кто не против, у нас есть особенные условия. Поэтому имейте в виду и уточняйте у пластического хирурга.',
+		'swiper': 'before-after-swiper', 'btn-prev': 'before-after-prev', 'btn-next': 'before-after-next', 'src1': 'img/waist/wom1.png', 'src2': 'img/waist/wom2.png', 'class': 'waist-slide'} )
+		
 	@@include( 'template-parts/sections/blepharoplasty/blef-video/blef-video.html', { h3: 'Минус 10 см в талии!',
 		text: 'Получили ошеломляющий результат. Посмотрите, как изменилась пациентка после уменьшения талии. Результат говорит сам за себя.', src: 'img/home/tabs/tab-image2.png'} )
+	
 	@@include( 'template-parts/sections/home/doctor/doctor.html' )
 	@@include( 'template-parts/sections/blepharoplasty/receive/receive.html' )
 	@@include( 'template-parts/sections/waist/price/waist-price.html' )

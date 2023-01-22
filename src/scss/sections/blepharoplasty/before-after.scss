@@ -32,6 +32,22 @@
 		}
 	}
 
+	.waist-slide {
+		height: 75vw;
+
+		@media all and (min-width: $m) {
+			height: 40vw;
+		}
+
+		@media all and (min-width: $md) {
+			height: 30vw;
+		}
+
+		@media all and (min-width: $xl) {
+			height: 100%;
+		}
+	}
+
 	.button-wrapp {
 		margin-top: 26px;
 		width: 100%;
@@ -64,6 +80,22 @@
 
 		@media all and (min-width: $md) {
 			display: block;
+		}
+	}
+
+	.blepharo-slide {
+		height: 80vw;
+
+		@media all and (min-width: $m) {
+			height: 50vw;
+		}
+
+		@media all and (min-width: $m) {
+			height: 35vw;
+		}
+
+		@media all and (min-width: $lg) {
+			height: 100%;
 		}
 	}
 }
@@ -128,4 +160,36 @@
 			height: 100%;
 		}
 	}
+
+	.work-bust-slide {
+		height: 75vw;
+
+		@media all and (min-width: $m) {
+			height: 40vw;
+		}
+
+		@media all and (min-width: $md) {
+			height: 30vw;
+		}
+
+		@media all and (min-width: $xl) {
+			height: 100%;
+		}
+	} 
 }
+
+.bust-slide {
+	height: 75vw;
+
+	@media all and (min-width: $m) {
+		height: 40vw;
+	}
+
+	@media all and (min-width: $md) {
+		height: 30vw;
+	}
+
+	@media all and (min-width: $xl) {
+		height: 100%;
+	}
+} 

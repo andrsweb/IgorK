@@ -37,6 +37,9 @@ const openList = list => {
 }
 
 const closeList = list => {
+
+	if( ! list ) return
+
 	const alwaysVisibleItems = list.querySelectorAll( '.always-visible' )
 	let listInitialHeight = 0
 

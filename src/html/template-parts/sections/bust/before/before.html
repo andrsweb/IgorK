@@ -2,17 +2,19 @@
 	<div class="container">
 		<div class="before-after-box">
 			<h2>
-				Фотографии До\После
+				@@h2
 			</h2>
 			<p class="before-after-text">
-				Немногие соглашаются на то, чтобы рассказать о своей истории преображения, в основном все хотят анонимности. Но для тех, кто не против, у нас есть особенные условия. Поэтому имейте в виду и уточняйте у пластического хирурга.
+				@@text
 			</p>
-			<div class="swiper before-after-swiper">
+			<div class="swiper @@swiper">
 				<div class="swiper-wrapper before-after-wrapper">
-					@@loop( '../../blepharoplasty/before/slide.html', [
-						{ 'src': 'img/bust/before/wom1.png'},
-						{ 'src': 'img/bust/before/wom2.png'}
-					] )
+					<div class="swiper-slide before-after-slide @@class">
+						<img src="@@src1" width="426" height="366" alt="">
+					</div>
+					<div class="swiper-slide before-after-slide @@class">
+						<img src="@@src2" width="426" height="366" alt="">
+					</div>
 				</div>
 				<div class="swiper-pagination"></div>
 			</div>
@@ -21,10 +23,10 @@
 					Смотреть все работы
 				</a>
 			</div>
-			<div class="prev before-after-prev">
+			<div class="prev @@btn-prev">
 				<span></span>
 			</div>
-			<div class="next before-after-next">
+			<div class="next @@btn-next">
 				<span></span>
 			</div>
 		</div>

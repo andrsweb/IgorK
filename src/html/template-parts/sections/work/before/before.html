@@ -9,10 +9,12 @@
 			</p>
 			<div class="swiper before-after-swiper">
 				<div class="swiper-wrapper before-after-wrapper">
-					@@loop( '../../blepharoplasty/before/slide.html', [
-						{ 'src': 'img/work/face/wom1.png'},
-						{ 'src': 'img/work/face/wom2.png'}
-					] )
+					<div class="swiper-slide before-after-slide @@class">
+						<img src="@@src1" width="426" height="366" alt="">
+					</div>
+					<div class="swiper-slide before-after-slide @@class">
+						<img src="@@src2" width="426" height="366" alt="">
+					</div>
 				</div>
 				<div class="swiper-pagination"></div>
 			</div>

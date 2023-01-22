@@ -4,13 +4,19 @@
 	@@include( 'template-parts/sections/blepharoplasty/hero/hero.html', { h1: 'Блефаропластика вернет Вам красивый<br> и здоровый взгляд и сделает моложе на 5-10 лет',
 		text1: 'Устранение "болезненного",<br> "усталого" или "хмурого" вида', text2: 'Деликатный шов,<br> незаметный окружающим',
 		text3: 'Уже на 4 день после операции<br> Вы можете ходить на работу'})
+
 	@@include( 'template-parts/sections/blepharoplasty/result/result.html', { h3: 'Более 70% женщин и мужчин после 40 лет сталкиваются с возрастными изменениями верхних и нижних век которые можно исправить только хирургическим путем!', text1: 'Открытое молодое веко без нависания и грыж.', 
 		text2: 'Устранение усталого и болезненного вида за счет ликвидации мешков под глазами, грыж и малярных мешков.', text3: 'Омоложение на 5-10 лет!', text4: '', 'text5': '', 'num1': '1', 'num2': '2', 'num3': '3', 'num4': '', 'num5': '',
 		title: 'В результате операции Вы получаете: '})
-	@@include( 'template-parts/sections/blepharoplasty/before/before.html' )
+
+	@@include( 'template-parts/sections/blepharoplasty/before/before.html', { 'src1': 'img/blepharoplasty/before/img1.jpg', 'src2': 'img/blepharoplasty/before/img2.jpg', 'src3': 'img/blepharoplasty/before/img3.jpg',
+		'class':'blepharo-slide' } )
+
 	@@include( 'template-parts/sections/blepharoplasty/recovery/recovery.html', { h2: 'Как проходит восстановление после блефаропластики', 'src': 'img/blepharoplasty/recovery/video.png' } )
+
 	@@include( 'template-parts/sections/blepharoplasty/blef-video/blef-video.html', { h3: 'Выраженный результат уже через 1,5 месяца!',
 		text: 'Посмотрите, как изменилась пациентка после блефаропластики. Разница до и после колоссальна!', src: 'img/blepharoplasty/blef-video/video.png'} )
+
 	@@include( 'template-parts/sections/home/doctor/doctor.html' )
 	@@include( 'template-parts/sections/blepharoplasty/receive/receive.html' )
 	@@include( 'template-parts/sections/blepharoplasty/price/price.html' )

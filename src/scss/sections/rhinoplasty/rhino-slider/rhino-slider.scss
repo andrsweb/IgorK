@@ -51,10 +51,27 @@
 	}
 }
 
+.rhino-slide {
+	height: 75vw;
+
+	@media all and (min-width: $m) {
+		height: 30vw;
+	}
+
+	@media all and (min-width: $md) {
+		height: 32vw;
+	}
+
+	@media all and (min-width: $xl) {
+		height: 100%;
+	}
+}
+
 .work-page {
 
 	.rhino-slider {
 		padding: 30px 0;
+		
 
 		@media all and (min-width: $xl) {
 			padding: 53px 0 38px;

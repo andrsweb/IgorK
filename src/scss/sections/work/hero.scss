@@ -80,7 +80,7 @@
 		align-items: center;
 	}
 
-	.main-tab-link {
+	.tab-inner-link {
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-medium;
@@ -88,6 +88,11 @@
 		line-height: $lh-title;
 		color: $grey;
 		margin-bottom: 26px;
+		transition: color ease $tr;
+
+		&:hover {
+			color: $accent;
+		}
 
 		@media all and (min-width: $m) {
 			font-size: 20px;

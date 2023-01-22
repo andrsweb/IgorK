@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 const mainTabs = () => {
-	const tabBtns     = document.querySelectorAll('.main-tab')
-	const tabContents = document.querySelectorAll('.links-wrapper')
-	const imgToChange = document.querySelectorAll('.image-to-change')
+	const tabBtns     = document.querySelectorAll('.main-page .main-tab')
+	const tabContents = document.querySelectorAll('.main-page .links-wrapper')
+	const imgToChange = document.querySelectorAll('.main-page .image-to-change')
 
 	const clearActive = (element, className = 'active') => {
 		element.forEach(item => item.classList.remove(`${className}`))

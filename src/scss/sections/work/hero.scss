@@ -1,0 +1,104 @@
+.work-page {
+	.main-tabs {
+		padding: 0 0 20px;
+
+		@media all and (min-width: $xl) {
+			padding: 0 0 50px;
+		}
+
+		.links-wrapper {
+			margin: 0;
+		}
+
+		.container {
+			max-width: 970px;
+		}
+
+		h1 {
+			font-family: $ff;
+			font-style: normal;
+			font-weight: $fw-semibold;
+			font-size: 26px;
+			line-height: $lh-title;
+			color: $accent;
+			margin-bottom: 18px;
+			text-align: center;
+
+			@media all and (min-width: $m) {
+				font-size: 30px;
+			}
+
+			@media all and (min-width: $lg) {
+				font-size: 36px;
+			}
+		}
+
+		.hero-subtext {
+			font-family: $ff;
+			font-style: normal;
+			font-weight: $fw-regular;
+			font-size: 18px;
+			line-height: $lh;
+			color: $black;
+			margin-bottom: 30px;
+
+			@media all and (min-width: $lg) {
+				margin-bottom: 67px;
+			}
+		}
+
+		.image-to-change {
+			width: 300px;
+			height: 400px;
+			display: block;
+
+			@media all and (min-width: $lg) {
+				width: 409px;
+				height: 671px;
+			}
+		}
+	}
+
+	.main-tabs-links {
+		padding: 20px 0;
+
+		@media all and (min-width: $lg) {
+			padding: 51px 0 63px 70px;
+			margin-right: 143px;
+		}
+
+		&::before {
+			height: 100%;
+		}
+	}
+
+	.main-tabs-img {
+		order: 2;
+	}
+	
+	.main-tabs-wrapper {
+		align-items: center;
+	}
+
+	.main-tab-link {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 18px;
+		line-height: $lh-title;
+		color: $grey;
+		margin-bottom: 26px;
+
+		@media all and (min-width: $m) {
+			font-size: 20px;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 24px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

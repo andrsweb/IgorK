@@ -1,4 +1,4 @@
-@@include( 'template-parts/header/header.html', { title: 'Блефаропластика', class: 'blepharoplasty-page' } )
+@@include( 'template-parts/header/header.html', { title: 'Блефаропластика', class: 'blepharoplasty-page','doc': '#doc', 'price': '#price' } )
 
 <main>
 	@@include( 'template-parts/sections/blepharoplasty/hero/hero.html', { h1: 'Блефаропластика вернет Вам красивый<br> и здоровый взгляд и сделает моложе на 5-10 лет',
@@ -25,7 +25,7 @@
 	@@include( 'template-parts/sections/blepharoplasty/receive/receive.html' )
 	@@include( 'template-parts/sections/blepharoplasty/price/price.html' )
 	@@include( 'template-parts/sections/blepharoplasty/price/popular.html' )
-	@@include( 'template-parts/sections/form.html' )
+	@@include( 'template-parts/sections/form.html', {'form-id': 'form-3'} )
 	@@include( 'template-parts/sections/home/clinic/clinic.html' )
 </main>
 

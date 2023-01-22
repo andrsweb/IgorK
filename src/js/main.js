@@ -14,6 +14,7 @@ import './about/showMore'
 
 //sliders
 import './slider'
+import './smoothScroll'
 
 // Price list page scripts.
 import './price-list/common'

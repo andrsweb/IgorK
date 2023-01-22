@@ -1,4 +1,4 @@
-@@include( 'template-parts/header/header.html', { title: 'Главная', class: 'main-page' } )
+@@include( 'template-parts/header/header.html', { title: 'Главная', class: 'main-page', 'doc': '#doc', 'price': '#price'} )
 
 <main>
 	@@include( 'template-parts/sections/home/hero.html' )
@@ -6,7 +6,7 @@
 	@@include( 'template-parts/sections/home/before/before.html' )
 	@@include( 'template-parts/sections/home/price/price.html' )
 	@@include( 'template-parts/sections/home/doctor/doctor.html' )
-	@@include( 'template-parts/sections/form.html' )
+	@@include( 'template-parts/sections/form.html', {'form-id': 'form-1'} )
 	@@include( 'template-parts/sections/home/clinic/clinic.html' )
 </main>
 

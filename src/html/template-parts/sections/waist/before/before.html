@@ -1,30 +1,42 @@
-<section class="before-after">
+<section class="before-after" id="waist">
 	<div class="container">
 		<div class="before-after-box">
 			<h2>
-				Фотографии До\После
+				@@h2
 			</h2>
 			<p class="before-after-text">
-				Немногие соглашаются на то, чтобы рассказать о своей истории преображения, в основном все хотят анонимности. Но для тех, кто не против, у нас есть особенные условия. Поэтому имейте в виду и уточняйте у пластического хирурга.
+				@@text
 			</p>
-			<div class="swiper before-after-swiper">
+			<div class="swiper @@swiper">
 				<div class="swiper-wrapper before-after-wrapper">
-					@@loop( '../../blepharoplasty/before/slide.html', [
-						{ 'src': 'img/waist/wom1.png'},
-						{ 'src': 'img/waist/wom2.png'}
+					@@loop( 'slide.html', [
+						{ 'src': 'img/waist/1.jpg', 'class': 'waist-slide'},
+						{ 'src': 'img/waist/1a.jpg', 'class': 'waist-slide'},
+						{ 'src': 'img/waist/2.jpg', 'class': 'waist-slide'},
+						{ 'src': 'img/waist/3.jpg', 'class': 'waist-slide'},
+						{ 'src': 'img/waist/4.jpg', 'class': 'waist-slide'},
+						{ 'src': 'img/waist/5.jpg', 'class': 'waist-slide'},
+						{ 'src': 'img/waist/6.jpg', 'class': 'waist-slide'},
+						{ 'src': 'img/waist/7.jpg', 'class': 'waist-slide'},
+						{ 'src': 'img/waist/8.jpg', 'class': 'waist-slide'},
+						{ 'src': 'img/waist/9.jpg', 'class': 'waist-slide'},
+						{ 'src': 'img/waist/10.jpg', 'class': 'waist-slide'},
+						{ 'src': 'img/waist/11.jpg', 'class': 'waist-slide'},
+						{ 'src': 'img/waist/12.jpg', 'class': 'waist-slide'},
+						{ 'src': 'img/waist/13.jpg', 'class': 'waist-slide'}
 					] )
 				</div>
 				<div class="swiper-pagination"></div>
 			</div>
 			<div class="button-wrapp">
-				<a href="#" class="button before-after-button">
+				<a href="work.html" class="button before-after-button">
 					Смотреть все работы
 				</a>
 			</div>
-			<div class="prev before-after-prev">
+			<div class="prev @@btn-prev">
 				<span></span>
 			</div>
-			<div class="next before-after-next">
+			<div class="next @@btn-next">
 				<span></span>
 			</div>
 		</div>

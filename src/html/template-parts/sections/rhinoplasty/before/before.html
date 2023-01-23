@@ -1,30 +1,32 @@
-<section class="before-after">
+<section class="before-after" id="rhino">
 	<div class="container">
 		<div class="before-after-box">
 			<h2>
-				Фотографии До\После
+				@@h2
 			</h2>
 			<p class="before-after-text">
-				Немногие соглашаются на то, чтобы рассказать о своей истории преображения, в основном все хотят анонимности. Но для тех, кто не против, у нас есть особенные условия. Поэтому имейте в виду и уточняйте у пластического хирурга.
+				@@text
 			</p>
-			<div class="swiper before-after-swiper">
+			<div class="swiper @@swiper">
 				<div class="swiper-wrapper before-after-wrapper">
-					@@loop( '../../blepharoplasty/before/slide.html', [
-						{ 'src': 'img/rhino/before/wom1.png'},
-						{ 'src': 'img/rhino/before/wom2.png'}
+					@@loop( 'item.html', [
+						{ 'src': 'img/rhino/before/1.jpg', 'class': 'rhino-slide'},
+						{ 'src': 'img/rhino/before/2.jpg', 'class': 'rhino-slide'},
+						{ 'src': 'img/rhino/before/3.jpg', 'class': 'rhino-slide'},
+						{ 'src': 'img/rhino/before/4.jpg', 'class': 'rhino-slide'}
 					] )
 				</div>
 				<div class="swiper-pagination"></div>
 			</div>
 			<div class="button-wrapp">
-				<a href="#" class="button before-after-button">
+				<a href="work.html" class="button before-after-button">
 					Смотреть все работы
 				</a>
 			</div>
-			<div class="prev before-after-prev">
+			<div class="prev @@btn-prev">
 				<span></span>
 			</div>
-			<div class="next before-after-next">
+			<div class="next @@btn-next">
 				<span></span>
 			</div>
 		</div>

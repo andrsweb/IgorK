@@ -5,14 +5,17 @@
 		text1: 'Подтянутая грудь желаемого <br> размера за 1 операцию', text2: 'Естественная пластика <br> и незаметные швы',
 		text3: 'Новые волнующие формы, <br> которые сделают фигуру <br> более гармоничной'})
 	@@include( 'template-parts/sections/bust/result/result.html' )
-	@@include( 'template-parts/sections/bust/before/before.html' )
+
+	@@include( 'template-parts/sections/bust/before/before.html', { 'swiper': 'before-after-swiper', 'btn-prev': 'before-after-prev', 'btn-next': 'before-after-next',
+	'h2': 'Фотографии До/\После', 'text': 'Немногие соглашаются на то, чтобы рассказать о своей истории преображения, в основном все хотят анонимности. Но для тех, кто не против, у нас есть особенные условия. Поэтому имейте в виду и уточняйте у пластического хирурга.'} )
+
 	@@include( 'template-parts/sections/blepharoplasty/blef-video/blef-video.html', { h3: 'Посмотрите, как изменилась грудь пациентки после подтяжки',
 		text: 'Пациентке выполнили подтяжку груди. В результате получили упругую, но мягкую грудь, которая хорошо держит форму.', src: 'img/bust/video/video.png'} )
 	@@include( 'template-parts/sections/home/doctor/doctor.html' )
 	@@include( 'template-parts/sections/blepharoplasty/receive/receive.html' )
 	@@include( 'template-parts/sections/bust/price/price.html' )
 	@@include( 'template-parts/sections/bust/price/popular.html' )
-	@@include( 'template-parts/sections/form.html' )
+	@@include( 'template-parts/sections/form.html', {'form-id': 'form-4'} )
 	@@include( 'template-parts/sections/home/clinic/clinic.html' )
 </main>
 

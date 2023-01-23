@@ -48,6 +48,7 @@
   "dependencies": {
     "@fancyapps/ui": "^4.0.31",
     "lazyframe": "^2.2.7",
+    "smoothscroll-polyfill": "^0.4.4",
     "swiper": "^8.4.6"
   }
 }

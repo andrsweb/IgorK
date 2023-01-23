@@ -19,6 +19,22 @@
 		max-width: 925px;
 	}
 
+	.blefaro-video-title {
+		display: none;
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-semibold;
+		font-size: 24px;
+		line-height: $lh;
+		text-align: center;
+		color: $dark;
+		margin-bottom: 30px;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 48px;
+		}
+	}
+
 	h3 {
 		font-family: $ff;
 		font-style: normal;
@@ -44,30 +60,30 @@
 		}
 	}
 
+	&-box {
+		width: 250px;
+		height: 400px;
+
+		@media all and (min-width: $m) {
+			width: 300px;
+			height: 500px;
+		}
+
+		@media all and (min-width: $lg) {
+			width: 345px;
+			height: 619px;
+		}
+	}
+
 	&-inner {
+		display: flex;
+		justify-content: center;
 		width: 100%;
 		margin-bottom: 30px;
 
 		@media all and (min-width: $lg) {
 			margin-bottom: 0;
 			padding-top: 40px;
-		}
-
-		img {
-			width: 250px;
-			height: 400px;
-			object-fit: cover;
-			margin: 0 auto;
-	
-			@media all and (min-width: $m) {
-				width: 300px;
-				height: 500px;
-			}
-	
-			@media all and (min-width: $lg) {
-				width: 345px;
-				height: 619px;
-			}
 		}
 	}
 
@@ -133,5 +149,16 @@
 		@media all and (min-width: $lg) {
 			margin-top: auto;
 		}
+	}
+}
+
+.work-page {
+
+	.blef-video {
+		padding: 40px 0;
+	}
+
+	.blefaro-video-title {
+		display: block;
 	}
 }

@@ -37,14 +37,22 @@
 		position: relative;
 		width: 100%;
 		order: 2;
+		display: flex;
+		justify-content: center;
 
 		@media all and (min-width: $lg) {
 			order: 1;
 			width: 37%;
 		}
 
-		img {
-			margin: 0 auto;
+		&-wrapper {
+			width: 300px;
+			height: 500px;
+
+			@media all and (min-width: $lg) {
+				width: 345px;
+				height: 614px;
+			}
 		}
 	}
 

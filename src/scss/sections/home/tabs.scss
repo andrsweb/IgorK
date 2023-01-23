@@ -18,6 +18,11 @@
 		}
 	}
 
+	&-img {
+		display: flex;
+		justify-content: center;
+	}
+
 	&-links {
 		position: relative;
 		display: flex;
@@ -162,6 +167,16 @@
 		picture {
 			display: none
 		}
+	}
+}
+
+.tab-video-wrapper {
+	width: 250px;
+	height: 400px;
+
+	@media all and (min-width: $md) {
+		width: 342px;
+		height: 612px;
 	}
 }
 

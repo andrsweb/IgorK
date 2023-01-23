@@ -9,18 +9,12 @@
 			</p>
 			<div class="swiper @@swiper">
 				<div class="swiper-wrapper before-after-wrapper">
-					<div class="swiper-slide before-after-slide @@class">
-						<img src="@@src1" width="426" height="366" alt="">
-					</div>
-					<div class="swiper-slide before-after-slide @@class">
-						<img src="@@src2" width="426" height="366" alt="">
-					</div>
-					<div class="swiper-slide before-after-slide @@class">
-						<img src="@@src3" width="426" height="366" alt="">
-					</div>
-					<div class="swiper-slide before-after-slide @@class">
-						<img src="@@src4" width="426" height="366" alt="">
-					</div>
+					@@loop( 'item.html', [
+						{ 'src': 'img/rhino/before/1.jpg', 'class': 'rhino-slide'},
+						{ 'src': 'img/rhino/before/2.jpg', 'class': 'rhino-slide'},
+						{ 'src': 'img/rhino/before/3.jpg', 'class': 'rhino-slide'},
+						{ 'src': 'img/rhino/before/4.jpg', 'class': 'rhino-slide'}
+					] )
 				</div>
 				<div class="swiper-pagination"></div>
 			</div>

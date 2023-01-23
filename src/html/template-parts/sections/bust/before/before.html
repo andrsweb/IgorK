@@ -9,27 +9,15 @@
 			</p>
 			<div class="swiper @@swiper">
 				<div class="swiper-wrapper before-after-wrapper">
-					<div class="swiper-slide before-after-slide @@class">
-						<img src="@@src1" width="426" height="366" alt="">
-					</div>
-					<div class="swiper-slide before-after-slide @@class">
-						<img src="@@src2" width="426" height="366" alt="">
-					</div>
-					<div class="swiper-slide before-after-slide @@class">
-						<img src="@@src3" width="426" height="366" alt="">
-					</div>
-					<div class="swiper-slide before-after-slide @@class">
-						<img src="@@src4" width="426" height="366" alt="">
-					</div>
-					<div class="swiper-slide before-after-slide @@class">
-						<img src="@@src5" width="426" height="366" alt="">
-					</div>
-					<div class="swiper-slide before-after-slide @@class">
-						<img src="@@src6" width="426" height="366" alt="">
-					</div>
-					<div class="swiper-slide before-after-slide @@class">
-						<img src="@@src7" width="426" height="366" alt="">
-					</div>
+					@@loop( 'slide.html', [
+						{ 'src': 'img/bust/before/1.jpg', 'class': 'bust-slide' },
+						{ 'src': 'img/bust/before/2.jpg', 'class': 'bust-slide' },
+						{ 'src': 'img/bust/before/3.jpg', 'class': 'bust-slide' },
+						{ 'src': 'img/bust/before/4.jpg', 'class': 'bust-slide' },
+						{ 'src': 'img/bust/before/5.jpg', 'class': 'bust-slide' },
+						{ 'src': 'img/bust/before/6.jpg', 'class': 'bust-slide' },
+						{ 'src': 'img/bust/before/7.jpg', 'class': 'bust-slide' }
+					] )
 				</div>
 				<div class="swiper-pagination"></div>
 			</div>

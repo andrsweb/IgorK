@@ -1,0 +1,11 @@
+@@include( 'template-parts/header/header.html', { title: 'Главная', class: 'main-page',
+'doc': '#doc', 'op': '#oper', 'be': '#bef', 'price': '#price', 'con': '#contacts', 
+'oper': 'Операции'} )
+
+<main>
+	@@include( 'template-parts/sections/contacts/hero.html' )	
+	@@include( 'template-parts/sections/form.html', {'form-id': 'form-1'} )
+</main>
+
+@@include( 'template-parts/footer/footer.html' )
+

@@ -1,0 +1,111 @@
+.contacts {
+	padding: 96px 0;
+
+	.container {
+		max-width: 1200px;
+	}
+
+	h1 {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 28px;
+		line-height: $lh-title;
+		color: $accent;
+		margin-bottom: 32px;
+
+		@media all and (min-width: $lg) {
+			font-size: 30px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 36px;
+		}
+	}
+
+	&-wrapper {
+		display: flex;
+	}
+
+	&-info {
+		width: 34%;
+
+		&-text {
+			font-family: $ff;
+			font-style: normal;
+			font-weight: $fw-regular;
+			font-size: 18px;
+			line-height: $lh;
+			color: $dark;
+			margin-bottom: 26px;
+		}
+	}
+
+	&-link {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 16px;
+		line-height: $lh;
+		color: $grey;
+		margin-bottom: 10px;
+		transition: ease color $tr;
+
+		&:hover {
+			color: $accent;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&-consultation {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 20px;
+		line-height: $lh;
+		color: $dark;
+		margin-top: 26px;
+	}
+
+	&-links {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&-social {
+		display: flex;
+		align-items: center;
+		margin-top: 32px;
+
+		&-link {
+			margin-right: 18px;
+			transition: opacity ease $tr;
+			
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&:hover {
+				opacity: $op;
+			}
+		}
+	}
+
+	&-img {
+		width: calc( 66% - 90px );
+		margin-left: 90px;
+	}
+
+	address {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 24px;
+		line-height: $lh;
+		color: $dark;
+		margin-bottom: 18px;
+	}
+}

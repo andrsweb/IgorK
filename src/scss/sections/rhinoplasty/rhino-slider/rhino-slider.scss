@@ -23,6 +23,16 @@
 		@media all and (min-width: $xl) {
 			padding: 0 140px;
 		}
+
+		&-box {
+			width: 250px;
+			height: 400px;
+
+			@media all and (min-width: $md) {
+				width: 345px;
+				height: 614px;
+			}
+		}
 	}
 
 	.rhino-swiper {
@@ -44,6 +54,7 @@
 
 	.swiper-pagination {
 		bottom: 0;
+		z-index: -1;
 
 		@media all and (min-width: $lg) {
 			bottom: 70px;

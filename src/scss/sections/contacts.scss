@@ -25,10 +25,19 @@
 
 	&-wrapper {
 		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
 	}
 
 	&-info {
-		width: 34%;
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 34%;
+		}
 
 		&-text {
 			font-family: $ff;
@@ -95,8 +104,16 @@
 	}
 
 	&-img {
-		width: calc( 66% - 90px );
-		margin-left: 90px;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-top: 50px;
+
+		@media all and (min-width: $lg) {
+			width: calc( 66% - 90px );
+			margin-left: 90px;
+			margin-top: 0;
+		}
 	}
 
 	address {

@@ -50,7 +50,13 @@
 	&-items {
 		display: flex;
 		background-color: rgba(255, 255, 255, 0.575);
-		padding: 50px;
+		padding: 20px;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			padding: 50px;
+			flex-direction: row;
+		}
 	}
 
 	&-receive-items {
@@ -58,13 +64,22 @@
 	}
 
 	&-info {
-		width: 70%;
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 70%;
+		}
 	}
 
 	&-img {
 		display: flex;
-		justify-content: flex-end;
-		width: 30%;
+		justify-content: center;
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 30%;
+			justify-content: flex-end;
+		}
 	}
 
 	&-text-title {
@@ -114,9 +129,13 @@
 		background: rgba(255, 255, 255, 0.877);
 
 		&-items {
-			margin: 0 -20px;
+			margin: 0 -10px;
 			display: flex;
 			flex-wrap: wrap;
+
+			@media all and (min-width: $lg) {
+				margin: 0 -20px;
+			}
 		}
 
 		&-item {
@@ -124,14 +143,24 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			padding: 0 20px;
-			width: calc( 100% / 4 );
+			padding: 0 10px;
+			width: calc( 100% / 2 );
+
+			@media all and (min-width: $lg) {
+				width: calc( 100% / 4 );
+				padding: 0 20px;
+			}
 		}
 
 		&-num {
 			font-weight: $fw-semibold;
 			font-size: 40px;
 			margin-bottom: 20px;
+		}
+
+		&-text {
+			padding: 0 5px;
+			text-align: center;
 		}
 	}
 }

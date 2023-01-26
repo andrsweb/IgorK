@@ -207,3 +207,10 @@
 		}
 	}
 }
+
+.ben-page {
+	.header-nav {
+		width: calc( 100% - 300px );
+		justify-content: center;
+	}
+}

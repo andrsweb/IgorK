@@ -1,0 +1,60 @@
+<section class="blef-price" id="price">
+	<div class="container">
+		<h2>
+			Сколько стоит операция?
+		</h2>
+		<div class="price-wrapper">
+			<div class="dropdown">
+				<div class="dropdown-title">
+					<h4 class="price-start">
+						Стоимость (только операция)
+					</h4>
+					<span></span>
+				</div>
+				<div class="dropdown-open">
+					<div class="dropdown-inner">
+						@@loop( '../../blepharoplasty/price/item.html', [
+							{ 'title': 'Смас подтяжка (подтяжка средней и нижней третей лица, подтяжка шеи)', 'value': '300 000 р'},
+							{ 'title': 'Эндоскопический лифтинг лба (подтяжка верхней трети лица)', 'value': '150 000 р'},
+							{ 'title': 'Платизмопластика с липосакцией', 'value': '200 000 р'},
+							{ 'title': 'Липосакция подподбородочной области', 'value': '70 000 р'},
+							{ 'title': 'Подтяжка бровей эндоскопическая', 'value': '150 000 р'},
+							{ 'title': ' Подтяжка бровей открытая', 'value': '100 000 р'},
+							{ 'title': 'Блефаропластика верхняя', 'value': '90 000 р'},
+							{ 'title': 'Блефаропластика нижняя', 'value': '90 000 р'},
+							{ 'title': 'Блефаропластика круговая', 'value': '160 000 р'},
+							{ 'title': 'Стоимость консультации', 'value': '0 р'}
+						] )
+					</div>
+				</div>
+			</div>
+			<div class="dropdown">
+				<div class="dropdown-title">
+					<h4 class="price-start">
+						Дополнительные услуги 
+					</h4>
+					<span></span>
+				</div>
+				<div class="dropdown-open">
+					<div class="dropdown-inner">
+						@@loop( '../../blepharoplasty/price/item.html', [
+							{ 'title': 'Анестезия (наркоз)', 'value': 'От 18 000 р &nbsp;<br> до 55 000 р'},
+							{ 'title': 'Пребывание в стационаре, койко-день до вечера', 'value': '6 000 р'},
+							{ 'title': 'Пребывание в стационаре, койко-день', 'value': '12 000 р'},
+							{ 'title': 'Компрессионное белье', 'value': 'от 3 000 р &nbsp;<br> до 13 000 р'},
+							{ 'title': 'Компрессионное белье', 'value': 'от 3 000 р &nbsp;<br> до 13 000 р'},
+							{ 'title': 'Местная анестезия', 'value': 'Зависит от операции'},
+							{ 'title': 'Анализы', 'value': 'Зависит от операции'},
+							{ 'title': 'Программы реабилитации после пластических операций', 'value': 'Зависит от операции'},
+						] )
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="button-wrapper">
+			<a href="price-list.html" class="dark-button price-button">
+				Смотреть все цены
+			</a>
+		</div>
+	</div>
+</section>

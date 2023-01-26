@@ -74,4 +74,27 @@
 			font-size: 20px;
 		}
 	}
+
+	h2 {
+		text-align: left;
+		margin-bottom: 40px;
+	}
+
+	.about-name {
+		text-align: right;
+		font-weight: $fw-semibold;
+	}
+
+	.top-text {
+		text-align: left;
+		font-style: italic;
+
+		strong {
+			text-decoration: underline;
+		}
+	}
+
+	.bottom-text {
+		text-align: left;
+	}
 }

@@ -13,10 +13,10 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="msapplication-config" content="favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
-	<title>@@title</title>
+	<title>Контакты</title>
 	<link rel="stylesheet" href="css/main.min.css" />
 </head>
-<body class="@@class">
+<body class="contacts-page">
 	<div class="wrapper">
 		<header class="header">
 			<div class="container">
@@ -26,19 +26,19 @@
 					</a>
 					<div class="header-inner">
 						<nav class="header-nav">
-							<a class="header-link anchor" href="@@doc">
+							<a class="header-link" href="about.html">
 								Ваш доктор
 							</a>
-							<a class="header-link anchor" href="@@op">
-								@@oper
+							<a class="header-link" href="index.html#bef">
+								Операции
 							</a>
-							<a class="header-link anchor" href="@@be">
+							<a class="header-link" href="work.html">
 								До\После
 							</a>
-							<a class="header-link anchor" href="@@price">
+							<a class="header-link" href="price-list.html">
 								Стоимость
 							</a>
-							<a class="header-link anchor" href="@@con">
+							<a class="header-link" href="#contacts">
 								Контакты
 							</a>
 						</nav>
@@ -57,3 +57,11 @@
 				</div>
 			</div>
 		</header>
+
+<main>
+	@@include( 'template-parts/sections/contacts/hero.html' )	
+	@@include( 'template-parts/sections/form.html', {'form-id': 'form-1'} )
+</main>
+
+@@include( 'template-parts/footer/footer.html' )
+

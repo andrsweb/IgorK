@@ -7,11 +7,16 @@
 	}
 
 	h2 {
-		text-align: left;
-		font-size: 26px;
+		text-align: center;
+		font-size: 22px;
 		padding-bottom: 20px;
 		position: relative;
 		margin-bottom: 40px;
+
+		@media all and (min-width: $lg) {
+			text-align: left;
+			font-size: 26px;
+		}
 
 		&::after {
 			content: "";
@@ -29,12 +34,22 @@
 		font-size: 18px;
 		font-weight: $fw-semibold;
 		margin-bottom: 20px;
+		text-align: center;
+
+		@media all and (min-width: $lg) {
+			text-align: left;
+		}
 	}
 
 	&-items {
 		width: 100%;
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
 
 		&-inner {
 			display: flex;
@@ -71,17 +86,29 @@
 	}
 
 	&-left {
-		width: 50%;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
 		justify-content: center;
+		margin-bottom: 50px;
+
+		@media all and (min-width: $lg) {
+			width: 50%;
+			margin-bottom: 0;
+			align-items: flex-start;
+		}
 	}
 
 	&-right {
 		display: flex;
-		justify-content: flex-end;
-		width: 50%;
+		justify-content: center;
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			justify-content: flex-end;
+			width: 50%;
+		}
 	}
 
 	.benefit-button {

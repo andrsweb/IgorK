@@ -36,19 +36,19 @@
 					</a>
 					<div class="header-inner">
 						<nav class="header-nav">
-							<a class="header-link anchor" href="#doc">
+							<a class="header-link anchor" href="#face-doc">
 								Ваш доктор
 							</a>
-							<a class="header-link anchor" href="#oper">
+							<a class="header-link anchor" href="#face-oper">
 								Операция
 							</a>
-							<a class="header-link anchor" href="#bef">
+							<a class="header-link anchor" href="#face-bef">
 								До\После
 							</a>
-							<a class="header-link anchor" href="#price">
+							<a class="header-link anchor" href="#face-price">
 								Стоимость
 							</a>
-							<a class="header-link anchor" href="#contacts">
+							<a class="header-link" href="contacts.html">
 								Контакты
 							</a>
 						</nav>
@@ -73,13 +73,13 @@
 		text1: 'Омоложение <br> на 10-15 лет ', text2: 'Гарантированный результат. <br> Работает там, где косметология бессильна',
 		text3: '    Безопасно за счёт высокой квалификации <br> команды и самых современных технологий'})
 
-	@@include( 'template-parts/sections/face/about-face/about.html')
+	@@include( 'template-parts/sections/face/about-face/about.html', {'id': 'face-oper'})
 	@@include( 'template-parts/sections/face/smas/smas.html')
 	@@include( 'template-parts/sections/face/methodic/methodic.html')
-	@@include( 'template-parts/sections/face/before/before.html')
+	@@include( 'template-parts/sections/face/before/before.html', { 'id': 'face-bef'})
 	@@include( 'template-parts/sections/work/history/history.html')
-	@@include( 'template-parts/sections/face/price/price.html')
-	@@include( 'template-parts/sections/home/doctor/doctor.html' )
+	@@include( 'template-parts/sections/face/price/price.html', { 'id': 'face-price'})
+	@@include( 'template-parts/sections/home/doctor/doctor.html', { 'id': 'face-doc'} )
 	@@include( 'template-parts/sections/face/slider/slider.html' )
 	@@include( 'template-parts/sections/face/benefit/benefit.html' )
 	@@include( 'template-parts/sections/blepharoplasty/receive/receive.html' )

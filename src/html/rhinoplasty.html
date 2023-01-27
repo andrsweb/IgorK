@@ -36,19 +36,19 @@
 					</a>
 					<div class="header-inner">
 						<nav class="header-nav">
-							<a class="header-link anchor" href="#doc">
+							<a class="header-link anchor" href="#rhino-doc">
 								Ваш доктор
 							</a>
-							<a class="header-link anchor" href="#oper">
+							<a class="header-link anchor" href="#rhino-oper">
 								Операция
 							</a>
-							<a class="header-link anchor" href="#bef">
+							<a class="header-link anchor" href="#rhino-bef">
 								До\После
 							</a>
-							<a class="header-link anchor" href="#price">
+							<a class="header-link anchor" href="#rhino-price">
 								Стоимость
 							</a>
-							<a class="header-link anchor" href="#contacts">
+							<a class="header-link" href="contacts.html">
 								Контакты
 							</a>
 						</nav>
@@ -73,15 +73,15 @@
 		text1: 'Новый нос преобразит Вас, <br> но сохранит индивидуальность', text2: 'Нос выглядит так, будто <br> дан Вам таким от природы',
 		text3: 'Вы сможете дышать <br> свободно и легко'})
 
-	@@include( 'template-parts/sections/rhinoplasty/result/result.html', {'src': 'img/rhino/result/video.png', 'data': 'https://player.vimeo.com/video/791657364?h=e6b717526f'} )
+	@@include( 'template-parts/sections/rhinoplasty/result/result.html', {'src': 'img/rhino/result/video.png', 'data': 'https://player.vimeo.com/video/791657364?h=e6b717526f',  'id': 'rhino-oper'} )
 	
 	@@include( 'template-parts/sections/rhinoplasty/before/before.html', { 'swiper': 'work-rhino-swiper', 'btn-prev': 'work-rhino-prev', 'btn-next': 'work-rhino-next',
-	'h2': 'Фотографии До/\После', 'text': 'Немногие соглашаются на то, чтобы рассказать о своей истории преображения, в основном все хотят анонимности. Но для тех, кто не против, у нас есть особенные условия. Поэтому имейте в виду и уточняйте у пластического хирурга.'} )
+	'h2': 'Фотографии До/\После', 'text': 'Немногие соглашаются на то, чтобы рассказать о своей истории преображения, в основном все хотят анонимности. Но для тех, кто не против, у нас есть особенные условия. Поэтому имейте в виду и уточняйте у пластического хирурга.', 'id': 'rhino-bef'} )
 
 	@@include( 'template-parts/sections/rhinoplasty/rhino-slide/rhino-slides.html', { h2: 'Посмотрите, как преобразились <br> пациентки после операции!', 'class': ''} )
-	@@include( 'template-parts/sections/home/doctor/doctor.html' )
+	@@include( 'template-parts/sections/home/doctor/doctor.html', { 'id': 'rhino-doc'} )
 	@@include( 'template-parts/sections/blepharoplasty/receive/receive.html' )
-	@@include( 'template-parts/sections/rhinoplasty/price/rhino-price.html' )
+	@@include( 'template-parts/sections/rhinoplasty/price/rhino-price.html', { 'id': 'rhino-price'} )
 	@@include( 'template-parts/sections/rhinoplasty/price/rhino-popular.html' )
 	@@include( 'template-parts/sections/form.html', {'form-id': 'form-rhino'} )
 	@@include( 'template-parts/sections/home/clinic/clinic.html' )

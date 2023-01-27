@@ -36,19 +36,19 @@
 					</a>
 					<div class="header-inner">
 						<nav class="header-nav">
-							<a class="header-link anchor" href="#doc">
+							<a class="header-link anchor" href="#home-doc">
 								Ваш доктор
 							</a>
-							<a class="header-link anchor" href="#oper">
+							<a class="header-link anchor" href="#home-oper">
 								Операции
 							</a>
-							<a class="header-link anchor" href="#bef">
+							<a class="header-link anchor" href="#home-before">
 								До\После
 							</a>
-							<a class="header-link anchor" href="#price">
+							<a class="header-link anchor" href="#home-price">
 								Стоимость
 							</a>
-							<a class="header-link anchor" href="#contacts">
+							<a class="header-link" href="contacts.html">
 								Контакты
 							</a>
 						</nav>
@@ -70,10 +70,10 @@
 
 <main>
 	@@include( 'template-parts/sections/home/hero.html' )
-	@@include( 'template-parts/sections/home/tabs/main-tabs.html' )
-	@@include( 'template-parts/sections/home/before/before.html' )
-	@@include( 'template-parts/sections/home/price/price.html' )
-	@@include( 'template-parts/sections/home/doctor/doctor.html' )
+	@@include( 'template-parts/sections/home/tabs/main-tabs.html', { 'id': 'home-oper'} )
+	@@include( 'template-parts/sections/home/before/before.html', { 'id': 'home-before'} )
+	@@include( 'template-parts/sections/home/price/price.html', { 'id': 'home-price'} )
+	@@include( 'template-parts/sections/home/doctor/doctor.html', { 'id': 'home-doc'} )
 	@@include( 'template-parts/sections/form.html', {'form-id': 'form-main'} )
 	@@include( 'template-parts/sections/home/clinic/clinic.html' )
 </main>

@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	initSwiper('.work-rhino-swiper', 2, '.work-rhino-next', 'work-rhino-prev', 2, '.swiper-pagination' )
 	initSwiper('.work-waist-swiper', 2, '.work-waist-next', 'work-waist-prev', 2, '.swiper-pagination' )
 	initSwiper('.work-bust-swiper', 2, '.work-bust-next', 'work-bust-prev', 2, '.swiper-pagination' )
+	initSwiper('.tv-swiper', 1, '.tv-next', '.tv-prev', 1, '.swiper-pagination' )
 })
 
 const initSwiper = (slider, num, next, prev, slides, pag ) => {

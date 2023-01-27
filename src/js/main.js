@@ -25,3 +25,4 @@ import './price-list/common'
 //libs
 import './fancybox'
 import './lazy-frame'
+import './inputs'

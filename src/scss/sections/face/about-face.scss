@@ -1,0 +1,100 @@
+.about-face {
+	padding: 30px 0;
+
+	.container {
+		max-width: 1400px;
+	}
+
+	&-items {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.about-left {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		margin-bottom: 30px;
+
+		@media all and (min-width: $md) {
+			width: 50%;
+			margin-bottom: 0;
+		}
+	}
+
+	&-text {
+		width: 100%;
+		font-family: $ff;
+		font-weight: $fw-regular;
+		margin-bottom: 30px;
+		font-size: 15px;
+		text-align: center;
+
+		@media all and (min-width: $lg) {
+			font-size: 23px;
+		}
+	}
+
+	.about-right {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		@media all and (min-width: $md) {
+			width: 50%;
+		}
+
+		&-wrapper {
+			width: 250px;
+			height: 400px;
+
+			@media all and (min-width: $md) {
+				justify-content: flex-end;
+			}
+
+			@media all and (min-width: $lg) {
+				width: 440px;
+				height: 550px;
+			}
+		}
+	}
+
+	&-btn-wrapper {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	&-button {
+		font-size: 15px;
+
+		@media all and (min-width: $xl) {
+			font-size: 20px;
+		}
+	}
+
+	h2 {
+		text-align: left;
+		margin-bottom: 40px;
+	}
+
+	.about-name {
+		text-align: right;
+		font-weight: $fw-semibold;
+	}
+
+	.top-text {
+		text-align: left;
+		font-style: italic;
+
+		strong {
+			text-decoration: underline;
+		}
+	}
+
+	.bottom-text {
+		text-align: left;
+	}
+}

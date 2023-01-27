@@ -13,10 +13,10 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="msapplication-config" content="favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
-	<title>О докторе</title>
+	<title>Пластическая хирургия лица</title>
 	<link rel="stylesheet" href="css/main.min.css" />
 </head>
-<body class="about-page">
+<body class="face-page">
 	<div class="wrapper">
 		<header class="header">
 			<div class="container">
@@ -29,8 +29,8 @@
 							<a class="header-link anchor" href="#doc">
 								Ваш доктор
 							</a>
-							<a class="header-link" href="index.html#bef">
-								Операции
+							<a class="header-link anchor" href="#oper">
+								Операция
 							</a>
 							<a class="header-link anchor" href="#bef">
 								До\После
@@ -59,18 +59,20 @@
 		</header>
 
 <main>
-	@@include( 'template-parts/sections/about/hero.html' )
-	@@include( 'template-parts/sections/about/rate/rate.html' )
-	@@include( 'template-parts/sections/about/info/about-info.html' )
-	@@include( 'template-parts/sections/about/media/media.html' )
-	@@include( 'template-parts/sections/about/press/press.html' )
-	
-	@@include( 'template-parts/sections/blepharoplasty/recovery/recovery.html', { h2: 'Выступления на федеральных каналах и мероприятиях', 'src': 'img/about/federal/video.png', 'data': 'https://player.vimeo.com/video/775559976?h=341a7aac14' } )
+	@@include( 'template-parts/sections/blepharoplasty/hero/hero.html', { h1: 'Пластическая хирургия лица',
+		text1: 'Омоложение <br> на 10-15 лет ', text2: 'Гарантированный результат. <br> Работает там, где косметология бессильна',
+		text3: '    Безопасно за счёт высокой квалификации <br> команды и самых современных технологий'})
 
-	@@include( 'template-parts/sections/about/study/study.html' )
-	@@include( 'template-parts/sections/about/study-slider/study-slider.html' )
-	@@include( 'template-parts/sections/about/trips/trips.html' )
-	@@include( 'template-parts/sections/form.html', {'form-id': 'form-2'} )
+	@@include( 'template-parts/sections/face/about-face/about.html')
+	@@include( 'template-parts/sections/face/smas/smas.html')
+	@@include( 'template-parts/sections/face/methodic/methodic.html')
+	@@include( 'template-parts/sections/face/before/before.html')
+	@@include( 'template-parts/sections/work/history/history.html')
+	@@include( 'template-parts/sections/face/price/price.html')
+	@@include( 'template-parts/sections/home/doctor/doctor.html' )
+	@@include( 'template-parts/sections/face/benefit/benefit.html' )
+	@@include( 'template-parts/sections/blepharoplasty/receive/receive.html' )
+	@@include( 'template-parts/sections/form.html', {'form-id': 'form-5'} )
 	@@include( 'template-parts/sections/home/clinic/clinic.html' )
 </main>
 

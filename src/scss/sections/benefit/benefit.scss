@@ -1,0 +1,166 @@
+.ben-hero {
+	position: relative;
+	width: 100vw;
+	padding: 5vh 0 57px 0;
+	background-image: url( '../img/home/hero/hero-bg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	z-index: 0;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100%;
+		background: linear-gradient(0deg, #000000 -4.1%, rgba(0, 0, 0, 0) 100%);
+		opacity: 0.85;
+		z-index: -1;
+	}
+
+	.container {
+		max-width: 1600px;
+	}
+
+	h1 {
+		text-align: left;
+		margin-bottom: 20px;
+	}
+
+	h2 {
+		text-align: left;
+		margin-bottom: 20px;
+		font-size: 25px;
+	}
+
+	h3 {
+		font-size: 22px;
+		margin: 30px 0;
+	}
+
+	h5 {
+		text-transform: uppercase;
+		font-size: 25px;
+		text-align: center;
+		margin: 0 0 20px 0;
+	}
+
+	&-items {
+		display: flex;
+		background-color: rgba(255, 255, 255, 0.575);
+		padding: 20px;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			padding: 50px;
+			flex-direction: row;
+		}
+	}
+
+	&-receive-items {
+		display: flex;
+	}
+
+	&-info {
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 70%;
+		}
+	}
+
+	&-img {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 30%;
+			justify-content: flex-end;
+		}
+	}
+
+	&-text-title {
+		font-weight: $fw-semibold;
+	}
+
+	&-text-item {
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.benefit-socials {
+		margin: 30px 0;
+	
+		&-wrapper {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+
+		&-item {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 120px;
+			height: 120px;
+			background: $bef;
+			border-radius: $bord;
+			transition: opacity ease $tr;
+			margin-right: 40px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&:hover {
+				opacity: $op;
+			}
+		}
+	}
+
+	&-receive {
+		padding: 30px 0;
+		background: rgba(255, 255, 255, 0.877);
+
+		&-items {
+			margin: 0 -10px;
+			display: flex;
+			flex-wrap: wrap;
+
+			@media all and (min-width: $lg) {
+				margin: 0 -20px;
+			}
+		}
+
+		&-item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 0 10px;
+			width: calc( 100% / 2 );
+
+			@media all and (min-width: $lg) {
+				width: calc( 100% / 4 );
+				padding: 0 20px;
+			}
+		}
+
+		&-num {
+			font-weight: $fw-semibold;
+			font-size: 40px;
+			margin-bottom: 20px;
+		}
+
+		&-text {
+			padding: 0 5px;
+			text-align: center;
+		}
+	}
+}

@@ -14,6 +14,7 @@
 
 // Footer styles.
 @import 'footer/footer';
+@import 'footer/popup';
 
 //form
 
@@ -66,7 +67,16 @@
 // work page sections styles.
 @import 'sections/work/hero';
 
+// face page sections styles.
+@import 'sections/face/about-face';
+@import 'sections/face/smas';
+@import 'sections/face/benefit';
+@import 'sections/benefit/benefit';
+
+
+//contacts
 @import 'sections/contacts';
+@import './thanks';
 
 //libs
 @import 'sections/lazy-frame'

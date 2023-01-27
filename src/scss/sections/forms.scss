@@ -161,6 +161,21 @@
 	}
 }
 
+.form-response {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	color: $accent;
+	font-size: 14px;
+	margin-left: 30px;
+	margin-top: 30px;
+	width: 100%;
+
+	@media all and (min-width: $xl) {
+		margin-top: 0;
+	}
+}
+
 .form.success {
 	text-align: center;
 	font-size: 18px;

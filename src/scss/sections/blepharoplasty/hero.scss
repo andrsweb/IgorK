@@ -1,4 +1,4 @@
-.blepharoplasty-page, .rhyno-page, .waist-page, .bust-page {
+.blepharoplasty-page, .rhyno-page, .waist-page, .bust-page, .face-page {
 	.hero {
 		position: relative;
 		width: 100vw;
@@ -44,6 +44,34 @@
 				font-size: 18px;
 				width: 33.333%;
 			}
+		}
+	}
+}
+
+.face-page {
+	.hero-texts {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.hero-text {
+		position: relative;
+		width: 100%;
+		max-width: 600px;
+		text-align: left;
+		padding-left: 40px;
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translate( -50% ) rotate( -45deg );
+			width: 20px;
+			height: 10px;
+			border-bottom: 2px solid $white;
+			border-left: 2px solid $white;
 		}
 	}
 }

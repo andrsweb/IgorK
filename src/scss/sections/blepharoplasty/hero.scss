@@ -1,4 +1,4 @@
-.blepharoplasty-page, .rhyno-page, .waist-page, .bust-page, .face-page {
+.blepharoplasty-page, .rhyno-page, .waist-page, .bust-page {
 	.hero {
 		position: relative;
 		width: 100vw;
@@ -49,17 +49,50 @@
 }
 
 .face-page {
-	.face-texts {
+
+	.face-hero {
+		position: relative;
+		width: 100vw;
+		padding: 32.7vh 0 57px 0;
+		background-image: url( '../img/blepharoplasty/hero/hero-bg.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		z-index: 0;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100%;
+			background: linear-gradient(0deg, #000000 -4.1%, rgba(0, 0, 0, 0) 100%);
+			opacity: 0.85;
+			z-index: -1;
+		}
+
+		.container {
+			max-width: 1100px;
+		}
+	}
+
+	.hero-texts {
 		flex-direction: column;
 		align-items: center;
 	}
 
-	.face-text {
+	.hero-text {
 		position: relative;
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 14px;
+		line-height: $lh;
+		color: #FFFFFF;
 		width: 100%;
-		max-width: 600px;
-		text-align: left;
 		padding-left: 40px;
+		margin-bottom: 20px;
 
 		&::before {
 			content: "";
@@ -73,6 +106,34 @@
 			border-bottom: 2px solid $white;
 			border-left: 2px solid $white;
 		}
+
+		@media all and (min-width: $lg) {
+			font-size: 18px;
+		}
+	}
+
+	h1 {
+		text-align: center;
+		color: $white;
+		margin-bottom: 43px;
+	}
+
+	.hero-button {
+		margin-bottom: 17px;
+
+		@media all and (min-width: $lg) {
+			font-size: 20px;
+			padding: 18px 60.5px;
+		}
+	}
+
+	.button-subtitle {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 12px;
+		line-height: 15px;
+		color: $white;
 	}
 }
 

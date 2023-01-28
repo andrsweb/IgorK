@@ -74,26 +74,40 @@
 			padding: 0 12%;
 		}
 	}
-
-	&-prev, &-next {
-		display: none;
-
-		@media all and (min-width: $md) {
-			display: block;
-		}
-	}
 }
 
-.swiper-pagination {
+.swiper-pagination, .rhino-pagination1, .media-pagination,
+.press-pagination, .study-pagination, .work-face-pagination,
+.blef-pagination {
 	position: relative;
 	bottom: 0;
-	margin-top: 31px;
+	width: 100%;
+	max-width: 200px;
+	z-index: 1;
+	text-align: center;
+
+	@media all and (min-width: 350px) {
+		max-width: 250px;
+	}
+
+	@media all and (min-width: $md) {
+		max-width: 400px;
+	}
+
+	@media all and (min-width: $lg) {
+		max-width: 100%;
+	}
 
 	&-bullet {
 		background: $accent;
 		height: 10px;
 		width: 10px;
 	}
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom, .swiper-pagination-fraction {
+	bottom: 0;
 }
 
 .work-page {
@@ -180,4 +194,32 @@
 	@media all and (min-width: $xl) {
 		height: 366px;
 	}
+}
+
+.desktop-button {
+	display: none;
+
+	@media all and (min-width: $md) {
+		display: block;
+	}
+}
+
+.mobile-button {
+	display: block;
+
+	@media all and (min-width: $md) {
+		display: none;
+	}
+}
+
+.before-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	max-width: 480px;
+	margin: 0 auto;
+	z-index: 0;
+	padding: 20px 0;
+	margin-top: 30px;
 }

@@ -78,12 +78,17 @@
 	}
 
 	.hero-texts {
+		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin-bottom: 48px;
+
+		@media all and (min-width: $m) {
+			flex-direction: row;
+		}
 	}
 
 	.hero-text {
-		position: relative;
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-regular;
@@ -91,20 +96,12 @@
 		line-height: $lh;
 		color: #FFFFFF;
 		width: 100%;
-		padding-left: 40px;
 		margin-bottom: 20px;
+		text-align: center;
+		padding: 0 10px;
 
-		&::before {
-			content: "";
-			display: block;
-			position: absolute;
-			left: 0;
-			top: 50%;
-			transform: translate( -50% ) rotate( -45deg );
-			width: 20px;
-			height: 10px;
-			border-bottom: 2px solid $white;
-			border-left: 2px solid $white;
+		@media all and (min-width: $m) {
+			margin-bottom: 0;
 		}
 
 		@media all and (min-width: $lg) {

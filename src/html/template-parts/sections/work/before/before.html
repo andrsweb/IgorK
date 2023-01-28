@@ -7,7 +7,7 @@
 			<p class="before-after-text">
 				Фотографии  До/После
 			</p>
-			<div class="swiper before-after-swiper">
+			<div class="swiper work-face-swiper">
 				<div class="swiper-wrapper before-after-wrapper">
 					@@loop( 'slide.html', [
 						{ 'src': 'img/work/face/1.jpg', 'class': 'face-swipe'},
@@ -24,12 +24,20 @@
 						{ 'src': 'img/work/face/12.jpg', 'class': 'face-swipe'}
 					] )
 				</div>
-				<div class="swiper-pagination"></div>
 			</div>
-			<div class="prev before-after-prev">
+			<div class="before-nav">
+				<div class="prev before-after-prev mobile-button">
+					<span></span>
+				</div>
+				<div class="next before-after-next mobile-button">
+					<span></span>
+				</div>
+				<div class=" work-face-pagination"></div>
+			</div>
+			<div class="prev before-after-prev desktop-button">
 				<span></span>
 			</div>
-			<div class="next before-after-next">
+			<div class="next before-after-next desktop-button">
 				<span></span>
 			</div>
 		</div>

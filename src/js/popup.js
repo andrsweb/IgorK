@@ -5,7 +5,9 @@ import { setTargetElement, getTargetElement } from './common/global'
 document.addEventListener( 'DOMContentLoaded', () => {
 	'use strict'
 
-	showPopup()
+	setTimeout(() => {
+		showPopup()
+	}, 10000 )
 } )
 
 const showPopup = () => {

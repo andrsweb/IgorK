@@ -121,19 +121,21 @@
 }
 
 .prev, .next {
-	display: none;
-	width: 62px;
-	height: 62px;
+	width: 30px;
+	height: 30px;
 	position: absolute;
-	top: 47.5%;
-	z-index: 1;
+	top: 50%;
+	z-index: 20;
 	cursor: pointer;
 	background-color: $light;
 	border-radius: 50%;
 	transition: background-color ease $tr;
+	transform: translateY(-50%);
 
-	@media all and (min-width: $lg) {
-		display: block;
+	@media all and (min-width: $md) {
+		top: 47.5%;
+		width: 62px;
+		height: 62px;
 	}
 
 	&.white-prev, &.white-next, &.media-prev, &.media-next, &.press-next, &.press-prev {
@@ -159,12 +161,17 @@
 		left: 55%;
 		transform: translate( -50%,-50% )
 					rotate( -135deg);
-		width: 20px;
-		height: 20px;
+		width: 10px;
+		height: 10px;
 		border-top: 2px solid $grey;
 		border-right: 2px solid $grey;
 		display: inline-block;
 		transition: border-color ease $tr;
+
+		@media all and (min-width: $md) {
+			width: 20px;
+			height: 20px;
+		}
 	}
 }
 
@@ -173,8 +180,9 @@
 }
 
 .next {
-	transform: rotate( 180deg );
 	right: 0;
+	transform: rotate( 180deg ) 
+		translateY(50%);
 }
 
 .swiper-button-prev, .swiper-button-next {

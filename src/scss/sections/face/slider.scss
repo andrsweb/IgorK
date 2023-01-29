@@ -1,5 +1,9 @@
 .tv {
-	padding: 50px 0;
+	padding: 20px 0;
+
+	@media all and (min-width: $xl) {
+		padding: 50px 0;
+	}
 
 	.container {
 		max-width: 1200px;
@@ -15,23 +19,8 @@
 		}
 
 		@media all and (min-width: $lg) {
-			width: 700px;
-			height: 500px;
-		}
-
-		&.vertical {
-			width: 200px;
-			height: 350px;
-
-			@media all and (min-width: $m) {
-				width: 300px;
-				height: 450px;
-			}
-
-			@media all and (min-width: $lg) {
-				width: 300px;
-				height: 600px;
-			}
+			width: 600px;
+			height: 400px;
 		}
 	}
 
@@ -56,5 +45,10 @@
 				font-size: 22px;
 			}
 		}
+	}
+
+	.before-nav{
+		margin-top: 10px;
+		padding: 20px 0;
 	}
 }

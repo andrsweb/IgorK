@@ -43,6 +43,14 @@
 		line-height: $lh;
 		color: $black;
 
+		br {
+			display: none;
+
+			@media all and (min-width: $lg) {
+				display: block;
+			}
+		}
+
 		@media all and (min-width: $lg) {
 			font-size: 18px
 		}
@@ -132,6 +140,7 @@
 	height: 10px;
 	cursor: pointer;
 	transform: translateY(-50%);
+	z-index: 1;
 
 	@media all and (min-width: $md) {
 		width: 20px;

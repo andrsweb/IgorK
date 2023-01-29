@@ -9,8 +9,6 @@
 }
 
 .blef-video {
-	padding: 0 0 40px;
-
 	@media all and (min-width: $xl) {
 		padding: 0 0 79px;
 	}
@@ -20,7 +18,6 @@
 	}
 
 	.blefaro-video-title {
-		display: none;
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-semibold;

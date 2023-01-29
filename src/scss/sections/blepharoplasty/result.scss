@@ -36,13 +36,13 @@
 	&-video {
 		position: relative;
 		width: 100%;
-		order: 2;
 		display: flex;
 		justify-content: center;
+		margin-bottom: 30px;
 
 		@media all and (min-width: $lg) {
-			order: 1;
 			width: 37%;
+			margin-bottom: 0;
 		}
 
 		&-wrapper {
@@ -63,10 +63,8 @@
 	
 		width: 100%;
 		margin-bottom: 30px;
-		order: 1;
 
 		@media all and (min-width: $lg) {
-			order: 2;
 			margin-left: 90px;
 			width: calc( 63% - 90px );
 			margin-bottom: 0;

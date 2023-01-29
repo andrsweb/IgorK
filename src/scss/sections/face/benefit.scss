@@ -109,6 +109,23 @@
 			justify-content: flex-end;
 			width: 50%;
 		}
+
+		img {
+			max-width: 45%;
+			margin: 0 auto;
+
+			@media all and (min-width: $m) {
+				max-width: 60%;
+			}
+
+			@media all and (min-width: $md) {
+				max-width: 80%;
+			}
+
+			@media all and (min-width: $lg) {
+				max-width: 100%;
+			}
+		}
 	}
 
 	.ben-button {

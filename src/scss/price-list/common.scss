@@ -9,7 +9,11 @@
 	}
 
 	.page-title {
-		margin: 77px 0 63px
+		margin: 20px 0;
+
+		@media (min-width: $lg) {
+			margin: 77px 0 63px
+		}
 	}
 
 	.home-form {
@@ -19,16 +23,22 @@
 
 .price-tabs-headers {
 	width: 100%;
+	display: none;
 
 	@media (min-width: $md) {
 		width: 290px;
 		padding-right: 15px
+	}
+
+	@media (min-width: $lg) {
+		display: block;
 	}
 }
 
 .price-tabs-content {
 	width: 100%;
 	margin-top: 40px;
+	display: block;
 
 	@media (min-width: $md) {
 		width: calc(100% - 290px);
@@ -77,8 +87,11 @@
 }
 
 .price-content {
-	display: none;
 	padding-bottom: 75px;
+
+	@media (min-width: $lg) {
+		display: none;
+	}
 
 	&.active {
 		display: block

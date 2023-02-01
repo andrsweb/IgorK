@@ -2,6 +2,11 @@
 	.hero {
 		background-image: url( '../img/about/hero/hero-bg.png');
 		padding: 0;
+		background-position: 75% 10%;
+
+		@media all and (min-width: $md) {
+			background-position: center;
+		}
 
 		&::before {
 			background: linear-gradient(90deg, rgba(0, 0, 0, 0.85) -4.25%, rgba(0, 0, 0, 0) 47.41%);

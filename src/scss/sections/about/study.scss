@@ -43,14 +43,6 @@
 		line-height: $lh;
 		color: $black;
 
-		br {
-			display: none;
-
-			@media all and (min-width: $lg) {
-				display: block;
-			}
-		}
-
 		@media all and (min-width: $lg) {
 			font-size: 18px
 		}

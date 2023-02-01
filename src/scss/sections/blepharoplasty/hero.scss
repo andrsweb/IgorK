@@ -2,12 +2,16 @@
 	.hero {
 		position: relative;
 		width: 100vw;
-		padding: 32.7vh 0 57px 0;
+		padding: 14.7vh 0 57px 0;
 		background-image: url( '../img/blepharoplasty/hero/hero-bg.png');
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 		z-index: 0;
+
+		@media all and (min-width: $md) {
+			padding: 32.7vh 0 57px 0;
+		}
 
 		.container {
 			max-width: 1100px;

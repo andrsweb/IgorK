@@ -1,5 +1,10 @@
 .bust-page {
 	.hero {
-		padding: 24.3vh 0 57px 0;
+		padding: 14.3vh 0 57px 0;
+
+		@media all and (min-width: $md) {
+			padding: 24.3vh 0 57px 0;
+
+		}
 	}
 }

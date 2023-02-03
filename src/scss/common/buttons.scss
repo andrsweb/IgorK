@@ -194,3 +194,30 @@
 		display: block;
 	}
 }
+
+.benefit-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 0;
+	border-style: none;
+	width: 100%;
+	max-width: 318px;
+	height: 42px;
+	background: #00CD58;
+	font-family: $ff;
+	font-weight: $fw-semibold;
+	font-size: 16px;
+	line-height: 21px;
+	color: $white;
+	cursor: pointer;
+	transition: opacity ease $tr;
+
+	@media all and (min-width: $m) {
+		width: 318px;
+	}
+
+	&:hover {
+		opacity:  $op;
+	}
+}

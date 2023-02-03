@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	initSwiper('.rhino-swiper', 2, '.white-next', '.white-prev', 1, '.swiper-pagination' )
 	initSwiper('.media-swiper', 1, '.media-next', '.media-prev', 1, '.media-pagination' )
 	initSwiper('.press-swiper', 4, '.press-next', 'press-prev', 4, '.press-pagination' )
-	initSwiper('.study-swiper', 4, '.study-next', 'study-prev', 4, '.study-pagination' )
+	initSwiper('.study-swiper', 4, '.study-next', '.study-prev', 4, '.study-pagination' )
 	initSwiper('.work-face-swiper', 2, '.before-after-next', '.before-after-prev', 2 , '.work-face-pagination' )
 	initSwiper('.blepharo-swiper', 2, '.blepharo-next', 'blepharo-prev', 2, '.blef-pagination' )
 	initSwiper('.work-rhino-swiper', 2, '.work-rhino-next', 'work-rhino-prev', 2, '.rhino-pagination1' )

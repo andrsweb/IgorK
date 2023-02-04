@@ -24,7 +24,7 @@ const initSwiper = (slider, num, next, prev, slides, pag ) => {
 	const swiper = new Swiper(slider, {
 
 		direction: 'horizontal',
-		loop: false,
+		loop: true,
 		slidesPerView: num,
 		spaceBetween: 18,
 		breakpoints: {

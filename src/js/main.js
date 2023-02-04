@@ -11,6 +11,7 @@ import './blepharoplasty/dropdown'
 
 //about page
 import './about/showMore'
+import './rev-page'
 
 //sliders
 import './slider'

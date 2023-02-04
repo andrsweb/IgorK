@@ -1,0 +1,226 @@
+.rev {
+	background: $white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+
+	h1 {
+		font-size: 22px;
+		color: $accent;
+		margin-bottom: 20px;
+		text-align: center;
+
+		@media all and (min-width: $lg) {
+			font-size: 40px;
+			margin-bottom: 40px;
+		}
+	}
+
+	h2 {
+		font-size: 18px;
+		color: $dark;
+		margin-bottom: 15px;
+
+		@media all and (min-width: $lg) {
+			font-size: 30px;
+			margin-bottom: 30px;
+		}
+	}
+
+	&-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 20px;
+		
+		@media all and (min-width: $sm) {
+			border: 2px solid $accent;
+			border-radius: $bord;
+		}
+
+
+		@media all and (min-width: $lg) {
+			padding: 70px;
+		}
+	}
+
+	&-items {
+		display: flex;
+	}
+
+	&-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-right: 10px;
+		cursor: pointer;
+
+		&:hover {
+			&:nth-child(1), &:nth-child(2), &:nth-child(3) {
+				svg path {
+					fill: red;
+				}
+			}
+
+			&:nth-child(4), &:nth-child(5) {
+				svg path {
+					fill: gold;
+				}
+			}
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+
+		span {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: $ff;
+			font-weight: $fw-semibold;
+			font-size: 20px;
+			color: $black;
+
+			@media all and (min-width: $lg) {
+				font-size: 40px;
+			}
+		}
+
+		svg {
+			width: 30px;
+			height: 30px;
+
+			@media all and (min-width: $lg) {
+				width: 50px;
+				height: 50px;
+			}
+
+			& path {
+				transition: fill ease $tr;
+				fill: $dark;
+			}
+		}
+	}
+}
+
+.why-bad-page {
+	h1 {
+		color: $accent;
+		text-align: center;
+		margin-bottom: 40px;
+		font-size: 30px;
+	}
+
+	.consultation {
+		display: flex;
+		justify-content: center;
+		font-size: 18px;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.promo {
+		min-height: 150px;
+		max-height: 300px;
+		padding-left: 30px;
+		font-family: "Montserrat", sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		color: #81909F;
+		max-width: 100%;
+		padding-top: 20px;
+		padding-right: 30px;
+		margin: 0;
+		resize: none;
+		border: 0;
+		border-radius: $bord;
+		background: #F5F7F9;
+		margin-bottom: 30px;
+	}
+
+	.button-wrapper {
+		display: flex;
+		justify-content: center;
+	}
+
+	.check-box {
+		margin-right: 20px;
+		width: 25px;
+		height: 25px;
+	}
+}
+
+.form-response.error {
+	text-align: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	margin-left: 0;
+}
+
+.why-good-page {
+	.why-good {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		h1 {
+			font-size: 30px;
+			color: $accent;
+			text-align: center;
+			margin-bottom: 40px;
+		}
+	
+		h2 {
+			text-align: center;
+			color: $dark;
+			font-size: 22px;
+			margin-bottom: 30px;
+		}
+
+		&-list {
+			display: flex;
+			flex-direction: column;
+			list-style:disc;
+			margin-bottom: 30px;
+		}
+
+		&-item {
+			font-size: 20px;
+			margin-bottom: 15px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		&-links {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin: 0 -20px;
+			max-width: 800px;
+		}
+
+		&-link {
+			padding: 0 20px;
+			width: calc( 100% / 3 );
+			margin-bottom: 30px;
+			transition: opacity ease $tr;
+
+			&:hover {
+				opacity: $op;
+			}
+		}
+	}
+}

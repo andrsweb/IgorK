@@ -4,6 +4,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-KLGM8GK');
+	</script>	
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -17,6 +23,10 @@
 	<link rel="stylesheet" href="css/main.min.css" />
 </head>
 <body class="main-page">
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLGM8GK"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>	
 	<div class="wrapper">
 		<header class="header">
 			<div class="container">
@@ -26,16 +36,16 @@
 					</a>
 					<div class="header-inner">
 						<nav class="header-nav">
-							<a class="header-link anchor" href="#doc">
+							<a class="header-link anchor" href="#home-doc">
 								Ваш доктор
 							</a>
-							<a class="header-link anchor" href="#oper">
+							<a class="header-link anchor" href="#home-oper">
 								Операции
 							</a>
-							<a class="header-link anchor" href="#bef">
+							<a class="header-link anchor" href="#home-before">
 								До\После
 							</a>
-							<a class="header-link anchor" href="#price">
+							<a class="header-link anchor" href="#home-price">
 								Стоимость
 							</a>
 							<a class="header-link anchor" href="#contacts">
@@ -60,11 +70,11 @@
 
 <main>
 	@@include( 'template-parts/sections/home/hero.html' )
-	@@include( 'template-parts/sections/home/tabs/main-tabs.html' )
-	@@include( 'template-parts/sections/home/before/before.html' )
-	@@include( 'template-parts/sections/home/price/price.html' )
-	@@include( 'template-parts/sections/home/doctor/doctor.html' )
-	@@include( 'template-parts/sections/form.html', {'form-id': 'form-1'} )
+	@@include( 'template-parts/sections/home/tabs/main-tabs.html', { 'id': 'home-oper'} )
+	@@include( 'template-parts/sections/home/before/before.html', { 'id': 'home-before'} )
+	@@include( 'template-parts/sections/home/price/price.html', { 'id': 'home-price'} )
+	@@include( 'template-parts/sections/home/doctor/doctor.html', { 'id': 'home-doc'} )
+	@@include( 'template-parts/sections/form.html', {'form-id': 'form-main'} )
 	@@include( 'template-parts/sections/home/clinic/clinic.html' )
 </main>
 

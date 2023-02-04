@@ -4,6 +4,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-KLGM8GK');
+	</script>	
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -17,6 +23,10 @@
 	<link rel="stylesheet" href="css/main.min.css" />
 </head>
 <body class="blepharoplasty-page">
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLGM8GK"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>	
 	<div class="wrapper">
 		<header class="header">
 			<div class="container">
@@ -26,16 +36,16 @@
 					</a>
 					<div class="header-inner">
 						<nav class="header-nav">
-							<a class="header-link anchor" href="#doc">
+							<a class="header-link anchor" href="#bleph-doc">
 								Ваш доктор
 							</a>
-							<a class="header-link anchor" href="#oper">
+							<a class="header-link anchor" href="#bleph-oper">
 								Операция
 							</a>
-							<a class="header-link anchor" href="#bef">
+							<a class="header-link anchor" href="#bleph-bef">
 								До\После
 							</a>
-							<a class="header-link anchor" href="#price">
+							<a class="header-link anchor" href="#bleph-price">
 								Стоимость
 							</a>
 							<a class="header-link anchor" href="#contacts">
@@ -59,27 +69,27 @@
 		</header>
 
 <main>
-	@@include( 'template-parts/sections/blepharoplasty/hero/hero.html', { h1: 'Блефаропластика вернет Вам красивый<br> и здоровый взгляд и сделает моложе на 5-10 лет',
+	@@include( 'template-parts/sections/blepharoplasty/hero/hero.html', { h1: 'Блефаропластика вернет Вам красивый<br> здоровый взгляд и сделает моложе на 5-10 лет',
 		text1: 'Устранение "болезненного",<br> "усталого" или "хмурого" вида', text2: 'Деликатный шов,<br> незаметный окружающим',
 		text3: 'Уже на 4 день после операции<br> Вы можете ходить на работу'})
 
 	@@include( 'template-parts/sections/blepharoplasty/result/result.html', { h3: 'Более 70% женщин и мужчин после 40 лет сталкиваются с возрастными изменениями верхних и нижних век которые можно исправить только хирургическим путем!', text1: 'Открытое молодое веко без нависания и грыж.', 
 		text2: 'Устранение усталого и болезненного вида за счет ликвидации мешков под глазами, грыж и малярных мешков.', text3: 'Омоложение на 5-10 лет!', text4: '', 'text5': '', 'num1': '1', 'num2': '2', 'num3': '3', 'num4': '', 'num5': '',
-		title: 'В результате операции Вы получаете: ', 'src': 'img/blepharoplasty/result/video.png', 'data': 'https://player.vimeo.com/video/791654045?h=4520b93065'} )
+		title: 'В результате операции Вы получаете: ', 'src': 'img/blepharoplasty/result/video.png', 'data': 'https://player.vimeo.com/video/791654045?h=4520b93065', 'id': 'bleph-oper'} )
 
-	@@include( 'template-parts/sections/blepharoplasty/before/before.html' )
+	@@include( 'template-parts/sections/blepharoplasty/before/before.html', { 'id': 'bleph-bef'} )
 
 	@@include( 'template-parts/sections/blepharoplasty/recovery/recovery.html', { h2: 'Как проходит восстановление после блефаропластики', 'src': 'img/blepharoplasty/recovery/video.png', 'data': 'https://player.vimeo.com/video/789721101?h=db157f1c2d' } )
 
 	@@include( 'template-parts/sections/blepharoplasty/blef-video/blef-video.html', { h3: 'Выраженный результат уже через 1,5 месяца!',
 		text: 'Посмотрите, как изменилась пациентка после блефаропластики. Разница до и после колоссальна!', src: 'img/blepharoplasty/blef-video/video.png', 'data': 'https://player.vimeo.com/video/786722785?h=17d5eff4f8'} )
 
-	@@include( 'template-parts/sections/home/doctor/doctor.html' )
-	@@include( 'template-parts/sections/face/benefit/benefit.html' )
+	@@include( 'template-parts/sections/home/doctor/doctor.html', { 'id': 'bleph-doc'} )
+	@@include( 'template-parts/sections/face/slider/slider.html' )
 	@@include( 'template-parts/sections/blepharoplasty/receive/receive.html' )
-	@@include( 'template-parts/sections/blepharoplasty/price/price.html' )
+	@@include( 'template-parts/sections/blepharoplasty/price/price.html', { 'id': 'bleph-price'} )
 	@@include( 'template-parts/sections/blepharoplasty/price/popular.html' )
-	@@include( 'template-parts/sections/form.html', {'form-id': 'form-3'} )
+	@@include( 'template-parts/sections/form.html', {'form-id': 'form-blepharo'} )
 	@@include( 'template-parts/sections/home/clinic/clinic.html' )
 </main>
 

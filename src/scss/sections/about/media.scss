@@ -28,6 +28,18 @@
 
 		img {
 			object-fit: cover;
+			width: 280px;
+			height: 200px;
+
+			@media all and (min-width: $sm) {
+				width: 380px;
+				height: 300px;
+			}
+	
+			@media all and (min-width: $xl) {
+				width: 947px;
+				height: 465px;
+			}
 		}
 	}
 
@@ -36,6 +48,5 @@
 		justify-content: center;
 		position: relative;
 		bottom: 0;
-		margin-top: 35px;
 	}
 }

@@ -1,13 +1,17 @@
-.blepharoplasty-page, .rhyno-page, .waist-page, .bust-page, .face-page {
+.blepharoplasty-page, .rhyno-page, .waist-page, .bust-page {
 	.hero {
 		position: relative;
 		width: 100vw;
-		padding: 32.7vh 0 57px 0;
+		padding: 14.7vh 0 57px 0;
 		background-image: url( '../img/blepharoplasty/hero/hero-bg.png');
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 		z-index: 0;
+
+		@media all and (min-width: $md) {
+			padding: 32.7vh 0 57px 0;
+		}
 
 		.container {
 			max-width: 1100px;
@@ -49,30 +53,88 @@
 }
 
 .face-page {
-	.hero-texts {
-		flex-direction: column;
-		align-items: center;
-	}
 
-	.hero-text {
+	.face-hero {
 		position: relative;
-		width: 100%;
-		max-width: 600px;
-		text-align: left;
-		padding-left: 40px;
+		width: 100vw;
+		padding: 32.7vh 0 57px 0;
+		background-image: url( '../img/blepharoplasty/hero/hero-bg.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		z-index: 0;
 
 		&::before {
 			content: "";
-			display: block;
 			position: absolute;
+			top: 0;
 			left: 0;
-			top: 50%;
-			transform: translate( -50% ) rotate( -45deg );
-			width: 20px;
-			height: 10px;
-			border-bottom: 2px solid $white;
-			border-left: 2px solid $white;
+			width: 100vw;
+			height: 100%;
+			background: linear-gradient(0deg, #000000 -4.1%, rgba(0, 0, 0, 0) 100%);
+			opacity: 0.85;
+			z-index: -1;
 		}
+
+		.container {
+			max-width: 1100px;
+		}
+	}
+
+	.hero-texts {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 48px;
+
+		@media all and (min-width: $m) {
+			flex-direction: row;
+		}
+	}
+
+	.hero-text {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 14px;
+		line-height: $lh;
+		color: #FFFFFF;
+		width: 100%;
+		margin-bottom: 20px;
+		text-align: center;
+		padding: 0 10px;
+
+		@media all and (min-width: $m) {
+			margin-bottom: 0;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 18px;
+		}
+	}
+
+	h1 {
+		text-align: center;
+		color: $white;
+		margin-bottom: 43px;
+	}
+
+	.hero-button {
+		margin-bottom: 17px;
+
+		@media all and (min-width: $lg) {
+			font-size: 20px;
+			padding: 18px 60.5px;
+		}
+	}
+
+	.button-subtitle {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 12px;
+		line-height: 15px;
+		color: $white;
 	}
 }
 

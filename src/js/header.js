@@ -9,9 +9,11 @@ const toggleBurgerMenu = () => {
 	const burgerMenu   = document.querySelector( '.header-wrapper' )
 	const burgerBtn    = document.querySelector( '.burger-button' )
 
+	if( ! burgerMenu || ! burgerBtn ) return
+
 	burgerBtn.addEventListener( 'click', () => {
 
-		if( ! burgerMenu && burgerBtn ) return
+	
 
 		if( ! burgerMenu.classList.contains( 'active') ) {
 			burgerMenu.classList.add( 'active' )

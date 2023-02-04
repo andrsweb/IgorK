@@ -3,8 +3,12 @@
 	
 	background-image: url( '../img/home/doctor/doc-bg.png');
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: 60% 50%;
 	background-size: cover;
+
+	@media all and (min-width: $md) {
+		background-position: center;
+	}
 
 	@media all and (min-width: $xl) {
 		padding: 76px 0 112px;

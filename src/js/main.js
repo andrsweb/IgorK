@@ -11,6 +11,7 @@ import './blepharoplasty/dropdown'
 
 //about page
 import './about/showMore'
+import './rev-page'
 
 //sliders
 import './slider'
@@ -25,3 +26,4 @@ import './price-list/common'
 //libs
 import './fancybox'
 import './lazy-frame'
+import './inputs'

@@ -72,11 +72,19 @@
 @import 'sections/face/smas';
 @import 'sections/face/benefit';
 @import 'sections/benefit/benefit';
+@import 'sections/face/slider';
 
 
 //contacts
 @import 'sections/contacts';
 @import './thanks';
 
+
+//other pages
+@import './sections/whatsapp';
+@import './sections/live';
+@import './sections/online';
+@import './sections/rev';
+
 //libs
-@import 'sections/lazy-frame'
+@import 'sections/lazy-frame';

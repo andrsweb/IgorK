@@ -4,6 +4,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-KLGM8GK');
+	</script>	
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -17,6 +23,10 @@
 	<link rel="stylesheet" href="css/main.min.css" />
 </head>
 <body class="waist-page">
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLGM8GK"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>	
 	<div class="wrapper">
 		<header class="header">
 			<div class="container">
@@ -26,19 +36,19 @@
 					</a>
 					<div class="header-inner">
 						<nav class="header-nav">
-							<a class="header-link anchor" href="#doc">
+							<a class="header-link anchor" href="#waist-doc">
 								Ваш доктор
 							</a>
-							<a class="header-link anchor" href="#oper">
+							<a class="header-link anchor" href="#waist-oper">
 								Операция
 							</a>
-							<a class="header-link anchor" href="#bef">
+							<a class="header-link anchor" href="#waist-bef">
 								До\После
 							</a>
-							<a class="header-link anchor" href="#price">
+							<a class="header-link anchor" href="#waist-price">
 								Стоимость
 							</a>
-							<a class="header-link anchor" href="#contacts">
+							<a class="header-link" href="contacts.html">
 								Контакты
 							</a>
 						</nav>
@@ -63,19 +73,20 @@
 		text1: 'Осиная талия на всю жизнь', text2: 'Новый уровень <br> женственности и красоты',
 		text3: 'Малотравматичная операция <br> без негативного влияния на здоровье'})
 		
-	@@include( 'template-parts/sections/waist/result/result.html', {'img': 'img/waist/waist.png', 'src': 'https://player.vimeo.com/video/791657990?h=ce0a47f4fe'} )
+	@@include( 'template-parts/sections/waist/result/result.html', {'img': 'img/waist/waist.png', 'src': 'https://player.vimeo.com/video/791657990?h=ce0a47f4fe', 'id': 'waist-oper'} )
 	@@include( 'template-parts/sections/waist/waist-info/waist-info.html' )
 	@@include( 'template-parts/sections/waist/before/before.html', { 'h2': 'Фотографии До/\После', 'text': 'Немногие соглашаются на то, чтобы рассказать о своей истории преображения, в основном все хотят анонимности. Но для тех, кто не против, у нас есть особенные условия. Поэтому имейте в виду и уточняйте у пластического хирурга.',
-		'swiper': 'before-after-swiper', 'btn-prev': 'before-after-prev', 'btn-next': 'before-after-next'} )
+		'swiper': 'waist-swiper', 'btn-prev': 'before-after-prev', 'btn-next': 'before-after-next', 'id': 'waist-bef'} )
 		
 	@@include( 'template-parts/sections/blepharoplasty/blef-video/blef-video.html', { h3: 'Минус 10 см в талии!',
 		text: 'Получили ошеломляющий результат. Посмотрите, как изменилась пациентка после уменьшения талии. Результат говорит сам за себя.', 'src': 'img/home/tabs/tab-image2.png', 'data': 'https://player.vimeo.com/video/791372763?h=d160131432'} )
 	
-	@@include( 'template-parts/sections/home/doctor/doctor.html' )
+	@@include( 'template-parts/sections/home/doctor/doctor.html', {'id': 'waist-doc'} )
+	@@include( 'template-parts/sections/face/slider/slider.html' )
 	@@include( 'template-parts/sections/blepharoplasty/receive/receive.html' )
-	@@include( 'template-parts/sections/waist/price/waist-price.html' )
+	@@include( 'template-parts/sections/waist/price/waist-price.html', {'id': 'waist-price'} )
 	@@include( 'template-parts/sections/waist/price/waist-price-popular.html' )
-	@@include( 'template-parts/sections/form.html', {'form-id': 'form-6'} )
+	@@include( 'template-parts/sections/form.html', {'form-id': 'form-waist'} )
 	@@include( 'template-parts/sections/home/clinic/clinic.html' )
 </main>
 

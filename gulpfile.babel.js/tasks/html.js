@@ -21,7 +21,9 @@ const html = () => {
 		} ) )
 		.pipe( fileInclude() )
 		.pipe( webpHtml() )
-		.pipe( htmlmin( app.htmlmin ) )
+		.pipe( htmlmin( app.htmlmin, {
+			ignoreCustomFragments: [ /<br>\s/gi ]
+		} ) )
 		.pipe( gulp.dest( path.html.dest ) )
 }
 

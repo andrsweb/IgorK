@@ -112,8 +112,13 @@
 	h1 {
 		color: $accent;
 		text-align: center;
-		margin-bottom: 40px;
-		font-size: 30px;
+		margin-bottom: 20px;
+		font-size: 22px;
+
+		@media all and (min-width: $lg) {
+			font-size: 30px;
+			margin-bottom: 40px;
+		}
 	}
 
 	.consultation {
@@ -168,23 +173,34 @@
 
 .why-good-page {
 	.why-good {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		&-wrapper {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
 
 		h1 {
-			font-size: 30px;
+			font-size: 22px;
 			color: $accent;
 			text-align: center;
-			margin-bottom: 40px;
+			margin-bottom: 20px;
+
+			@media all and (min-width: $lg) {
+				font-size: 30px;
+				margin-bottom: 40px;
+			}
 		}
 	
 		h2 {
 			text-align: center;
 			color: $dark;
-			font-size: 22px;
+			font-size: 18px;
 			margin-bottom: 30px;
+
+			@media all and (min-width: $lg) {
+				font-size: 22px;
+			}
 		}
 
 		&-list {
@@ -195,8 +211,12 @@
 		}
 
 		&-item {
-			font-size: 20px;
+			font-size: 15px;
 			margin-bottom: 15px;
+
+			@media all and (min-width: $lg) {
+				font-size: 20px;
+			}
 
 			&:last-child {
 				margin-bottom: 0;
@@ -213,10 +233,16 @@
 		}
 
 		&-link {
+			display: flex;
+			justify-content: center;
 			padding: 0 20px;
-			width: calc( 100% / 3 );
+			width: calc( 100% / 2 );
 			margin-bottom: 30px;
 			transition: opacity ease $tr;
+
+			@media all and (min-width: $md) {
+				width: calc( 100% / 3 );
+			}
 
 			&:hover {
 				opacity: $op;

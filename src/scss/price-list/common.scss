@@ -30,7 +30,7 @@
 		padding-right: 15px
 	}
 
-	@media (min-width: $lg) {
+	@media (min-width: $md) {
 		display: block;
 	}
 }
@@ -89,14 +89,6 @@
 .price-content {
 	padding-bottom: 75px;
 
-	@media (min-width: $lg) {
-		display: none;
-	}
-
-	&.active {
-		display: block
-	}
-
 	&-title {
 		font-size: 24px;
 		color: $accent;
@@ -111,6 +103,7 @@
 
 	&-item {
 		margin-bottom: 36px;
+		position: relative;
 
 		&:last-child {
 			margin-bottom: 0;

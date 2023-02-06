@@ -20,9 +20,6 @@ import './smoothScroll'
 //popup
 import './popup'
 
-// Price list page scripts.
-import './price-list/common'
-
 //libs
 import './fancybox'
 import './lazy-frame'

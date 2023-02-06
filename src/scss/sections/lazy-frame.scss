@@ -42,3 +42,15 @@
 		display: none;
 	}
 }
+
+.for-anchor {
+	position: absolute;
+	top: -70px;
+	left: 0;
+}
+
+.price-list-page-inner {
+	.for-anchor {
+		top: -180px;
+	}
+}

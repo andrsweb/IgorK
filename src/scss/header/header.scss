@@ -37,17 +37,14 @@
 				flex-direction: column;
 				justify-content: center;
 				position: fixed;
-				top: 76px;
+				top: 63px;
 				right: 0;
 				width: 200px;
 				background: $white;
-				border-top: 2px solid $accent;
-				border-left: 2px solid $accent;
-				border-bottom: 2px solid $accent;
-				border-top-left-radius: $bord;
 				border-bottom-left-radius: $bord;
 				z-index: 100;
 				animation: fade 0.5s forwards;
+				background: linear-gradient(to bottom, rgb(255, 255, 255) 0%,rgb(215, 218, 226) 100%);
 
 				@keyframes fade {
 					0% {
@@ -71,8 +68,21 @@
 		}
 	}
 
-	&-logo {
+	.mobile-header-button {
 		display: flex;
+		align-items: center;
+
+		@media all and (min-width: $lg) {
+			display: none;
+		}
+
+		.header-button {
+			margin-right: 10px;
+		}
+	}
+
+	&-logo {
+		display: none;
 		flex-direction: column;
 		font-family: $ff;
 		font-style: normal;
@@ -84,8 +94,19 @@
 		min-width: 163px;
 		transition: opacity ease $tr;
 
+		&.mobile {
+			display: flex;
+			margin: 0;
+			margin-top: 20px;
+
+			@media all and (min-width: $lg) {
+				display: none;
+			}
+		}
+
 		@media all and (min-width: $lg) {
 			margin-right: 20px;
+			display: flex;
 		}
 
 		@media all and (min-width: $xl) {

@@ -11,7 +11,12 @@
 	}
 
 	h1 {
-		color: $accent;
+		color: $white;
+		font-size: 20px;
+
+		@media all and (min-width: $lg) {
+			font-size: 30px;
+		}
 	}
 
 	h2 {
@@ -76,6 +81,35 @@
 
 		img {
 			margin: 0 auto;
+			max-width: 100%;
+			
+			@media all and (min-width: $xl) {
+				max-width: 75%;
+			}
+
+			@media all and (min-width: $xxl) {
+				position: absolute;
+				right: 40px;
+				top: 20px;
+			}
+		}
+	}
+
+	&-img-mobile { 
+
+		img {
+			max-width: 60%;
+		}
+		@media all and (min-width: $md) {
+			display: none;
+		}
+	}
+
+	&-img-desktop {
+		display: none;
+
+		@media all and (min-width: $md) {
+			display: block;
 		}
 	}
 
@@ -97,7 +131,7 @@
 	h1 {
 		font-size: 22px;
 		font-family: $ff;
-		font-weight: $fw-regular;
+		font-weight: $fw-semibold;
 		text-transform: uppercase;
 		line-height: 1.2em;
 		margin-bottom: 10px;
@@ -109,7 +143,7 @@
 		}
 
 		@media all and (min-width: $lg) {
-			font-size: 40px;
+			font-size: 30px;
 			line-height: 1;
 		}
 	}
@@ -127,7 +161,7 @@
 		}
 
 		@media all and (min-width: $lg) {
-			font-size: 30px;
+			font-size: 25px;
 			line-height: 1;
 		}
 	}
@@ -160,7 +194,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		margin-bottom: 80px;
+		margin-bottom: 40px;
 
 		@media all and (min-width: $md) {
 			align-items: flex-start;
@@ -279,4 +313,26 @@
 	.wrapper {
 		padding-top: 0;
 	}
+}
+
+.face-page {
+	.whatsapp {
+		height: auto;
+		background-image: none;
+		background-color: $white;
+
+		&::before {
+			display: none;
+		}
+
+		&-wrapper {
+			background-color: $accent;
+		}
+
+		&-num {
+			color: $white;
+		}
+	}
+
+
 }

@@ -7,7 +7,7 @@
 	}
 
 	.container {
-		max-width: 1190px;
+		max-width: 1200px;
 	}
 
 	h2 {
@@ -16,6 +16,7 @@
 
 	&-items {
 		display: flex;
+		justify-content: center;
 		flex-wrap: wrap;
 		margin: 0 -14px;
 	}
@@ -23,7 +24,7 @@
 	&-item {
 		padding: 0 14px;
 		width: calc( 100% / 1 );
-		margin-bottom: 30px;
+		margin-bottom: 75px;
 
 		&:last-child {
 			margin-bottom: 0;
@@ -36,35 +37,58 @@
 		@media all and (min-width: $md) {
 			width: calc( 100% / 3 );
 		}
-
-		@media all and (min-width: $xl) {
-			width: calc( 100% / 5 );
-		}
 	}
 
 	&-inner {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		width: 100%;
+		
+	}
+
+	&-img {
+		height: 250px;
+
+		@media all and (min-width: $md) {
+			height: 200px;
+		}
+
+		@media all and (min-width: $lg) {
+			height: 300px;
+		}
+
+		@media all and (min-width: $xxl) {
+			height: 316px;
+		}
+
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
 	}
 
 	&-title {
-		width: 208px;
+		width: 100%;
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-medium;
 		font-size: 18px;
 		line-height: $lh-title;
-		color: $white;
+		color: $accent;
 		text-align: center;
-		background: $accent;
-		border-top-right-radius: 12px;
-		border-top-left-radius: 12px;
+		background: $white;
+		border-bottom-right-radius: 12px;
+		border-bottom-left-radius: 12px;
 		padding: 13px 29px;
-	}
+		transition: background-color ease $tr,
+				color ease $tr;
 
-	&-img {
-		margin-bottom: 16px;
+		&:hover {
+			background-color: $accent;
+			color: $white;
+		}
 	}
 
 	&-button {

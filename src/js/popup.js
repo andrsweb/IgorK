@@ -7,17 +7,13 @@ document.addEventListener( 'DOMContentLoaded', () => {
 
 	setTimeout(() => {
 		showPopup()
-	}, 10000 )
+	}, 1000 )
 } )
 
 const showPopup = () => {
 	const popupWrapper    = document.querySelector( '.face-page .popup-wrapper' )
-	const addPopupWrapper = document.querySelector( '.add-popup-wrapper' )
 	const closeButton     = document.querySelector( '.popup-close' )
-	const addCloseButton  = document.querySelector( '.add-popup-close' )
-	const popButton       = document.querySelector( '.popup-btn' )
 	const body            = document.querySelector( 'header')
-	const benBtn          = document.querySelectorAll( '.benefit-button' )
 	setTargetElement( document.querySelector( '#body-lock' ) )
 
 	if( ! popupWrapper ) return
@@ -42,11 +38,6 @@ const showPopup = () => {
 		enableBodyScroll( getTargetElement() )
 	} )
 
-	addCloseButton.addEventListener( 'click', () => {
-		addPopupWrapper.classList.remove( 'showed' )
-		enableBodyScroll( getTargetElement() )
-	} )
-
 	popupWrapper.addEventListener( 'click', e => {
 		e.stopPropagation()
 
@@ -56,16 +47,5 @@ const showPopup = () => {
 			popupWrapper.classList.remove( 'showed' )
 			enableBodyScroll( getTargetElement() )
 		}
-	} )
-
-	popButton.addEventListener( 'click', () => {
-		addPopupWrapper.classList.add( 'showed' )
-	})
-
-	benBtn.forEach( button => {
-		button.addEventListener( 'click', e => {
-			e.preventDefault()
-			setTimeout( () => window.location.href = 'https://api.whatsapp.com/send/?phone=79776378446&text=%D0%A1%D0%9C%D0%90%D0%A1', 500 )
-		} )
 	} )
 }

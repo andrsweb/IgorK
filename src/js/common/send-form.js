@@ -43,7 +43,7 @@ const submitForm = selector => {
 						form.classList.remove( 'error' )
 						form.innerHTML = request.response.message
 						setTimeout(() => {
-							location.href = 'thankyou-facelift.html'
+							location.href = 'thankyou.html'
 						}, 1000);
 
 						if( isRedirect ) location.href = 'thankyou-facelift.html'

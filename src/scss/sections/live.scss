@@ -1,6 +1,8 @@
 .live-page {
 	h1 {
 		margin-bottom: 40px;
+		max-width: 900px;
+		text-align: center;
 	}
 
 	h2 {
@@ -10,11 +12,24 @@
 	h3 {
 		text-align: left;
 		margin-bottom: 30px;
-		color: $accent;
+		color: $white;
+	}
+
+	.whatsapp-num {
+		color: $white;
 	}
 
 	.for {
 		color: $white;
+		text-align: center;
+
+		span {
+			color: gold;
+		}
+	}
+
+	.whatsapp-info {
+		justify-content: center;
 	}
 
 	.live-links {

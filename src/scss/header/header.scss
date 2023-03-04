@@ -235,3 +235,9 @@
 		justify-content: center;
 	}
 }
+
+.mobile-main-link {
+	@media all and (min-width: $lg) {
+		display: none;
+	}
+}

@@ -71,6 +71,7 @@
 	.mobile-header-button {
 		display: flex;
 		align-items: center;
+		margin-left: auto;
 
 		@media all and (min-width: $lg) {
 			display: none;
@@ -82,31 +83,22 @@
 	}
 
 	&-logo {
-		display: none;
+		display: flex;
 		flex-direction: column;
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-semibold;
-		font-size: 17px;
+		font-size: 14px;
 		line-height: $lh-title;
 		color: $accent;
-		margin-right: 74px;
-		min-width: 163px;
+		margin-right: 20px;
+		min-width: 140px;
 		transition: opacity ease $tr;
-
-		&.mobile {
-			display: flex;
-			margin: 0;
-			margin-top: 20px;
-
-			@media all and (min-width: $lg) {
-				display: none;
-			}
-		}
 
 		@media all and (min-width: $lg) {
 			margin-right: 20px;
-			display: flex;
+			font-size: 17px;
+			min-width: 163px;
 		}
 
 		@media all and (min-width: $xl) {
@@ -117,10 +109,14 @@
 			font-family: $ff;
 			font-style: normal;
 			font-weight: $fw-regular;
-			font-size: 12px;
+			font-size: 10px;
 			line-height: $lh-title;
 			color: $grey;
 			text-transform: uppercase;
+
+			@media all and (min-width: $lg) {
+				font-size: 12px;
+			}
 		}
 
 		&:hover {
@@ -200,9 +196,13 @@
 	}
 
 	&-button {
-		padding: 5.5px 23px;
+		padding: 5.5px 13px;
 		font-size: 14px;
 		border-radius: 8px;
+
+		@media all and (min-width: $lg) {
+			padding: 5.5px 23px;
+		}
 	}
 
 	&-number {

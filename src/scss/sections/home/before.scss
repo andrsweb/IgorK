@@ -37,6 +37,11 @@
 		@media all and (min-width: $md) {
 			width: calc( 100% / 3 );
 		}
+
+		&:hover  .before-title {
+			background-color: $accent;
+			color: $white;
+		}
 	}
 
 	&-inner {
@@ -84,11 +89,6 @@
 		padding: 13px 29px;
 		transition: background-color ease $tr,
 				color ease $tr;
-
-		&:hover {
-			background-color: $accent;
-			color: $white;
-		}
 	}
 
 	&-button {

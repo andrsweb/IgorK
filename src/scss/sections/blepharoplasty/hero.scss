@@ -52,6 +52,23 @@
 	}
 }
 
+.waist-page, .bust-page {
+	.hero {
+		position: relative;
+		width: 100vw;
+		padding: 14.7vh 0 57px 0;
+		background-image: url( '../img/waist/hero-bg.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		z-index: 0;
+
+		@media all and (min-width: $md) {
+			padding: 32.7vh 0 57px 0;
+		}
+	}
+}
+
 .face-page {
 
 	.face-hero {

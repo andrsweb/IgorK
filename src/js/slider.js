@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	'use strict'
 
 	initSwiper('.face-swiper', 2, '.before-after-next', '.before-after-prev', 2 , '.face-pagination' )
+	initSwiper('.abdo-swiper', 2, '.before-after-next', '.before-after-prev', 2 , '.face-pagination' )
 	initSwiper('.bleph-swiper', 2, '.before-after-next', '.before-after-prev', 2 , '.blef-pagination' )
 	initSwiper('.waist-swiper', 2, '.before-after-next', '.before-after-prev', 2 , '.waist-pagination' )
 	initSwiper('.bust-swiper', 2, '.before-after-next', '.before-after-prev', 2 , '.bust-pagination' )

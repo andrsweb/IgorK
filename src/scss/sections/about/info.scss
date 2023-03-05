@@ -23,6 +23,17 @@
 		}
 	}
 
+	h4 {
+		text-align: center;
+		font-size: 20px;
+		transition: color ease $tr;
+		cursor: pointer;
+
+		&:hover {
+			color: $accent;
+		}
+	}
+
 	&-wrapper {
 		margin-bottom: 48px;
 	}
@@ -35,7 +46,7 @@
 		line-height: $lh;
 		text-align: center;
 		color: $black;
-		margin-bottom: 25px;
+		margin-bottom: 10px;
 
 		@media all and (min-width: $xl) {
 			font-size: 18px;
@@ -44,6 +55,16 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
+	}
+	
+	.dropdown-inner {
+		text-align: center;
+	}
+
+	.dropdown-open {
+		overflow: hidden;
+		height: 0;
+		transition: height ease $tr;
 	}
 
 	&-button-wrapper {

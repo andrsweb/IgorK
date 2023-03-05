@@ -2,6 +2,7 @@ document.addEventListener( 'DOMContentLoaded',  () => {
     'use strict'
 
     toogleDropdown()
+	changeTitleForClick()
 } )
 
 const toogleDropdown = () => {
@@ -47,4 +48,22 @@ const reCalculateDropdownHeight = dropdown => {
     if (! dropdownOpen || ! dropdownInner) return
 
     dropdownOpen.style.height = `${ dropdownInner.getBoundingClientRect().height }px`
+}
+
+const changeTitleForClick = () => {
+	let button = document.querySelector( '.read-more' )
+
+	if( ! button ) return
+
+	button.innerHTML = 'Читать далее...'
+
+	button.addEventListener( 'click', () => {
+			if( ! button.classList.contains( 'opened' ) ) {
+				button.innerHTML = 'Свернуть'
+				button.classList.add( 'opened' )
+			} else if ( button.classList.contains( 'opened' ) ) {
+				button.innerHTML = 'Читать далее...'
+				button.classList.remove( 'opened' )
+			}
+	} )
 }

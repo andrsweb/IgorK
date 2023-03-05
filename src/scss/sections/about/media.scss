@@ -1,5 +1,6 @@
 .media {
 	padding: 37px 0 25px;
+	background-color: $bef;
 	
 	.container {
 		max-width: 1200px;
@@ -13,18 +14,18 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 280px;
-		height: 200px;
+		// width: 280px;
+		// height: 200px;
 
-		@media all and (min-width: $sm) {
-			width: 380px;
-			height: 300px;
-		}
+		// @media all and (min-width: $sm) {
+		// 	width: 380px;
+		// 	height: 300px;
+		// }
 
-		@media all and (min-width: $xl) {
-			width: 947px;
-			height: 465px;
-		}
+		// @media all and (min-width: $xl) {
+		// 	width: 947px;
+		// 	height: 465px;
+		// }
 
 		img {
 			object-fit: cover;

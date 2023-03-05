@@ -2,10 +2,10 @@
 	.hero {
 		background-image: url( '../img/about/hero/hero-bg.png');
 		padding: 0;
-		background-position: 75% 10%;
+		background-position: 100% 10%;
 
 		@media all and (min-width: $md) {
-			background-position: center;
+			background-position: top;
 		}
 
 		&::before {

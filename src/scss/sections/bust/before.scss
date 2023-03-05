@@ -6,4 +6,12 @@
 			padding: 60px 0;
 		}
 	}
+
+	.rhino-slider {
+		.white-next.desktop-button {
+			@media all and (min-width: $lg) {
+				right: 10px;
+			}
+		}
+	}
 }

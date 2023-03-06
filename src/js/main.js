@@ -24,3 +24,6 @@ import './popup'
 import './fancybox'
 import './lazy-frame'
 import './inputs'
+
+//for lazy map
+import './isInScope'

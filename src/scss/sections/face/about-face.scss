@@ -16,12 +16,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-start;
-		margin-bottom: 30px;
-
-		@media all and (min-width: $md) {
-			width: 50%;
-			margin-bottom: 0;
-		}
+		margin-bottom: 30px;	
 	}
 
 	&-text {
@@ -43,11 +38,6 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-
-		@media all and (min-width: $md) {
-			width: 50%;
-			flex-direction: row;
-		}
 
 		&-wrapper {
 			width: 250px;
@@ -94,8 +84,9 @@
 	}
 
 	h2 {
-		text-align: left;
+		text-align: center;
 		margin-bottom: 40px;
+		width: 100%;
 	}
 
 	.top-text {

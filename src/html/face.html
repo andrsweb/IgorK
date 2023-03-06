@@ -81,8 +81,9 @@
 		text1: 'Гарантированный результат. Работает там, где косметология бессильна', text2: 'Омоложение <br> на 10-15 лет',
 		text3: '    Безопасно за счёт высокой квалификации команды и самых современных технологий'})
 
-	@@include( 'template-parts/sections/face/about-face/about.html', {'id': 'face-oper'})
-	@@include( 'template-parts/sections/face/smas/smas.html')
+		@@include( 'template-parts/sections/blepharoplasty/result/result.html', { h3: 'Большинство пациентов Игоря Алексеевича после хирургической SMAS подтяжки сходится на том, что: ', text1: 'Результат виден сразу после операции ', 
+		text2: 'Вы станете увереннее', text3: 'Это безболезненно', text4: '', 'text5': '', 'num1': '1', 'num2': '2', 'num3': '3', 'num4': '', 'num5': '',
+		title: 'В результате операции Вы получаете: ', 'src': 'img/face/face-video.png', 'data': 'https://player.vimeo.com/video/697723039?color&autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0#t=', 'id': 'bleph-oper'} )
 	@@include( 'template-parts/sections/face/methodic/methodic.html')
 	@@include( 'template-parts/sections/face/before/before.html', { 'id': 'face-bef'})
 	@@include( 'template-parts/sections/work/history/history.html')

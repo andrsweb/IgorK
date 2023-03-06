@@ -47,6 +47,7 @@ const submitForm = selector => {
 						}, 1000);
 
 						if( isRedirect ) location.href = 'thankyou-facelift.html'
+						if( isRedirect === 'bad' ) location.href = 'why-bad-thankyou.html'
 					}	else {	// If error.
 						formResponse.classList.remove( 'success' )
 						formResponse.classList.add( 'error' )

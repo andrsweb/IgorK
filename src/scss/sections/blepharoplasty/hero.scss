@@ -52,12 +52,12 @@
 	}
 }
 
-.waist-page, .bust-page {
+.bust-page {
 	.hero {
 		position: relative;
 		width: 100vw;
 		padding: 14.7vh 0 57px 0;
-		background-image: url( '../img/waist/hero-bg.png');
+		background-image: url( '../img/bust/hero-bg.png');
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -69,13 +69,31 @@
 	}
 }
 
+.waist-page {
+	.hero {
+		position: relative;
+		width: 100vw;
+		padding: 14.7vh 0 57px 0;
+		background-image: url( '../img/waist/hero-bg.png');
+		background-repeat: no-repeat;
+		background-position: 100% 10%;
+		background-size: cover;
+		z-index: 0;
+
+		@media all and (min-width: $md) {
+			padding: 32.7vh 0 57px 0;
+			background-position: center;
+		}
+	}
+}
+
 .face-page {
 
 	.face-hero {
 		position: relative;
 		width: 100vw;
 		padding: 32.7vh 0 57px 0;
-		background-image: url( '../img/blepharoplasty/hero/hero-bg.png');
+		background-image: url( '../img/face/hero-bg.png');
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;

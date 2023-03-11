@@ -2,9 +2,9 @@
 	.hero {
 		padding: 14.3vh 0 57px 0;
 
-		@media all and (min-width: $md) {
-			padding: 24.3vh 0 57px 0;
-
+		@media all and (min-width: $lg) {
+			padding: 35.3vh 0 57px 0;
+			background-position: 100% 25%;
 		}
 	}
 }

@@ -65,6 +65,7 @@
 
 		@media all and (min-width: $md) {
 			padding: 32.7vh 0 57px 0;
+			
 		}
 	}
 }
@@ -92,12 +93,17 @@
 	.face-hero {
 		position: relative;
 		width: 100vw;
-		padding: 32.7vh 0 57px 0;
+		padding: 34.7vh 0 57px 0;
 		background-image: url( '../img/face/hero-bg.png');
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: 30% 100%;
 		background-size: cover;
 		z-index: 0;
+
+		@media all and (min-width: $md) {
+			background-position: 100% 25%;
+			padding: 45vh 0 57px 0;
+		}
 
 		&::before {
 			content: "";

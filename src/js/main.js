@@ -27,3 +27,5 @@ import './inputs'
 
 //for lazy map
 import './isInScope'
+
+import './event'
